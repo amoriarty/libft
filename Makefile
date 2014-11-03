@@ -7,7 +7,8 @@ SRCS=	srcs/ft_putchar.c \
 		srcs/ft_strdup.c \
 		srcs/ft_strcpy.c \
 		srcs/ft_strncpy.c \
-		srcs/ft_strcat.c
+		srcs/ft_strcat.c \
+		srcs/ft_strncat.c
 
 OBJT=	ft_putchar.o \
 		ft_putstr.o \
@@ -16,7 +17,8 @@ OBJT=	ft_putchar.o \
 		ft_strdup.o \
 		ft_strcpy.o \
 		ft_strncpy.o \
-		ft_strcat.o
+		ft_strcat.o \
+		ft_strncat.o
 
 GCC= gcc -Wall -Werror -Wextra
 
