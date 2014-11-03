@@ -10,7 +10,8 @@ SRCS=	srcs/ft_putchar.c \
 		srcs/ft_strcat.c \
 		srcs/ft_strncat.c \
 		srcs/ft_atoi.c \
-		srcs/ft_strcmp.c
+		srcs/ft_strcmp.c \
+		srcs/ft_strncmp.c
 
 OBJT=	ft_putchar.o \
 		ft_putstr.o \
@@ -22,7 +23,8 @@ OBJT=	ft_putchar.o \
 		ft_strcat.o \
 		ft_strncat.o \
 		ft_atoi.o \
-		ft_strcmp.o
+		ft_strcmp.o \
+		ft_strncmp.o
 
 GCC= gcc -Wall -Werror -Wextra
 
