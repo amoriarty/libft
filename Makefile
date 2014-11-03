@@ -1,14 +1,14 @@
-NAME= libft.a
+NAME=	libft.a
 
-SRCS= 	srcs/ft_putchar.c \
-	srcs/ft_putstr.c \
-	srcs/ft_putnbr.c \
-	srcs/ft_strlen.c
+SRCS=	srcs/ft_putchar.c \
+		srcs/ft_putstr.c \
+		srcs/ft_putnbr.c \
+		srcs/ft_strlen.c
 
-OBJT= 	ft_putchar.o \
-	ft_putstr.o \
-	ft_putnbr.o \
-	ft_strlen.o
+OBJT=	ft_putchar.o \
+		ft_putstr.o \
+		ft_putnbr.o \
+		ft_strlen.o
 
 GCC= gcc -Wall -Werror -Wextra
 
