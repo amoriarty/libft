@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 12:12:00 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/03 13:28:02 by alegent          ###   ########.fr       */
+/*   Created: 2014/11/03 13:03:31 by alegent           #+#    #+#             */
+/*   Updated: 2014/11/03 13:33:09 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# define TRUE 1
-# define FALSE 0
+#include "libft.h"
 
-void		ft_putchar(char c);
-void		ft_putstr(char *str);
-void		ft_putnbr(int nb);
-int			ft_strlen(char *str);
-
-#endif
+void		ft_putnbr(int nb)
+{
+	if (nb < 0)
+	{
+		ft_putchar('-');
+		nb = -nb;
+	}
+	if (nb > 9)
+	{
+		ft_putnbr(nb / 10);
+		ft_putnbr(nb % 10);
+	}
+	else
+		ft_putchar(nb + '0');
+}

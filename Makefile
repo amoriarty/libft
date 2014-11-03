@@ -1,21 +1,27 @@
-LIB= libc.a
+NAME= libft.a
 
-SRCS= srcs/ft_strlen.c
+SRCS= 	srcs/ft_putchar.c \
+	srcs/ft_putstr.c \
+	srcs/ft_putnbr.c \
+	srcs/ft_strlen.c
 
-OBJT= ft_strlen.o
+OBJT= 	ft_putchar.o \
+	ft_putstr.o \
+	ft_putnbr.o \
+	ft_strlen.o
 
 GCC= gcc -Wall -Werror -Wextra
 
-all: make clean
+all: $(NAME) clean
 
-make:
-	$(GCC) -c $(SRCS) -I includes -o $(LIB)
-	ar -q $(OBJT) $(LIB)
+$(NAME):
+	$(GCC) -c $(SRCS) -I includes
+	ar r $(NAME) $(OBJT)
 
 clean:
 	rm $(OBJT)
 
 fclean:
-	rm $(LIB)
+	rm $(NAME)
 
 re: fclean all

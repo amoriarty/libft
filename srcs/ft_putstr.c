@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 12:12:00 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/03 13:28:02 by alegent          ###   ########.fr       */
+/*   Created: 2014/11/03 12:48:28 by alegent           #+#    #+#             */
+/*   Updated: 2014/11/03 13:03:23 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# define TRUE 1
-# define FALSE 0
+#include "libft.h"
 
-void		ft_putchar(char c);
-void		ft_putstr(char *str);
-void		ft_putnbr(int nb);
-int			ft_strlen(char *str);
+void		ft_putstr(char *str)
+{
+	int	i;
 
-#endif
+	i = 0;
+	while (str[i] != '\0')
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
+}
