@@ -5,14 +5,16 @@ SRCS=	srcs/ft_putchar.c \
 		srcs/ft_putnbr.c \
 		srcs/ft_strlen.c \
 		srcs/ft_strdup.c \
-		srcs/ft_strcpy.c
+		srcs/ft_strcpy.c \
+		srcs/ft_strncpy.c
 
 OBJT=	ft_putchar.o \
 		ft_putstr.o \
 		ft_putnbr.o \
 		ft_strlen.o \
 		ft_strdup.o \
-		ft_strcpy.o
+		ft_strcpy.o \
+		ft_strncpy.o
 
 GCC= gcc -Wall -Werror -Wextra
 
