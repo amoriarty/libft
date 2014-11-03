@@ -11,7 +11,8 @@ SRCS=	srcs/ft_putchar.c \
 		srcs/ft_strncat.c \
 		srcs/ft_atoi.c \
 		srcs/ft_strcmp.c \
-		srcs/ft_strncmp.c
+		srcs/ft_strncmp.c \
+		srcs/ft_isalpha.c
 
 OBJT=	ft_putchar.o \
 		ft_putstr.o \
@@ -24,7 +25,8 @@ OBJT=	ft_putchar.o \
 		ft_strncat.o \
 		ft_atoi.o \
 		ft_strcmp.o \
-		ft_strncmp.o
+		ft_strncmp.o \
+		ft_isalpha.o
 
 GCC= gcc -Wall -Werror -Wextra
 
