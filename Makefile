@@ -3,6 +3,11 @@ NAME=	libft.a
 SRCS=	srcs/ft_putchar.c \
 		srcs/ft_putstr.c \
 		srcs/ft_putnbr.c \
+		srcs/ft_putendl.c \
+		srcs/ft_putchar_fd.c \
+		srcs/ft_putstr_fd.c \
+		srcs/ft_putendl_fd.c \
+		srcs/ft_putnbr_fd.c \
 		srcs/ft_strlen.c \
 		srcs/ft_strdup.c \
 		srcs/ft_strcpy.c \
@@ -28,6 +33,11 @@ SRCS=	srcs/ft_putchar.c \
 OBJT=	ft_putchar.o \
 		ft_putstr.o \
 		ft_putnbr.o \
+		ft_putendl.o \
+		ft_putchar_fd.o \
+		ft_putstr_fd.o \
+		ft_putendl_fd.o \
+		ft_putnbr_fd.o \
 		ft_strlen.o \
 		ft_strdup.o \
 		ft_strcpy.o \
