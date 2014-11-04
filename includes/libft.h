@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 12:12:00 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/04 11:46:02 by alegent          ###   ########.fr       */
+/*   Updated: 2014/11/04 11:52:21 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ int			ft_strncmp(const char *s1, const char *s2, size_t n);
 int			ft_isalpha(int c);
 int			ft_isdigit(int c);
 int			ft_isalnum(int c);
+int			ft_isascii(int c);
 
 #endif

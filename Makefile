@@ -14,7 +14,8 @@ SRCS=	srcs/ft_putchar.c \
 		srcs/ft_strncmp.c \
 		srcs/ft_isalpha.c \
 		srcs/ft_isdigit.c \
-		srcs/ft_isalnum.c
+		srcs/ft_isalnum.c \
+		srcs/ft_isascii.c
 
 OBJT=	ft_putchar.o \
 		ft_putstr.o \
@@ -30,7 +31,8 @@ OBJT=	ft_putchar.o \
 		ft_strncmp.o \
 		ft_isalpha.o \
 		ft_isdigit.o \
-		ft_isalnum.o
+		ft_isalnum.o \
+		ft_isascii.o
 
 GCC= gcc -Wall -Werror -Wextra
 
