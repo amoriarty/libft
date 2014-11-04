@@ -13,6 +13,7 @@ SRCS=	srcs/ft_putchar.c \
 		srcs/ft_strchr.c \
 		srcs/ft_strrchr.c \
 		srcs/ft_strstr.c \
+		srcs/ft_strnstr.c \
 		srcs/ft_atoi.c \
 		srcs/ft_strcmp.c \
 		srcs/ft_strncmp.c \
@@ -37,6 +38,7 @@ OBJT=	ft_putchar.o \
 		ft_strchr.o \
 		ft_strrchr.o \
 		ft_strstr.o \
+		ft_strnstr.o \
 		ft_atoi.o \
 		ft_strcmp.o \
 		ft_strncmp.o \
