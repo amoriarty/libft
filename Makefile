@@ -11,6 +11,8 @@ SRCS=	srcs/ft_putchar.c \
 		srcs/ft_strncat.c \
 		srcs/ft_strlcat.c \
 		srcs/ft_strchr.c \
+		srcs/ft_strrchr.c \
+		srcs/ft_strstr.c \
 		srcs/ft_atoi.c \
 		srcs/ft_strcmp.c \
 		srcs/ft_strncmp.c \
@@ -33,6 +35,8 @@ OBJT=	ft_putchar.o \
 		ft_strncat.o \
 		ft_strlcat.o \
 		ft_strchr.o \
+		ft_strrchr.o \
+		ft_strstr.o \
 		ft_atoi.o \
 		ft_strcmp.o \
 		ft_strncmp.o \
@@ -46,13 +50,13 @@ OBJT=	ft_putchar.o \
 
 GCC= gcc -Wall -Werror -Wextra
 
-all: $(NAME) clean
+all: clean
 
 $(NAME):
 	$(GCC) -c $(SRCS) -I includes
 	ar r $(NAME) $(OBJT)
 
-clean:
+clean: $(NAME)
 	rm $(OBJT)
 
 fclean:
