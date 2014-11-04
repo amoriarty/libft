@@ -28,7 +28,9 @@ SRCS=	srcs/ft_putchar.c \
 		srcs/ft_isascii.c \
 		srcs/ft_isprint.c \
 		srcs/ft_toupper.c \
-		srcs/ft_tolower.c
+		srcs/ft_tolower.c \
+		srcs/ft_memset.c \
+		srcs/ft_bzero.c
 
 OBJT=	ft_putchar.o \
 		ft_putstr.o \
@@ -58,7 +60,9 @@ OBJT=	ft_putchar.o \
 		ft_isascii.o \
 		ft_isprint.o \
 		ft_toupper.o \
-		ft_tolower.o
+		ft_tolower.o \
+		ft_memset.o \
+		ft_bzero.o
 
 GCC= gcc -Wall -Werror -Wextra
 
