@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 17:42:46 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/03 17:57:27 by alegent          ###   ########.fr       */
+/*   Updated: 2014/11/04 10:22:17 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static int		ft_power(int digitlen)
 	int		i;
 	int		res;
 
-	i = 0;
+	i = 1;
 	res = 1;
 	while (i < digitlen)
 	{

@@ -13,7 +13,8 @@ SRCS=	srcs/ft_putchar.c \
 		srcs/ft_strcmp.c \
 		srcs/ft_strncmp.c \
 		srcs/ft_isalpha.c \
-		srcs/ft_isdigit.c
+		srcs/ft_isdigit.c \
+		srcs/ft_isalnum.c
 
 OBJT=	ft_putchar.o \
 		ft_putstr.o \
@@ -28,7 +29,8 @@ OBJT=	ft_putchar.o \
 		ft_strcmp.o \
 		ft_strncmp.o \
 		ft_isalpha.o \
-		ft_isdigit.o
+		ft_isdigit.o \
+		ft_isalnum.o
 
 GCC= gcc -Wall -Werror -Wextra
 
