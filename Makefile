@@ -30,7 +30,11 @@ SRCS=	srcs/ft_putchar.c \
 		srcs/ft_toupper.c \
 		srcs/ft_tolower.c \
 		srcs/ft_memset.c \
-		srcs/ft_bzero.c
+		srcs/ft_bzero.c \
+		srcs/ft_memcpy.c \
+		srcs/ft_memccpy.c \
+		srcs/ft_memmove.c \
+		srcs/ft_memchr.c
 
 OBJT=	ft_putchar.o \
 		ft_putstr.o \
@@ -62,7 +66,11 @@ OBJT=	ft_putchar.o \
 		ft_toupper.o \
 		ft_tolower.o \
 		ft_memset.o \
-		ft_bzero.o
+		ft_bzero.o \
+		ft_memcpy.o \
+		ft_memccpy.o \
+		ft_memmove.o \
+		ft_memchr.o
 
 GCC= gcc -Wall -Werror -Wextra
 

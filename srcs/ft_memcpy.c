@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 12:13:51 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/04 19:29:04 by alegent          ###   ########.fr       */
+/*   Created: 2014/11/04 18:50:38 by alegent           #+#    #+#             */
+/*   Updated: 2014/11/04 18:57:55 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t		ft_strlcat(char *dst, const char *src, size_t size)
+void		*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t		i;
-	int			x;
+	char		*pdst;
 
 	i = 0;
-	x = 0;
-	while (dst[i] != '\0' && i < size - 1)
-		i++;
-	while (src[x] != '\0' && i < size - 1)
+	pdst = (char *)dst;
+	while (i < n)
 	{
-		dst[i] = src[x];
+		*(char *)dst = *(char *)src;
 		i++;
-		x++;
+		dst++;
+		src++;
 	}
-	dst[i] = '\0';
-	return (i);
+	return ((void *)pdst);
 }
