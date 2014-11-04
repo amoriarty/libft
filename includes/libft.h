@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 12:12:00 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/04 16:05:58 by alegent          ###   ########.fr       */
+/*   Updated: 2014/11/04 16:11:05 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 void		ft_putchar(char c);
 void		ft_putstr(char const *s);
-void		ft_putnbr(int nb);
+void		ft_putnbr(int n);
 size_t		ft_strlen(const char *s);
 char		*ft_strdup(const char *s1);
 char		*ft_strcpy(char *dst, const char *src);

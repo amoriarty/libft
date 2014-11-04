@@ -6,24 +6,24 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 13:03:31 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/03 13:33:09 by alegent          ###   ########.fr       */
+/*   Updated: 2014/11/04 16:11:24 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_putnbr(int nb)
+void		ft_putnbr(int n)
 {
-	if (nb < 0)
+	if (n < 0)
 	{
 		ft_putchar('-');
-		nb = -nb;
+		n = -n;
 	}
-	if (nb > 9)
+	if (n > 9)
 	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
+		ft_putnbr(n / 10);
+		ft_putnbr(n % 10);
 	}
 	else
-		ft_putchar(nb + '0');
+		ft_putchar(n + '0');
 }
