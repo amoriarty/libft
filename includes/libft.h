@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 12:12:00 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/04 20:02:40 by alegent          ###   ########.fr       */
+/*   Updated: 2014/11/04 20:08:24 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,5 +53,6 @@ void		*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void		*ft_memmove(void *dst, const void *src, size_t len);
 void		*ft_memchr(const void *s, int c, size_t n);
 int			ft_memcmp(const void *s1, const void *s2, size_t n);
+void		*ft_memalloc(size_t size);
 
 #endif
