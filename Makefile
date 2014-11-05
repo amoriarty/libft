@@ -36,7 +36,8 @@ SRCS=	srcs/ft_putchar.c \
 		srcs/ft_memmove.c \
 		srcs/ft_memchr.c \
 		srcs/ft_memcmp.c \
-		srcs/ft_memalloc.c
+		srcs/ft_memalloc.c \
+		srcs/ft_memdel.c
 
 OBJT=	ft_putchar.o \
 		ft_putstr.o \
@@ -74,7 +75,8 @@ OBJT=	ft_putchar.o \
 		ft_memmove.o \
 		ft_memchr.o \
 		ft_memcmp.o \
-		ft_memalloc.o
+		ft_memalloc.o \
+		ft_memdel.o
 
 GCC= gcc -Wall -Werror -Wextra
 
