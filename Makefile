@@ -40,7 +40,14 @@ SRCS=	srcs/ft_putchar.c \
 		srcs/ft_memdel.c \
 		srcs/ft_strnew.c \
 		srcs/ft_strdel.c \
-		srcs/ft_strclr.c
+		srcs/ft_strclr.c \
+		srcs/ft_striter.c \
+		srcs/ft_striteri.c \
+		srcs/ft_strmap.c \
+		srcs/ft_strmapi.c \
+		srcs/ft_strequ.c \
+		srcs/ft_strnequ.c \
+		srcs/ft_strsub.c
 
 OBJT=	ft_putchar.o \
 		ft_putstr.o \
@@ -82,7 +89,14 @@ OBJT=	ft_putchar.o \
 		ft_memdel.o \
 		ft_strnew.o \
 		ft_strdel.o \
-		ft_strclr.o
+		ft_strclr.o \
+		ft_striter.o \
+		ft_striteri.o \
+		ft_strmap.o \
+		ft_strmapi.o \
+		ft_strequ.o \
+		ft_strnequ.o \
+		ft_strsub.o
 
 GCC= gcc -Wall -Werror -Wextra
 
