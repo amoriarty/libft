@@ -47,7 +47,11 @@ SRCS=	srcs/ft_putchar.c \
 		srcs/ft_strmapi.c \
 		srcs/ft_strequ.c \
 		srcs/ft_strnequ.c \
-		srcs/ft_strsub.c
+		srcs/ft_strsub.c \
+		srcs/ft_strjoin.c \
+		srcs/ft_itoa.c \
+		srcs/ft_strtrim.c \
+		srcs/ft_strsplit.c
 
 OBJT=	ft_putchar.o \
 		ft_putstr.o \
@@ -96,7 +100,11 @@ OBJT=	ft_putchar.o \
 		ft_strmapi.o \
 		ft_strequ.o \
 		ft_strnequ.o \
-		ft_strsub.o
+		ft_strsub.o \
+		ft_strjoin.o \
+		ft_itoa.o \
+		ft_strtrim.o \
+		ft_strsplit.o
 
 GCC= gcc -Wall -Werror -Wextra
 
