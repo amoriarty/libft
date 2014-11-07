@@ -6,7 +6,7 @@
 /*   By: alegent <alegent@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 10:16:38 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/06 16:03:35 by alegent          ###   ########.fr       */
+/*   Updated: 2014/11/07 17:24:50 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ static char		**ft_alloc(char **str, int len)
 			res[i] = str[i];
 			i++;
 		}
+		res[i] = '\0';
 	}
 	return (res);
 }
@@ -46,7 +47,7 @@ char			**ft_strsplit(char const *s, char c)
 		len = 0;
 		while (s[i] != '\0' && s[i] == c)
 			i++;
-		start = i + 1;
+		start = i;
 		while (s[i] != '\0' && s[i] != c)
 		{
 			len++;

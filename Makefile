@@ -108,7 +108,7 @@ OBJT=	ft_putchar.o \
 
 GCC= gcc -Wall -Werror -Wextra
 
-all: clean
+all: $(NAME) clean
 
 $(NAME):
 	$(GCC) -c $(SRCS) -I includes

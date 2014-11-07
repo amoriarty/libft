@@ -6,7 +6,7 @@
 /*   By: alegent <alegent@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 17:37:30 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/05 19:04:28 by alegent          ###   ########.fr       */
+/*   Updated: 2014/11/07 17:02:40 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,8 @@ char			*ft_itoa(int n)
 	char	*itoa;
 
 	isneg = FALSE;
+	if (n == 0)
+		return ("0");
 	if (n < 0)
 	{
 		n = -n;
