@@ -5,57 +5,71 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: alegent <alegent@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 10:16:38 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/07 17:24:50 by alegent          ###   ########.fr       */
+/*   Created: 2014/11/08 16:01:39 by alegent           #+#    #+#             */
+/*   Updated: 2014/11/08 17:37:14 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
-static char		**ft_alloc(char **str, int len)
+static int		count_words(const char *s, char c)
 {
-	int			i;
-	char		**res;
+	int		words;
+	int		i;
 
+	words = 0;
 	i = 0;
-	res = (char **)malloc(sizeof(char *) * (len + 1));
-	if (str != NULL)
+	while (s[i])
 	{
-		while (i < len)
-		{
-			res[i] = str[i];
+		while (s[i] == c)
 			i++;
+		if (s[i] != c && s[i] && ft_isprint(s[i]))
+		{
+			words++;
+			while (s[i] != c && s[i])
+				i++;
 		}
-		res[i] = '\0';
 	}
-	return (res);
+	return (words);
 }
 
-char			**ft_strsplit(char const *s, char c)
+static size_t	get_word_length(const char *s, char c)
 {
-	int			i;
-	int			x;
-	int			start;
-	size_t		len;
-	char		**res;
+	size_t	length;
+	int		i;
+
+	length = 0;
+	i = 0;
+	while (s[i++] != c && s[i])
+		length++;
+	return (length);
+}
+
+char			**ft_strsplit(const char *s, char c)
+{
+	char	**tab;
+	int		i;
+	int		x;
 
 	i = 0;
-	x = 0;
-	start = 0;
-	while (s[i] != '\0')
+	if (!(tab = (char **)malloc(sizeof(char*) * (count_words(s, c) + 1))))
+		return (NULL);
+	while (*s)
 	{
-		len = 0;
-		while (s[i] != '\0' && s[i] == c)
-			i++;
-		start = i;
-		while (s[i] != '\0' && s[i] != c)
+		while (*s == c)
+			s++;
+		if (*s != c && *s && ft_isprint(*s))
 		{
-			len++;
+			x = 0;
+			if (!(tab[i] = ft_strnew(get_word_length(s, c))))
+				return (NULL);
+			while (*s != c && *s && ft_isprint(*s))
+				tab[i][x++] = *s++;
+			tab[i][x] = '\0';
 			i++;
 		}
-		res = ft_alloc(res, x);
-		res[x] = ft_strsub(s, start, len);
-		x++;
 	}
-	return (res);
+	tab[i] = 0;
+	return (tab);
 }

@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 17:42:46 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/07 18:31:54 by alegent          ###   ########.fr       */
+/*   Updated: 2014/11/08 17:38:30 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,8 +56,6 @@ int				ft_atoi(const char *str)
 	str = ft_strtrim(str);
 	digitlen = ft_digitlen(str);
 	res = 0;
-//	if (str[digitlen] == '0')
-//		digitlen++;
 	if (str[i] == '-' || str[i] == '+')
 		i++;
 	while (str[i] >= '0' && str[i] <= '9')
