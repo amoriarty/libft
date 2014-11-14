@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 16:56:19 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/05 19:26:25 by alegent          ###   ########.fr       */
+/*   Updated: 2014/11/14 18:44:25 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,11 @@ char			*ft_strtrim(char const *s)
 	int		x;
 	char	*res;
 
+	if (s == NULL)
+		return (NULL);
 	i = 0;
 	x = 0;
-	res = ft_strnew(ft_strlen(s));
-	if (res == NULL)
+	if ((res = ft_strnew(ft_strlen(s))) == NULL)
 		return (NULL);
 	while (ft_isblank(s[i]) == TRUE)
 		i++;

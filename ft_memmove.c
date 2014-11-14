@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 19:12:29 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/14 13:07:50 by alegent          ###   ########.fr       */
+/*   Updated: 2014/11/14 18:36:14 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,9 @@
 void		*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t		i;
-	size_t		zero;
 	char		*tmp;
 
 	i = 0;
-	zero = 0;
 	tmp = ft_memalloc(len);
 	while (i < len)
 	{
@@ -34,9 +32,10 @@ void		*ft_memmove(void *dst, const void *src, size_t len)
 		dst++;
 		i++;
 	}
-	while (i > zero)
+	i = 0;
+	while (i < len)
 	{
-		i--;
+		i++;
 		dst--;
 	}
 	return (dst);
