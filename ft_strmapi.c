@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 15:46:38 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/14 18:25:36 by alegent          ###   ########.fr       */
+/*   Updated: 2014/11/14 19:41:13 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ char		*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		map[i] = (*f)(i, s[i]);
 		i++;
 	}
+	map[i] = '\0';
 	return (map);
 }
