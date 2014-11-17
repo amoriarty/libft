@@ -6,10 +6,11 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 15:26:40 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/17 11:09:41 by alegent          ###   ########.fr       */
+/*   Updated: 2014/11/17 16:50:13 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
 char		*ft_strnstr(const char *s1, const char *s2, size_t n)

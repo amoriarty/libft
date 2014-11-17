@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 12:12:00 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/08 14:32:44 by alegent          ###   ########.fr       */
+/*   Updated: 2014/11/17 16:39:27 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 # define TRUE 1
 # define FALSE 0
 # include <stdlib.h>
-# include <string.h>
 
 void		ft_putchar(char c);
 void		ft_putstr(char const *s);

@@ -6,10 +6,11 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:49:05 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/17 10:31:58 by alegent          ###   ########.fr       */
+/*   Updated: 2014/11/17 16:51:10 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
 static int	ft_cmp(const char *s1, const char *s2)
@@ -17,7 +18,7 @@ static int	ft_cmp(const char *s1, const char *s2)
 	int		i;
 
 	i = 0;
-	while (s1[i] != '\0')
+	while (s2[i] != '\0')
 	{
 		if (s1[i] != s2[i])
 			return (FALSE);
