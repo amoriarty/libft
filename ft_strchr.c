@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 13:00:40 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/17 19:32:06 by alegent          ###   ########.fr       */
+/*   Updated: 2014/11/19 12:24:07 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ char		*ft_strchr(const char *s, int c)
 		return (dst);
 	while (s[i] && s[i] != c)
 		i++;
+	if (!(s[i]))
+			return (NULL);
 	while (s[i] != '\0')
 	{
 		dst[x] = s[i];

@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:49:05 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/17 16:51:10 by alegent          ###   ########.fr       */
+/*   Updated: 2014/11/19 12:42:50 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,20 +36,20 @@ char		*ft_strstr(const char *s1, const char *s2)
 	dst = (char *)malloc(sizeof(char) * ft_strlen(s1));
 	if (*s2 == 0)
 		return ((char *)s1);
-	while (*s1 != *s2)
+	while (*s1)
 	{
-		if (*s1 == '\0')
-			return (NULL);
+		if (ft_cmp(s1, s2) == TRUE)
+		{
+			while (*s1 != '\0')
+			{
+				dst[i] = *s1;
+				s1++;
+				i++;
+			}
+			dst[i] = '\0';
+			return (dst);
+		}
 		s1++;
 	}
-	if (ft_cmp(s1, s2) == FALSE)
-		return (NULL);
-	while (*s1 != '\0')
-	{
-		dst[i] = *s1;
-		s1++;
-		i++;
-	}
-	dst[i] = '\0';
-	return (dst);
+	return (NULL);
 }
