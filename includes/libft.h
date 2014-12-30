@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 12:12:00 by alegent           #+#    #+#             */
-/*   Updated: 2014/12/30 11:12:49 by alegent          ###   ########.fr       */
+/*   Updated: 2014/12/30 12:32:57 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # define TRUE 1
 # define FALSE 0
+# define CANCEL "\033[0;m"
 # include <stdlib.h>
 
 void			ft_putchar(char c);
@@ -69,6 +70,7 @@ char			*ft_itoa(int n);
 char			*ft_strtrim(char const *s);
 char			**ft_strsplit(char const *s, char c);
 size_t			ft_digitlen(int n);
+void			ft_putcolor(char *str, char *color);
 
 typedef struct	s_list
 {
