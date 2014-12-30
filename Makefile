@@ -6,7 +6,7 @@
 #    By: alegent <alegent@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/10 16:50:19 by alegent           #+#    #+#              #
-#    Updated: 2014/12/02 17:32:19 by alegent          ###   ########.fr        #
+#    Updated: 2014/12/30 11:12:14 by alegent          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,7 +70,8 @@ SRCS=	ft_putchar.c \
 		ft_lstadd.c \
 		ft_lstend.c \
 		ft_lstdelete.c \
-		get_next_line.c
+		get_next_line.c \
+		ft_digitlen.c
 
 OBJT=	ft_putchar.o \
 		ft_putstr.o \
@@ -130,7 +131,8 @@ OBJT=	ft_putchar.o \
 		ft_lstadd.o \
 		ft_lstend.o \
 		ft_lstdelete.o \
-		get_next_line.o
+		get_next_line.o \
+		ft_digitlen.o
 
 GCC= gcc -Wall -Werror -Wextra
 

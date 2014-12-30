@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 12:12:00 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/27 13:14:47 by alegent          ###   ########.fr       */
+/*   Updated: 2014/12/30 11:12:49 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_itoa(int n);
 char			*ft_strtrim(char const *s);
 char			**ft_strsplit(char const *s, char c);
+size_t			ft_digitlen(int n);
 
 typedef struct	s_list
 {
