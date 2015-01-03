@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:36:10 by alegent           #+#    #+#             */
-/*   Updated: 2015/01/03 15:49:53 by alegent          ###   ########.fr       */
+/*   Updated: 2015/01/03 17:03:56 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,14 @@
 
 char		*ft_strrchr(const char *s, int c)
 {
-	int		i;
-	int		x;
-	char	*dst;
+	int		len;
 
-	i = ft_strlen(s);
-	x = 0;
-	dst = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
-	while (s[i] != c && i >= 0)
-		i--;
-	if (s[i] == c)
+	len = ft_strlen(s);
+	while (len >= 0)
 	{
-		while (s[i] != '\0')
-		{
-			dst[x] = s[i];
-			i++;
-			x++;
-		}
-		dst[x] = '\0';
-		return (dst);
+		if (s[len] == c)
+			return ((char *)s + len);
+		len--;
 	}
 	return (NULL);
 }
