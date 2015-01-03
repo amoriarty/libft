@@ -6,7 +6,7 @@
 #    By: alegent <alegent@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/10 16:50:19 by alegent           #+#    #+#              #
-#    Updated: 2014/12/30 11:12:14 by alegent          ###   ########.fr        #
+#    Updated: 2015/01/03 15:51:08 by alegent          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -139,17 +139,17 @@ GCC= gcc -Wall -Werror -Wextra
 all: $(NAME)
 
 $(NAME): $(OBJT)
-	ar rc $(NAME) $(OBJT)
-	ranlib $(NAME)
+	@ar rc $(NAME) $(OBJT)
+	@ranlib $(NAME)
 
 $(OBJT):
-	$(GCC) -c $(SRCS) -I includes
+	@$(GCC) -c $(SRCS) -I includes
 
 clean:
-	rm -f $(OBJT) libft.h.gch
+	@rm -f $(OBJT) libft.h.gch
 
 fclean:
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all clean
 

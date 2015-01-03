@@ -6,11 +6,10 @@
 /*   By: alegent <alegent@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/26 17:19:47 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/26 17:34:01 by alegent          ###   ########.fr       */
+/*   Updated: 2015/01/03 15:50:38 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 #include "get_next_line.h"
 

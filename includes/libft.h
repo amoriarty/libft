@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 12:12:00 by alegent           #+#    #+#             */
-/*   Updated: 2014/12/30 12:32:57 by alegent          ###   ########.fr       */
+/*   Updated: 2015/01/03 15:47:24 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # define TRUE 1
 # define FALSE 0
 # define CANCEL "\033[0;m"
+# include <unistd.h>
 # include <stdlib.h>
 
 void			ft_putchar(char c);

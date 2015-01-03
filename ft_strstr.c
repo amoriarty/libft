@@ -6,11 +6,10 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:49:05 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/19 12:42:50 by alegent          ###   ########.fr       */
+/*   Updated: 2015/01/03 15:50:05 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 static int	ft_cmp(const char *s1, const char *s2)
