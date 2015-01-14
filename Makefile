@@ -6,7 +6,7 @@
 #    By: alegent <alegent@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/10 16:50:19 by alegent           #+#    #+#              #
-#    Updated: 2015/01/03 15:51:08 by alegent          ###   ########.fr        #
+#    Updated: 2015/01/14 14:19:59 by alegent          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,6 +70,8 @@ SRCS=	ft_putchar.c \
 		ft_lstadd.c \
 		ft_lstend.c \
 		ft_lstdelete.c \
+		ft_lstiter.c \
+		ft_lstmap.c \
 		get_next_line.c \
 		ft_digitlen.c
 
@@ -131,6 +133,7 @@ OBJT=	ft_putchar.o \
 		ft_lstadd.o \
 		ft_lstend.o \
 		ft_lstdelete.o \
+		ft_lstiter.o \
 		get_next_line.o \
 		ft_digitlen.o
 
