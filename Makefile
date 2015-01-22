@@ -20,6 +20,7 @@ SRCS=	ft_putchar.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
+		ft_puterror.c \
 		ft_strlen.c \
 		ft_strdup.c \
 		ft_strcpy.c \
@@ -83,6 +84,7 @@ OBJT=	ft_putchar.o \
 		ft_putstr_fd.o \
 		ft_putendl_fd.o \
 		ft_putnbr_fd.o \
+		ft_puterror.o
 		ft_strlen.o \
 		ft_strdup.o \
 		ft_strcpy.o \
