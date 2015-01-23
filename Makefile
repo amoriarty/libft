@@ -6,7 +6,7 @@
 #    By: alegent <alegent@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/10 16:50:19 by alegent           #+#    #+#              #
-#    Updated: 2015/01/14 14:19:59 by alegent          ###   ########.fr        #
+#    Updated: 2015/01/23 09:37:55 by alegent          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,6 @@ SRCS=	ft_putchar.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
-		ft_puterror.c \
 		ft_strlen.c \
 		ft_strdup.c \
 		ft_strcpy.c \
@@ -84,7 +83,6 @@ OBJT=	ft_putchar.o \
 		ft_putstr_fd.o \
 		ft_putendl_fd.o \
 		ft_putnbr_fd.o \
-		ft_puterror.o
 		ft_strlen.o \
 		ft_strdup.o \
 		ft_strcpy.o \
