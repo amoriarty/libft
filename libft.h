@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 12:12:00 by alegent           #+#    #+#             */
-/*   Updated: 2015/01/26 09:37:08 by alegent          ###   ########.fr       */
+/*   Updated: 2015/01/26 11:38:18 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,7 @@ char			**ft_strsplit(char const *s, char c);
 size_t			ft_digitlen(int n);
 void			ft_putcolor(char *str, char *color);
 void			ft_putcolor_fd(char *str, char *color, int fd);
+void			ft_puterror(char *name, char *error);
 
 typedef struct	s_list
 {
