@@ -6,7 +6,7 @@
 #    By: alegent <alegent@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/10 16:50:19 by alegent           #+#    #+#              #
-#    Updated: 2015/01/26 09:36:47 by alegent          ###   ########.fr        #
+#    Updated: 2015/01/26 10:40:22 by alegent          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -150,7 +150,7 @@ $(NAME): $(OBJT)
 	@ranlib $(NAME)
 
 $(OBJT):
-	@$(GCC) -c $(SRCS) -I includes
+	@$(GCC) -c $(SRCS) -I .
 
 clean:
 	@rm -f $(OBJT) libft.h.gch
