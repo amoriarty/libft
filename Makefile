@@ -6,7 +6,7 @@
 #    By: alegent <alegent@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/10 16:50:19 by alegent           #+#    #+#              #
-#    Updated: 2015/01/26 11:38:42 by alegent          ###   ########.fr        #
+#    Updated: 2015/02/11 12:00:16 by alegent          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -137,6 +137,7 @@ OBJT=	ft_putchar.o \
 		ft_lstend.o \
 		ft_lstdelete.o \
 		ft_lstiter.o \
+		ft_lstmap.o \
 		get_next_line.o \
 		ft_digitlen.o \
 		ft_putcolor.o \

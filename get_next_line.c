@@ -6,12 +6,11 @@
 /*   By: alegent <alegent@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/26 17:19:47 by alegent           #+#    #+#             */
-/*   Updated: 2015/01/03 15:50:38 by alegent          ###   ########.fr       */
+/*   Updated: 2015/02/11 12:01:04 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "get_next_line.h"
 
 static int				text_copy(int const fd, char **line)
 {
