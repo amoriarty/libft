@@ -6,7 +6,7 @@
 #    By: alegent <alegent@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/02/13 12:17:39 by alegent           #+#    #+#              #
-#    Updated: 2015/02/16 13:07:15 by alegent          ###   ########.fr        #
+#    Updated: 2015/02/16 13:37:37 by alegent          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -113,31 +113,25 @@ FRAMEWORK=
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@echo "=====\c"
-	@echo "=====\c"
 	@ar rc $(NAME) $(OBJ)
-	@echo "=====\c"
-	@echo "====]\n"
+	@echo "You're free to go."
 
 $(OBJ_PATH)%.o: $(SRC_PATH)%.c
-	@echo "\033[33;32m[====\c"
 	@mkdir $(OBJ_PATH) 2> /dev/null || echo "" 2> /dev/null
-	@echo "=====\c"
-	@$(GCC) -o $@ -c $<
-	@echo "=====\c"
+	$(GCC) -o $@ -c $<
 
 clean:
 	@rm -rf $(OBJ)
 	@rm -rf $(OBJ_PATH)
+	@echo "Objects files are deleted."
 
 fclean: clean
 	@rm -rf $(NAME)
+	@echo "$(NAME) are deleted."
 
 re: fclean all
 
 norme:
 	@norminette $(INC_LIB)*.[ch]
-	@norminette $(SRC)
-	@norminette $(INC_PATH)*.h
 
 .PHONY: clean fclean re norme
