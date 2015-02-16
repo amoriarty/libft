@@ -6,7 +6,7 @@
 #    By: alegent <alegent@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/02/13 12:17:39 by alegent           #+#    #+#              #
-#    Updated: 2015/02/16 13:37:37 by alegent          ###   ########.fr        #
+#    Updated: 2015/02/16 15:14:31 by alegent          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -114,16 +114,16 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	@ar rc $(NAME) $(OBJ)
-	@echo "You're free to go."
+	@echo "$(NAME) has been created."
 
 $(OBJ_PATH)%.o: $(SRC_PATH)%.c
 	@mkdir $(OBJ_PATH) 2> /dev/null || echo "" 2> /dev/null
-	$(GCC) -o $@ -c $<
+	@$(GCC) -o $@ -c $<
 
 clean:
 	@rm -rf $(OBJ)
 	@rm -rf $(OBJ_PATH)
-	@echo "Objects files are deleted."
+	@echo "$(NAME) objects files are deleted."
 
 fclean: clean
 	@rm -rf $(NAME)
