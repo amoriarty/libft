@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 12:12:00 by alegent           #+#    #+#             */
-/*   Updated: 2015/01/26 11:38:18 by alegent          ###   ########.fr       */
+/*   Updated: 2015/02/11 12:00:40 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 # define LIBFT_H
 # define TRUE 1
 # define FALSE 0
+# define ERROR -1
+# define BUFF_SIZE 1
 # define CANCEL "\033[0;m"
 # include <unistd.h>
 # include <stdlib.h>
+# define EOL '\n'
 
 void			ft_putchar(char c);
 void			ft_putstr(char const *s);
@@ -75,6 +78,7 @@ size_t			ft_digitlen(int n);
 void			ft_putcolor(char *str, char *color);
 void			ft_putcolor_fd(char *str, char *color, int fd);
 void			ft_puterror(char *name, char *error);
+int				get_next_line(const int fd, char **line);
 
 typedef struct	s_list
 {
