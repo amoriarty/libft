@@ -6,7 +6,7 @@
 #    By: alegent <alegent@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/02/13 12:17:39 by alegent           #+#    #+#              #
-#    Updated: 2015/02/16 15:14:31 by alegent          ###   ########.fr        #
+#    Updated: 2015/02/17 10:37:15 by alegent          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -84,7 +84,9 @@ SRC_NAME= ft_atoi.c \
 		  ft_strtrim.c \
 		  ft_tolower.c \
 		  ft_toupper.c \
-		  get_next_line.c
+		  get_next_line.c \
+		  ft_strtoupper.c \
+		  ft_strtolower.c
 SRC= $(addprefix $(SRC_PATH), $(SRC_NAME))
 
 #OBJ BLOC
