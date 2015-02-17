@@ -6,17 +6,17 @@
 /*   By: alegent <alegent@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/17 10:35:45 by alegent           #+#    #+#             */
-/*   Updated: 2015/02/17 10:36:39 by alegent          ###   ########.fr       */
+/*   Updated: 2015/02/17 10:40:50 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void				ft_strtolower(char *s)
+void				ft_strtolower(char **s)
 {
 	int				i;
 
 	i = -1;
-	while (s[++i])
-		s[i] = ft_tolower(s[i]);
+	while (*s[++i])
+		*s[i] = ft_tolower(*s[i]);
 }
