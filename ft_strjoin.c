@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 16:48:53 by alegent           #+#    #+#             */
-/*   Updated: 2015/01/03 15:48:59 by alegent          ###   ########.fr       */
+/*   Updated: 2015/03/16 10:43:53 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,18 +27,10 @@ char		*ft_strjoin(char const *s1, char const *s2)
 	if ((res = ft_strnew(ft_strlen(s1) + ft_strlen(s2))) == NULL)
 		return (NULL);
 	while (s1[i] != '\0')
-	{
-		res[x] = s1[i];
-		i++;
-		x++;
-	}
+		res[x++] = s1[i++];
 	i = 0;
 	while (s2[i] != '\0')
-	{
-		res[x] = s2[i];
-		i++;
-		x++;
-	}
+		res[x++] = s2[i++];
 	res[x] = '\0';
 	return (res);
 }
