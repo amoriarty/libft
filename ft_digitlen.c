@@ -17,7 +17,7 @@ size_t					ft_digitlen(int n)
 	size_t				res;
 
 	res = 0;
-	if (res < 0)
+	if (n < 0)
 	{
 		res++;
 		n *= -1;

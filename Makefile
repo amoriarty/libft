@@ -52,6 +52,7 @@ SRC_NAME= ft_atoi.c \
 		  ft_putendl.c \
 		  ft_putendl_fd.c \
 		  ft_puterror.c \
+		  ft_perror.c \
 		  ft_putnbr.c \
 		  ft_putnbr_fd.c \
 		  ft_putstr.c \
@@ -118,7 +119,7 @@ $(NAME): $(OBJ)
 
 $(OBJ_PATH)%.o: $(SRC_PATH)%.c
 	@mkdir $(OBJ_PATH) 2> /dev/null || echo "" 2> /dev/null
-	@$(GCC) -o $@ -c $<
+	$(GCC) -o $@ -c $<
 
 clean:
 	@rm -rf $(OBJ)
