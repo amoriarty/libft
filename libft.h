@@ -14,6 +14,8 @@
 # define LIBFT_H
 # define TRUE 1
 # define FALSE 0
+# define SUCCESS 1
+# define FAILURE 0
 # define ERROR -1
 # define BUFF_SIZE 1
 # define CANCEL "\033[0;m"
