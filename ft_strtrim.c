@@ -12,13 +12,6 @@
 
 #include "libft.h"
 
-static int		ft_isblank(char c)
-{
-	if (c == ' ' || c == '\n' || c == '\t')
-		return (TRUE);
-	return (FALSE);
-}
-
 char			*ft_strtrim(char const *s)
 {
 	int		i;
