@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 12:12:00 by alegent           #+#    #+#             */
-/*   Updated: 2015/02/17 10:44:16 by alegent          ###   ########.fr       */
+/*   Updated: 2015/05/13 13:46:03 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,13 +84,12 @@ void			ft_putcolor_fd(char *str, char *color, int fd);
 void			ft_puterror(char *name, char *error);
 int				get_next_line(const int fd, char **line);
 
-typedef struct s_list		t_list;
-struct				s_list
+typedef struct	s_list
 {
 	void			*content;
 	size_t			content_size;
 	struct s_list	*next;
-};
+}				t_list;
 
 t_list			*ft_lstnew(void *content, size_t content_size);
 void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
