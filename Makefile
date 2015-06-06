@@ -6,7 +6,7 @@
 #    By: alegent <alegent@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/02/13 12:17:39 by alegent           #+#    #+#              #
-#    Updated: 2015/02/17 10:44:38 by alegent          ###   ########.fr        #
+#    Updated: 2015/06/06 15:15:45 by alegent          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -97,7 +97,7 @@ OBJ= $(addprefix $(OBJ_PATH), $(OBJ_NAME))
 
 #GCC BLOC
 #GCC flag, you don't have to modify this (but you're free to go)
-GCC= gcc -Wall -Wextra -Werror
+GCC= clang -Wall -Wextra -Werror
 
 #INCLUDE BLOC
 #Don't forget to include the other librarie that yo use
