@@ -120,7 +120,7 @@ $(NAME): $(OBJ)
 	@echo "$(NAME) has been created."
 
 $(OBJ_PATH)%.o: $(SRC_PATH)%.c
-	@mkdir $(OBJ_PATH) 2> /dev/null || echo "" 2> /dev/null
+	@mkdir -p $(OBJ_PATH) 2> /dev/null
 	$(GCC) -o $@ -c $<
 
 clean:
