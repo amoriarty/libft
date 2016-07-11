@@ -1,2 +1,4 @@
 obj
 libft.a
+.idea/
+CMakeLists.txt

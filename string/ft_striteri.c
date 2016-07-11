@@ -1,28 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strclr.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/05 11:32:48 by alegent           #+#    #+#             */
-/*   Updated: 2015/01/03 15:48:23 by alegent          ###   ########.fr       */
+/*   Created: 2014/11/05 15:03:34 by alegent           #+#    #+#             */
+/*   Updated: 2015/01/03 15:48:54 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-void		ft_strclr(char *s)
+void		ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	int		i;
+	unsigned int	i;
+	unsigned int	len;
 
-	if (s != NULL)
+	if (s != NULL && f != NULL)
 	{
-		i = ft_strlen(s);
-		while (i >= 0)
+		i = 0;
+		len = ft_strlen(s);
+		while (i < len)
 		{
-			s[i] = '\0';
-			i--;
+			(*f)(i, s);
+			s++;
+			i++;
 		}
 	}
 }
