@@ -6,7 +6,7 @@
 /*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 12:12:00 by alegent           #+#    #+#             */
-/*   Updated: 2015/05/13 13:46:03 by alegent          ###   ########.fr       */
+/*   Updated: 2016/07/11 17:20:35 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@
 # include <unistd.h>
 # include <stdlib.h>
 # define EOL '\n'
+
+typedef char	t_bool;
 
 void			ft_putchar(char c);
 void			ft_putstr(char const *s);
