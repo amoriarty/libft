@@ -6,7 +6,7 @@
 #    By: alegent <alegent@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/02/13 12:17:39 by alegent           #+#    #+#              #
-#    Updated: 2015/06/06 15:15:45 by alegent          ###   ########.fr        #
+#    Updated: 2017/04/18 19:05:57 by alegent          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,14 +43,12 @@ SRC_NAME= is/ft_isalnum.c \
           memory/ft_memdel.c \
           memory/ft_memmove.c \
           memory/ft_memset.c \
-          print/ft_perror.c \
           print/ft_putchar.c \
           print/ft_putchar_fd.c \
           print/ft_putcolor.c \
           print/ft_putcolor_fd.c \
           print/ft_putendl.c \
           print/ft_putendl_fd.c \
-          print/ft_puterror.c \
           print/ft_putnbr.c \
           print/ft_putnbr_fd.c \
           print/ft_putstr.c \
@@ -98,7 +96,7 @@ OBJ= $(addprefix $(OBJ_PATH), $(OBJ_NAME))
 
 #GCC BLOC
 #GCC flag, you don't have to modify this (but you're free to go)
-GCC= clang -Wall -Wextra -Werror
+GCC= clang -Wall -Wextra -Werror -g
 
 #INCLUDE BLOC
 #Don't forget to include the other librarie that yo use

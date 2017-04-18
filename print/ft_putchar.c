@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: alegent <alegent@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 12:41:45 by alegent           #+#    #+#             */
-/*   Updated: 2015/01/03 15:47:09 by alegent          ###   ########.fr       */
+/*   Updated: 2017/04/18 18:42:22 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void		ft_putchar(char c)
 {
-	write(1, &c, 1);
+	ft_putchar_fd(c, STDOUT_FILENO);
 }

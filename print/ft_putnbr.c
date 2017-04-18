@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alegent <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: alegent <alegent@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 13:03:31 by alegent           #+#    #+#             */
-/*   Updated: 2014/11/05 11:44:38 by alegent          ###   ########.fr       */
+/*   Updated: 2017/04/18 18:44:11 by alegent          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void		ft_putnbr(int n)
 {
-	ft_putstr(ft_itoa(n));
+	ft_putnbr_fd(n, STDOUT_FILENO);
 }
