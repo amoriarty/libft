@@ -6,7 +6,7 @@
 #    By: alegent <alegent@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/02/13 12:17:39 by alegent           #+#    #+#              #
-#    Updated: 2017/04/18 19:05:57 by alegent          ###   ########.fr        #
+#    Updated: 2017/04/26 15:12:12 by alegent          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,6 +79,7 @@ SRC_NAME= is/ft_isalnum.c \
           string/ft_strstr.c \
           string/ft_strsub.c \
           string/ft_strtrim.c \
+		  string/ft_strimp.c \
           unclassed/ft_atoi.c \
           unclassed/ft_digitlen.c \
           unclassed/ft_itoa.c \
@@ -133,7 +134,10 @@ fclean: clean
 
 re: fclean all
 
-norme:
-	@norminette $(INC_LIB)*.[ch]
+main: $(NAME) main.o
+	$(GCC) -I $(INC_PATH) -L. -lft -o main main.o
+
+main.o:
+	$(GCC) -I $(INC_PATH) -o main.o -c main.c
 
 .PHONY: clean fclean re norme
