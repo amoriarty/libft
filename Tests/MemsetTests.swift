@@ -16,15 +16,15 @@ class MemsetTests: XCTestCase {
         let tested = malloc(size)!
 
         memset(original, 42, size)
-        XCTAssert(ft_memset(tested, 42, size) != nil)
+        XCTAssert(ft_memset(tested, 42, size) == tested)
         XCTAssert(memcmp(original, tested, size) == 0)
 
         memset(original, 24, size)
-        XCTAssert(ft_memset(tested, 24, size) != nil)
+        XCTAssert(ft_memset(tested, 24, size) == tested)
         XCTAssert(memcmp(original, tested, size) == 0)
 
         memset(original, 0, size / 2)
-        XCTAssert(ft_memset(tested, 0, size / 2) != nil)
+        XCTAssert(ft_memset(tested, 0, size / 2) == tested)
         XCTAssert(memcmp(original, tested, size) == 0)
 
         free(original)
@@ -39,7 +39,7 @@ class MemsetTests: XCTestCase {
 
         memset(original, 42, size)
         waitForExpectations(timeout: 10) { error in
-            XCTAssert(ft_memset(tested, 42, size) != nil)
+            XCTAssert(ft_memset(tested, 42, size) == tested)
             expect.fulfill()
         }
 
@@ -61,22 +61,11 @@ class MemsetTests: XCTestCase {
 
         memset(original, char, size)
         memset(tested, char, size)
-        XCTAssert(ft_memset(tested, 0, 0) != nil)
+        XCTAssert(ft_memset(tested, 0, 0) == tested)
         XCTAssert(memcmp(original, tested, size) == 0)
 
         free(original)
         free(tested)
-    }
-
-    func testReturnValue() {
-        let size = 42
-        let buffer = malloc(size)!
-
-        XCTAssert(memset(buffer, 0, size) == ft_memset(buffer, 0, size))
-        XCTAssert(memset(buffer, 24, size) == ft_memset(buffer, 0, size))
-        XCTAssert(memset(buffer, 42, size) == ft_memset(buffer, 0, size))
-
-        free(buffer)
     }
 
 }
