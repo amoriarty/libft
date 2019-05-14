@@ -37,17 +37,6 @@ class MemcpyTests: XCTestCase {
         free(buffer)
     }
 
-    func testNull() {
-        let source = "ft_memcpy: null test"
-        let buffer = malloc(source.count)!
-
-        bzero(buffer, source.count)
-        XCTAssert(ft_memcpy(nil, source, source.count) == nil)
-        XCTAssert(ft_memcpy(buffer, nil, source.count) == buffer)
-
-        free(buffer)
-    }
-
     func testNoSize() {
         let source = "ft_memcpy: no size"
         let original = malloc(source.count)!
@@ -61,6 +50,18 @@ class MemcpyTests: XCTestCase {
 
         free(original)
         free(tested)
+    }
+
+    func testNull() {
+        let source = "ft_memcpy: null test"
+        let buffer = malloc(source.count)!
+
+        bzero(buffer, source.count)
+        XCTAssert(ft_memcpy(nil, nil, source.count) == nil)
+        XCTAssert(ft_memcpy(nil, source, source.count) == nil)
+        XCTAssert(ft_memcpy(buffer, nil, source.count) == buffer)
+
+        free(buffer)
     }
 
 }

@@ -49,10 +49,6 @@ class MemsetTests: XCTestCase {
         free(tested)
     }
 
-    func testNull() {
-        XCTAssert(ft_memset(nil, 0, 42) == nil)
-    }
-
     func testNoSize() {
         let size = 42
         let char: Int32 = 42
@@ -66,6 +62,10 @@ class MemsetTests: XCTestCase {
 
         free(original)
         free(tested)
+    }
+
+    func testNull() {
+        XCTAssert(ft_memset(nil, 0, 42) == nil)
     }
 
 }

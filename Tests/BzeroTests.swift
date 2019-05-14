@@ -43,10 +43,6 @@ class BzeroTests: XCTestCase {
         free(tested)
     }
 
-    func testNull() {
-        ft_bzero(nil, 42)
-    }
-
     func testNoSize() {
         let size = 42
         let original = malloc(size)!
@@ -59,6 +55,10 @@ class BzeroTests: XCTestCase {
 
         free(original)
         free(tested)
+    }
+
+    func testNull() {
+        ft_bzero(nil, 42)
     }
 
 }
