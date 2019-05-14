@@ -74,8 +74,9 @@
 		EC89F076228A9C69002ED417 /* ft_striteri.c in Sources */ = {isa = PBXBuildFile; fileRef = EC89F033228A9C68002ED417 /* ft_striteri.c */; };
 		EC89F077228A9C69002ED417 /* ft_memcmp.c in Sources */ = {isa = PBXBuildFile; fileRef = EC89F034228A9C68002ED417 /* ft_memcmp.c */; };
 		EC89F078228A9C69002ED417 /* ft_strmap.c in Sources */ = {isa = PBXBuildFile; fileRef = EC89F035228A9C68002ED417 /* ft_strmap.c */; };
-		EC89F080228A9E6F002ED417 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC89F07F228A9E6F002ED417 /* Tests.swift */; };
+		EC89F080228A9E6F002ED417 /* MemsetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC89F07F228A9E6F002ED417 /* MemsetTests.swift */; };
 		EC89F082228A9E6F002ED417 /* libft.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC89EFEB228A9BC5002ED417 /* libft.a */; };
+		EC8C1F35228B01BA0032719E /* BzeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C1F34228B01BA0032719E /* BzeroTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,9 +159,10 @@
 		EC89F034228A9C68002ED417 /* ft_memcmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_memcmp.c; sourceTree = "<group>"; };
 		EC89F035228A9C68002ED417 /* ft_strmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_strmap.c; sourceTree = "<group>"; };
 		EC89F07D228A9E6F002ED417 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC89F07F228A9E6F002ED417 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		EC89F07F228A9E6F002ED417 /* MemsetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemsetTests.swift; sourceTree = "<group>"; };
 		EC89F081228A9E6F002ED417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC89F089228AA1CB002ED417 /* Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		EC8C1F34228B01BA0032719E /* BzeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BzeroTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,7 +279,8 @@
 		EC89F07E228A9E6F002ED417 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				EC89F07F228A9E6F002ED417 /* Tests.swift */,
+				EC8C1F34228B01BA0032719E /* BzeroTests.swift */,
+				EC89F07F228A9E6F002ED417 /* MemsetTests.swift */,
 				EC89F081228A9E6F002ED417 /* Info.plist */,
 				EC89F089228AA1CB002ED417 /* Tests-Bridging-Header.h */,
 			);
@@ -458,7 +461,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC89F080228A9E6F002ED417 /* Tests.swift in Sources */,
+				EC8C1F35228B01BA0032719E /* BzeroTests.swift in Sources */,
+				EC89F080228A9E6F002ED417 /* MemsetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,82 @@
+//
+//  MemsetTests.swift
+//  Tests
+//
+//  Created by Alex Legent on 14/05/2019.
+//  Copyright © 2019 Alex Legent. All rights reserved.
+//
+
+import XCTest
+
+class MemsetTests: XCTestCase {
+
+    func testBasic() {
+        let size = 42
+        let original = malloc(size)!
+        let tested = malloc(size)!
+
+        memset(original, 42, size)
+        XCTAssert(ft_memset(tested, 42, size) != nil)
+        XCTAssert(memcmp(original, tested, size) == 0)
+
+        memset(original, 24, size)
+        XCTAssert(ft_memset(tested, 24, size) != nil)
+        XCTAssert(memcmp(original, tested, size) == 0)
+
+        memset(original, 0, size / 2)
+        XCTAssert(ft_memset(tested, 0, size / 2) != nil)
+        XCTAssert(memcmp(original, tested, size) == 0)
+
+        free(original)
+        free(tested)
+    }
+
+    func testLargeSize() {
+        let size = 0xFFFFFFFF
+        let original = malloc(size)!
+        let tested = malloc(size)!
+        let expect = expectation(description: "ft_memset should take less than 10 seconds on large size")
+
+        memset(original, 42, size)
+        waitForExpectations(timeout: 10) { error in
+            XCTAssert(ft_memset(tested, 42, size) != nil)
+            expect.fulfill()
+        }
+
+        XCTAssert(memcmp(original, tested, size) == 0)
+
+        free(original)
+        free(tested)
+    }
+
+    func testNull() {
+        XCTAssert(ft_memset(nil, 0, 42) == nil)
+    }
+
+    func testNoSize() {
+        let size = 42
+        let char: Int32 = 42
+        let original = malloc(size)!
+        let tested = malloc(size)!
+
+        memset(original, char, size)
+        memset(tested, char, size)
+        XCTAssert(ft_memset(tested, 0, 0) != nil)
+        XCTAssert(memcmp(original, tested, size) == 0)
+
+        free(original)
+        free(tested)
+    }
+
+    func testReturnValue() {
+        let size = 42
+        let buffer = malloc(size)!
+
+        XCTAssert(memset(buffer, 0, size) == ft_memset(buffer, 0, size))
+        XCTAssert(memset(buffer, 24, size) == ft_memset(buffer, 0, size))
+        XCTAssert(memset(buffer, 42, size) == ft_memset(buffer, 0, size))
+
+        free(buffer)
+    }
+
+}
