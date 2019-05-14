@@ -35,14 +35,10 @@ class MemsetTests: XCTestCase {
         let size = 0xFFFFFFFF
         let original = malloc(size)!
         let tested = malloc(size)!
-        let expect = expectation(description: "ft_memset should take less than 10 seconds on large size")
 
         memset(original, 42, size)
-        waitForExpectations(timeout: 10) { error in
-            XCTAssert(ft_memset(tested, 42, size) == tested)
-            expect.fulfill()
-        }
 
+        XCTAssert(ft_memset(tested, 42, size) == tested)
         XCTAssert(memcmp(original, tested, size) == 0)
 
         free(original)

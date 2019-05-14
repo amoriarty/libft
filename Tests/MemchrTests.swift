@@ -25,12 +25,7 @@ class MemchrTests: XCTestCase {
 
     func testLargeSize() {
         let source = String(repeating: "A", count: 0xFFFFFFF)
-        let expect = expectation(description: "ft_memchr should take less than 25 seconds on large size string")
-
-        waitForExpectations(timeout: 25) { error in
-            XCTAssert(ft_memchr(source, 0, source.count) == nil)
-            expect.fulfill()
-        }
+        XCTAssert(ft_memchr(source, 0, source.count) == nil)
     }
 
     func testNullByte() {

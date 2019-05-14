@@ -25,13 +25,9 @@ class MemmoveTests: XCTestCase {
     func testLargeSize() {
         let source = String(repeating: "A", count: 0xFFFFFFF)
         let buffer = malloc(source.count)!
-        let expect = expectation(description: "ft_memmove should take less than 30 seconds on large size")
 
-        waitForExpectations(timeout: 30) { error in
-            XCTAssert(ft_memmove(buffer, source, source.count) == buffer)
-            expect.fulfill()
-        }
-
+        XCTAssert(ft_memmove(buffer, source, source.count) == buffer)
+        
         free(buffer)
     }
 

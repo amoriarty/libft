@@ -81,6 +81,7 @@
 		EC8C1F39228B0E450032719E /* MemccpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C1F38228B0E450032719E /* MemccpyTests.swift */; };
 		EC8C1F3B228B13D90032719E /* MemmoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C1F3A228B13D90032719E /* MemmoveTests.swift */; };
 		EC8C1F3D228B1A520032719E /* MemchrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C1F3C228B1A520032719E /* MemchrTests.swift */; };
+		EC8C1F3F228B21170032719E /* MemcmpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C1F3E228B21170032719E /* MemcmpTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +172,7 @@
 		EC8C1F38228B0E450032719E /* MemccpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemccpyTests.swift; sourceTree = "<group>"; };
 		EC8C1F3A228B13D90032719E /* MemmoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemmoveTests.swift; sourceTree = "<group>"; };
 		EC8C1F3C228B1A520032719E /* MemchrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemchrTests.swift; sourceTree = "<group>"; };
+		EC8C1F3E228B21170032719E /* MemcmpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemcmpTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +289,7 @@
 		EC89F07E228A9E6F002ED417 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				EC8C1F3E228B21170032719E /* MemcmpTests.swift */,
 				EC8C1F3C228B1A520032719E /* MemchrTests.swift */,
 				EC8C1F3A228B13D90032719E /* MemmoveTests.swift */,
 				EC8C1F38228B0E450032719E /* MemccpyTests.swift */,
@@ -478,6 +481,7 @@
 				EC8C1F37228B04A20032719E /* MemcpyTests.swift in Sources */,
 				EC8C1F39228B0E450032719E /* MemccpyTests.swift in Sources */,
 				EC8C1F3B228B13D90032719E /* MemmoveTests.swift in Sources */,
+				EC8C1F3F228B21170032719E /* MemcmpTests.swift in Sources */,
 				EC89F080228A9E6F002ED417 /* MemsetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -38,13 +38,9 @@ class MemccpyTests: XCTestCase {
         let character: Int32 = 58
         let source = String(repeating: "A", count: 0xFFFFFFF)
         let buffer = malloc(source.count)!
-        let expect = expectation(description: "ft_memccpy should take less than 30 seconds on large size")
 
         bzero(buffer, source.count)
-        waitForExpectations(timeout: 30) { error in
-            XCTAssert(ft_memccpy(buffer, source, character, source.count) == nil)
-            expect.fulfill()
-        }
+        XCTAssert(ft_memccpy(buffer, source, character, source.count) == nil)
 
         free(buffer)
     }

@@ -24,15 +24,10 @@ class MemcpyTests: XCTestCase {
     func testLargeSize() {
         let source = String(repeating: "A", count: 0xFFFFFFF)
         let buffer = malloc(source.count)!
-        let expect = expectation(description: "ft_memcpy should take less than 30 seconds on large size")
 
         bzero(buffer, source.count)
-        waitForExpectations(timeout: 30) { error in
-            XCTAssert(ft_memcpy(buffer, source, source.count) != nil)
-            expect.fulfill()
-        }
-
-        XCTAssert(memcmp(buffer, source, source.count) != 0)
+        XCTAssert(ft_memcpy(buffer, source, source.count) != nil)
+        XCTAssert(memcmp(buffer, source, source.count) == 0)
 
         free(buffer)
     }

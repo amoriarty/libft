@@ -25,20 +25,14 @@ class BzeroTests: XCTestCase {
     }
 
     func testLargeSize() {
-        let size = 0xFFFFFFFF
+        let size = 0xFFFFFFF
         let original = malloc(size)!
         let tested = malloc(size)!
-        let expect = expectation(description: "ft_bzero should take less than 10 second on large size")
 
         bzero(original, size)
         memset(tested, 42, size)
-        waitForExpectations(timeout: 10) { error in
-            ft_bzero(tested, size)
-            expect.fulfill()
-        }
-
+        ft_bzero(tested, size)
         XCTAssert(memcmp(original, tested, size) == 0)
-
         free(original)
         free(tested)
     }
