@@ -55,4 +55,17 @@ class BzeroTests: XCTestCase {
         ft_bzero(nil, 42)
     }
 
+    func testPerfomance() {
+        let size = 42
+        let buffer = malloc(size)!
+
+        measure {
+            for _ in 0...1000 {
+                ft_bzero(buffer, size)
+            }
+        }
+
+        free(buffer)
+    }
+
 }

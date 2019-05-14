@@ -76,4 +76,18 @@ class MemmoveTests: XCTestCase {
         free(buffer)
     }
 
+    func testPerfomance() {
+        let source = "ft_memmove: basic tests"
+        let buffer = malloc(source.count)!
+        bzero(buffer, source.count)
+
+        measure {
+            for _ in 0...1000 {
+                ft_memmove(buffer, source, source.count)
+            }
+        }
+
+        free(buffer)
+    }
+
 }

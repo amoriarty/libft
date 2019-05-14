@@ -48,4 +48,14 @@ class MemchrTests: XCTestCase {
         XCTAssert(ft_memchr(nil, 0, 42) == nil)
     }
 
+    func testPerfomance() {
+        let source = "ft_memchr: basic tests"
+
+        measure {
+            for _ in 0...1000 {
+                ft_memchr(source, 58, source.count)
+            }
+        }
+    }
+
 }

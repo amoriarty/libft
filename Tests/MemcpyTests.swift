@@ -59,4 +59,19 @@ class MemcpyTests: XCTestCase {
         free(buffer)
     }
 
+    func testPerformance() {
+        let source = "ft_memcpy: basic test"
+        let buffer = malloc(source.count)!
+
+        bzero(buffer, source.count)
+
+        measure {
+            for _ in 0...1000 {
+                ft_memcpy(buffer, source, source.count)
+            }
+        }
+
+        free(buffer)
+    }
+
 }

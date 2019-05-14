@@ -31,4 +31,14 @@ class MemcmpTests: XCTestCase {
         XCTAssert(ft_memcmp(nil, nil, source.count) == 0)
     }
 
+    func testPerformance() {
+        let source = "ft_memcmp: performance test"
+
+        measure {
+            for _ in 0...1000 {
+                ft_memcmp(source, source, source.count)
+            }
+        }
+    }
+
 }

@@ -64,4 +64,18 @@ class MemsetTests: XCTestCase {
         XCTAssert(ft_memset(nil, 0, 42) == nil)
     }
 
+    func testPerfomance() {
+        let size = 42
+        let buffer = malloc(size)!
+        bzero(buffer, size)
+
+        measure {
+            for _ in 0...1000 {
+                ft_memset(buffer, 0, size)
+            }
+        }
+
+        free(buffer)
+    }
+
 }
