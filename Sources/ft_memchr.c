@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/// Locate byte in byte string
+/// @param s Byte string to search
+/// @param c Character to found in string
+/// @param n Size of the string
+/// @returns Pointer on byte if found, `NULL` otherwise
 void		*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t		i;

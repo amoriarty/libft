@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/// Trim blank character at start and end of a string
+/// @param s String to trim
+/// @returns Newly allocated string without blank character
 char			*ft_strtrim(char const *s)
 {
 	int		i;

@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/// Size-bounded concatanate string
+/// @param s1 Left hand string to concatanate
+/// @param s2 Right hand string to concatanate
+/// @param n Size to concatenate
+/// @returns Head pointer to concatanate string
 char		*ft_strncat(char *s1, const char *s2, size_t n)
 {
 	unsigned int		i;

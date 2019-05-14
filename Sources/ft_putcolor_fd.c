@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+// TODO: Maybe delete that
+/// Write a string in a particular color on a file descriptor
+/// @param str String to write
+/// @param color Color to write str with
+/// @param fd File descriptor to write to
 void				ft_putcolor_fd(char *str, char *color, int fd)
 {
 	ft_putstr_fd(color, fd);

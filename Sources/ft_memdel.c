@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+/// Deallocate memory passed
+/// @param ap Pointer to the memory to deallocate
 void		ft_memdel(void **ap)
 {
 	if (ap != NULL)

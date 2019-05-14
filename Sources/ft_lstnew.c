@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/// Allocate a new list based on content passed
+/// @param content Pointer to content of the head node
+/// @param content_size size of the content
+/// @returns First node of the new allocated list
 t_list			*ft_lstnew(void *content, size_t content_size)
 {
 	t_list		*new;

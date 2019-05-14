@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/// Printing character test (space character inclusive)
+/// @param c Character to test
+/// @returns True is character is a printing character, false otherwise
 int			ft_isprint(int c)
 {
 	return ((c > 31 && c < 127) ? TRUE : FALSE);

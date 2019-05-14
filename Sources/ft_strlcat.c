@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/// Size-bounded string copying and concatenation
+/// @param dst Destination string
+/// @param src Source string
+/// @param size Size to copy
+/// @returns Size to the new destination string
 size_t			ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t		dst_len;

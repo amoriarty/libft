@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/// ASCII character test
+/// @param c Character to test
+/// @returns True if character is in ASCII table, false otherwise
 int			ft_isascii(int c)
 {
 	return ((c >= 0 && c < 128) ? TRUE : FALSE);

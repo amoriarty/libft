@@ -20,6 +20,8 @@ static int	ft_trim(char c)
 	return (FALSE);
 }
 
+/// Convert ASCII string to integer
+/// @param str String to convert to integer
 int			ft_atoi(const char *str)
 {
 	int		res;

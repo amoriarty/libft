@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/// Call function `f` to each node of a list
+/// @param lst Head pointer of the a list
+/// @param f Function to call on each node
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
 	if (lst && f)

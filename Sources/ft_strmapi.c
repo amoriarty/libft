@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+// TODO: Probably duplicate of strmap
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;

@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/// Copy memory area
+/// @param dst Destination memory
+/// @param src Source memory
+/// @param n Size to copy
+/// @returns Pointer of the destination memory
 void		*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t		i;

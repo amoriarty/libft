@@ -55,6 +55,10 @@ static char				*get_line(char *offset, char **line)
 	return (offset);
 }
 
+/// Get next line of file descriptor
+/// @param fd File descriptor to read
+/// @param line String to save next line
+/// @returns Number of characters read from file descriptor
 int						get_next_line(int const fd, char **line)
 {
 	int				ret;

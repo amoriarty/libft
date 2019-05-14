@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/// Decimal-digit character test
+/// @param c Character to test
+/// @returns True is character is a decimal-digit, false otherwise
 int			ft_isdigit(int c)
 {
 	return ((c >= '0' && c <= '9') ? TRUE : FALSE);

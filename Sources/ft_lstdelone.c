@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/// Delete a list node by applying `del` and `free`
+/// @param alst Pointer to node to delete
+/// @param del Function to apply before deallocating node
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
 {
 	(*del)((*alst)->content, (*alst)->content_size);

@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+// TODO: Maybe delete that
 void			ft_lstdelete(t_list **del, t_list *prec, t_list *suiv)
 {
 	prec->next = suiv;

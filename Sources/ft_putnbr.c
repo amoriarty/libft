@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+/// Write an integer to STDOUT
+/// @param n Integer to write
 void		ft_putnbr(int n)
 {
 	ft_putnbr_fd(n, STDOUT_FILENO);

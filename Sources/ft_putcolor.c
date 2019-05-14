@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/// Write a string in a particular color on STDOUT
+/// @param str String to write
+/// @param color Color to write string with
 void				ft_putcolor(char *str, char *color)
 {
 	ft_putcolor_fd(str, color, STDOUT_FILENO);

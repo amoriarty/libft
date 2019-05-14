@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+/// Copy string until character found
+/// @param dst Destination string
+/// @param src Source string
+/// @param c Character stoping copy to be executed
+/// @param n Size to copy
+/// @returns Destination string
 void		*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	size_t		i;

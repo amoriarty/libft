@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/// Write an integer to a file descriptor
+/// @param n Integer to write
+/// @param fd File descriptor to write to
 void		ft_putnbr_fd(int n, int fd)
 {
 	char	*tmp;

@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+// TODO: Maybe delete that
+/// Add a node at the end of a list
+/// @param alst Head pointer of the list
+/// @param new Node to append
 void				ft_lstend(t_list **alst, t_list *new)
 {
 	t_list		*tmp;

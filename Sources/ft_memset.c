@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/// Fill a byte string with a byte value
+/// @param b Destination memory
+/// @param c Byte value to write
+/// @param len Size to write
+/// @returns Start of memory pointer
 void		*ft_memset(void *b, int c, size_t len)
 {
 	size_t		i;

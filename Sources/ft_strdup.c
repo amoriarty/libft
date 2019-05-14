@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/// Save a copy of a string
+/// @param s1 String to copy
+/// @return Newly allocated copied string 
 char		*ft_strdup(const char *s1)
 {
 	int		i;

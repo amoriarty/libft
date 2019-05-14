@@ -24,6 +24,7 @@ static int			length(const char **split)
 	return (len);
 }
 
+// TODO: Probably delete that
 char				*ft_strimp(const char **split, const char c)
 {
 	int				i;

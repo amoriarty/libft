@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/// Compare strings
+/// @param s1 Left hand string to compare
+/// @param s2 Right hand string to compare
+/// @returns Zero if strings are identicals, the difference between the two
+///     first differing characters
 int			ft_strcmp(const char *s1, const char *s2)
 {
 	int		i;

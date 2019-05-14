@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/// Write zeroes to a byte string
+/// @param s String to write zeroes on
+/// @param n Size of the string
 void		ft_bzero(void *s, size_t n)
 {
 	size_t		i;

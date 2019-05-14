@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/// Concatenate strings
+/// @param s1 First part of the string, where s2 will be append
+/// @param s2 String to append
+/// @returns Concatanate string
 char		*ft_strcat(char *s1, const char *s2)
 {
 	int		i;

@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/// Apply function `f` to string into a newly allocated string
+/// @param s String to apply `f` to
+/// @param f Function to apply on string
+/// @returns Newly allocated string where `f` is applied
 char		*ft_strmap(char const *s, char (*f)(char))
 {
 	unsigned int		i;

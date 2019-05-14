@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/// Allocate a new string
+/// @param size Size to allocate
+/// @returns Newly allocated string
 char		*ft_strnew(size_t size)
 {
 	char	*str;

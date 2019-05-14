@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/// Copy strings
+/// @param dst Destination string
+/// @param src Source string
+/// @returns Pointer of the head of destination string
 char		*ft_strcpy(char *dst, const char *src)
 {
 	int		i;

@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+// TODO: Remove it (duplicate of `ft_striter`)
+/// Apply `f` on each character of a string
+/// @param s String to apply `f` to
+/// @param f Function to apply on each character
 void		ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;

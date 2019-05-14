@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+/// Size-bounded strings comparaision
+/// @param s1 Left hand string to compare
+/// @param s2 Right hand string to compare
+/// @param n Size to compare
+/// @returns Zero if string are identicals, the difference between the two
+///     first differing character otherwise
 int			ft_strnequ(char const *s1, char const *s2, size_t n)
 {
 	size_t		i;

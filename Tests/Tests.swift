@@ -11,7 +11,7 @@ import XCTest
 class Tests: XCTestCase {
 
     func testUnitTesting() {
-        ft_putendl("Hello World")
+        
     }
 
 }

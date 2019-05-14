@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/// Locate a substring in a string
+/// @param s1 String to locate substring in
+/// @param s2 Substring to locate string
+/// @param n Size to search for
+/// @returns Pointer to head of the needle in the haystack if found, NULL otherwise
 char				*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
 	size_t		i;

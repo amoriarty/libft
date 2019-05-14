@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/// Convert a list into a new one by applying `f`
+/// @param lst Head pointer of the list
+/// @param f Function to convert each node
+/// @returns Newly allocate list, with converted node
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
 	t_list			*new;

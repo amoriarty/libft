@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/// Write a string to a file descriptor, append by a carriage return
+/// @param s String to write
+/// @param fd File descriptor to write to
 void		ft_putendl_fd(char const *s, int fd)
 {
 	ft_putstr_fd(s, fd);

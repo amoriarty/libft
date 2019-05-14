@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/// Concatenate string into a newly allocate string
+/// @param s1 Left hand string to concatenate
+/// @param s2 Right hand string to concatenate
+/// @returns Newly allocated string, concatanation of the two strings
 char		*ft_strjoin(char const *s1, char const *s2)
 {
 	int		i;

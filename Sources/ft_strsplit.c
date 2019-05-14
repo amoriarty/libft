@@ -45,6 +45,10 @@ static size_t	get_word_length(const char *s, char c)
 	return (length);
 }
 
+/// Split a character into an array of string, seperated by c
+/// @param s String to split
+/// @param c Splitting character
+/// @returns Array of splitting strings
 char			**ft_strsplit(const char *s, char c)
 {
 	char	**tab;

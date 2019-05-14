@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+/// Replace all characters by zeroes
+/// @param s String to clear
 void		ft_strclr(char *s)
 {
 	ft_bzero(s, ft_strlen(s));

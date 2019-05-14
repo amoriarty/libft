@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+/// Compare byte string
+/// @param s1 Left hand string to compare
+/// @param s2 Right hand string to compare
+/// @param n Size of string
+/// @returns Zero if the two strings is identical, the difference between
+///     the two first differing character
 int			ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t		i;

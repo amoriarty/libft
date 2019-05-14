@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/// Space or tab character test
+/// @param Character to test
+/// @returns True if character is a space or tab, false otherwise
 int			ft_isblank(int c)
 {
 	if (c == ' ' || c == '\n' || c == '\t'

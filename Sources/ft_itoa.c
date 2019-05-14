@@ -33,6 +33,9 @@ static	int		ft_int_len(int n)
 	return (i);
 }
 
+/// Convert interger to ASCII string
+/// @param n Integer to convert
+/// @returns Converted string
 char			*ft_itoa(int n)
 {
 	int		q;

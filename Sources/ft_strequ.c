@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/// Compare string
+/// @param s1 Left hand string to compare
+/// @param s2 Right hand string to compare
+/// @return True if strings are identicals, false otherwise.
 int			ft_strequ(char const *s1, char const *s2)
 {
 	int		i;

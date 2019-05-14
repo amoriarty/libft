@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/// Allocate memory
+/// @param size Size of the memory to allocate
+/// @returns Pointer to newly allocated memory, or NULL if an error occured
 void		*ft_memalloc(size_t size)
 {
 	void	*mem;

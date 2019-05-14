@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+/// Write a string to STDOUT
+/// @param s String to write
 void		ft_putstr(char const *s)
 {
 	ft_putstr_fd(s, STDOUT_FILENO);

@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/// Add a new node at the head of the list
+/// @param alst Head pointer of the list
+/// @param new Node to add
 void				ft_lstadd(t_list **alst, t_list *new)
 {
 	new->next = *alst;

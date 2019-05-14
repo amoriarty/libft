@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/// Size-bounded string copying
+/// @param dst Destination string
+/// @param src Source string
+/// @param n Size to copy
+/// @returns Head pointer to destination string
 char		*ft_strncpy(char *dst, const char *src, size_t n)
 {
 	unsigned int		i;

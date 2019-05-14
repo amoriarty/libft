@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+/// Calculate the number of character composing an integer
+/// @param n Integer to calculate lenght
 size_t					ft_digitlen(int n)
 {
 	size_t				res;
