@@ -109,6 +109,7 @@
 		ECA74CDA228C1BDE005E653D /* StrdelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CD9228C1BDE005E653D /* StrdelTests.swift */; };
 		ECA74CDC228C1D05005E653D /* StriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CDB228C1D05005E653D /* StriterTests.swift */; };
 		ECA74CDE228C21C3005E653D /* StriteriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CDD228C21C3005E653D /* StriteriTests.swift */; };
+		ECA74CE2228C2956005E653D /* StrclrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CE1228C2956005E653D /* StrclrTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -227,6 +228,7 @@
 		ECA74CD9228C1BDE005E653D /* StrdelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrdelTests.swift; sourceTree = "<group>"; };
 		ECA74CDB228C1D05005E653D /* StriterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StriterTests.swift; sourceTree = "<group>"; };
 		ECA74CDD228C21C3005E653D /* StriteriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StriteriTests.swift; sourceTree = "<group>"; };
+		ECA74CE1228C2956005E653D /* StrclrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrclrTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,6 +345,7 @@
 		EC89F07E228A9E6F002ED417 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				ECA74CE1228C2956005E653D /* StrclrTests.swift */,
 				ECA74CDD228C21C3005E653D /* StriteriTests.swift */,
 				ECA74CDB228C1D05005E653D /* StriterTests.swift */,
 				ECA74CD9228C1BDE005E653D /* StrdelTests.swift */,
@@ -577,6 +580,7 @@
 				EC8C1F39228B0E450032719E /* MemccpyTests.swift in Sources */,
 				EC8C1F3B228B13D90032719E /* MemmoveTests.swift in Sources */,
 				ECA74CDE228C21C3005E653D /* StriteriTests.swift in Sources */,
+				ECA74CE2228C2956005E653D /* StrclrTests.swift in Sources */,
 				ECA74CBC228C0823005E653D /* StrstrTests.swift in Sources */,
 				ECA74CB6228BF870005E653D /* StrlcatTests.swift in Sources */,
 				ECA74CB2228BF245005E653D /* StrcatTests.swift in Sources */,
