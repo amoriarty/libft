@@ -103,6 +103,8 @@
 		ECA74CCE228C1106005E653D /* IsPrintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CCD228C1106005E653D /* IsPrintTests.swift */; };
 		ECA74CD0228C1157005E653D /* ToUpperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CCF228C1157005E653D /* ToUpperTests.swift */; };
 		ECA74CD2228C1196005E653D /* ToLowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CD1228C1196005E653D /* ToLowerTests.swift */; };
+		ECA74CD4228C153C005E653D /* MemallocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CD3228C153C005E653D /* MemallocTests.swift */; };
+		ECA74CD6228C162E005E653D /* MemdelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CD5228C162E005E653D /* MemdelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,6 +217,8 @@
 		ECA74CCD228C1106005E653D /* IsPrintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPrintTests.swift; sourceTree = "<group>"; };
 		ECA74CCF228C1157005E653D /* ToUpperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToUpperTests.swift; sourceTree = "<group>"; };
 		ECA74CD1228C1196005E653D /* ToLowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToLowerTests.swift; sourceTree = "<group>"; };
+		ECA74CD3228C153C005E653D /* MemallocTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemallocTests.swift; sourceTree = "<group>"; };
+		ECA74CD5228C162E005E653D /* MemdelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemdelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,6 +335,8 @@
 		EC89F07E228A9E6F002ED417 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				ECA74CD5228C162E005E653D /* MemdelTests.swift */,
+				ECA74CD3228C153C005E653D /* MemallocTests.swift */,
 				ECA74CD1228C1196005E653D /* ToLowerTests.swift */,
 				ECA74CCF228C1157005E653D /* ToUpperTests.swift */,
 				ECA74CCD228C1106005E653D /* IsPrintTests.swift */,
@@ -560,6 +566,7 @@
 				ECA74CBC228C0823005E653D /* StrstrTests.swift in Sources */,
 				ECA74CB6228BF870005E653D /* StrlcatTests.swift in Sources */,
 				ECA74CB2228BF245005E653D /* StrcatTests.swift in Sources */,
+				ECA74CD6228C162E005E653D /* MemdelTests.swift in Sources */,
 				ECA74CC6228C0F28005E653D /* IsAlphaTests.swift in Sources */,
 				ECA74CD0228C1157005E653D /* ToUpperTests.swift in Sources */,
 				ECA74CCE228C1106005E653D /* IsPrintTests.swift in Sources */,
@@ -567,6 +574,7 @@
 				ECA74CCC228C10AF005E653D /* IsAsciiTests.swift in Sources */,
 				EC89F080228A9E6F002ED417 /* MemsetTests.swift in Sources */,
 				ECA74CAA228BEBD3005E653D /* SrtlenTests.swift in Sources */,
+				ECA74CD4228C153C005E653D /* MemallocTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
