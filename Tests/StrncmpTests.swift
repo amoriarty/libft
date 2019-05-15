@@ -1,5 +1,5 @@
 //
-//  Strncmp.swift
+//  StrncmpTests.swift
 //  Tests
 //
 //  Created by Alex Legent on 15/05/2019.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class Strncmp: XCTestCase {
+class StrncmpTests: XCTestCase {
 
     func testBasic() {
         let left = "ft_strncmp: basics test"

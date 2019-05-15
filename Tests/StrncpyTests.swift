@@ -1,5 +1,5 @@
 //
-//  Strncpy.swift
+//  StrncpyTests.swift
 //  Tests
 //
 //  Created by Alex Legent on 15/05/2019.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class Strncpy: XCTestCase {
+class StrncpyTests: XCTestCase {
 
     func testBasic() {
         let source = "ft_strncpy: basic test"
