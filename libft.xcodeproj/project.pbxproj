@@ -88,6 +88,7 @@
 		ECA74CB0228BF10D005E653D /* Strncpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CAF228BF10D005E653D /* Strncpy.swift */; };
 		ECA74CB2228BF245005E653D /* StrcatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CB1228BF245005E653D /* StrcatTests.swift */; };
 		ECA74CB4228BF714005E653D /* StrncatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CB3228BF714005E653D /* StrncatTests.swift */; };
+		ECA74CB6228BF870005E653D /* StrlcatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CB5228BF870005E653D /* StrlcatTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +186,7 @@
 		ECA74CAF228BF10D005E653D /* Strncpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strncpy.swift; sourceTree = "<group>"; };
 		ECA74CB1228BF245005E653D /* StrcatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrcatTests.swift; sourceTree = "<group>"; };
 		ECA74CB3228BF714005E653D /* StrncatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrncatTests.swift; sourceTree = "<group>"; };
+		ECA74CB5228BF870005E653D /* StrlcatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrlcatTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +303,7 @@
 		EC89F07E228A9E6F002ED417 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				ECA74CB5228BF870005E653D /* StrlcatTests.swift */,
 				ECA74CB3228BF714005E653D /* StrncatTests.swift */,
 				ECA74CB1228BF245005E653D /* StrcatTests.swift */,
 				ECA74CAF228BF10D005E653D /* Strncpy.swift */,
@@ -503,6 +506,7 @@
 				EC8C1F37228B04A20032719E /* MemcpyTests.swift in Sources */,
 				EC8C1F39228B0E450032719E /* MemccpyTests.swift in Sources */,
 				EC8C1F3B228B13D90032719E /* MemmoveTests.swift in Sources */,
+				ECA74CB6228BF870005E653D /* StrlcatTests.swift in Sources */,
 				ECA74CB2228BF245005E653D /* StrcatTests.swift in Sources */,
 				EC8C1F3F228B21170032719E /* MemcmpTests.swift in Sources */,
 				EC89F080228A9E6F002ED417 /* MemsetTests.swift in Sources */,

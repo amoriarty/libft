@@ -46,7 +46,7 @@ class StrncatTests: XCTestCase {
         bzero(buffer, source.count)
         memcpy(buffer, left, left.count)
 
-        XCTAssert(ft_strncpy(buffer, right, 0) == buffer)
+        XCTAssert(ft_strncat(buffer, right, 0) == buffer)
         XCTAssert(memcmp(buffer, source, source.count) != 0)
         XCTAssert(memcmp(buffer, left, left.count) == 0)
 
