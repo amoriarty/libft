@@ -10,6 +10,7 @@
 		EC3E1634228C2F7900810DE7 /* StrsubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1633228C2F7900810DE7 /* StrsubTests.swift */; };
 		EC3E1636228C309800810DE7 /* StrjoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1635228C309800810DE7 /* StrjoinTests.swift */; };
 		EC3E1638228C31B400810DE7 /* StrtrimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1637228C31B400810DE7 /* StrtrimTests.swift */; };
+		EC3E163A228C32DC00810DE7 /* ItoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1639228C32DC00810DE7 /* ItoaTests.swift */; };
 		EC89F036228A9C68002ED417 /* ft_strnew.c in Sources */ = {isa = PBXBuildFile; fileRef = EC89EFF3228A9C63002ED417 /* ft_strnew.c */; };
 		EC89F037228A9C68002ED417 /* libft.h in Headers */ = {isa = PBXBuildFile; fileRef = EC89EFF4228A9C63002ED417 /* libft.h */; };
 		EC89F038228A9C68002ED417 /* ft_memset.c in Sources */ = {isa = PBXBuildFile; fileRef = EC89EFF5228A9C63002ED417 /* ft_memset.c */; };
@@ -133,6 +134,7 @@
 		EC3E1633228C2F7900810DE7 /* StrsubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrsubTests.swift; sourceTree = "<group>"; };
 		EC3E1635228C309800810DE7 /* StrjoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrjoinTests.swift; sourceTree = "<group>"; };
 		EC3E1637228C31B400810DE7 /* StrtrimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrtrimTests.swift; sourceTree = "<group>"; };
+		EC3E1639228C32DC00810DE7 /* ItoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItoaTests.swift; sourceTree = "<group>"; };
 		EC89EFEB228A9BC5002ED417 /* libft.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libft.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC89EFF3228A9C63002ED417 /* ft_strnew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_strnew.c; sourceTree = "<group>"; };
 		EC89EFF4228A9C63002ED417 /* libft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libft.h; sourceTree = "<group>"; };
@@ -359,6 +361,7 @@
 		EC89F07E228A9E6F002ED417 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				EC3E1639228C32DC00810DE7 /* ItoaTests.swift */,
 				EC3E1637228C31B400810DE7 /* StrtrimTests.swift */,
 				EC3E1635228C309800810DE7 /* StrjoinTests.swift */,
 				EC3E1633228C2F7900810DE7 /* StrsubTests.swift */,
@@ -592,6 +595,7 @@
 				ECA74CB0228BF10D005E653D /* StrncpyTests.swift in Sources */,
 				ECA74CC2228C0B04005E653D /* StrncmpTests.swift in Sources */,
 				EC3E1634228C2F7900810DE7 /* StrsubTests.swift in Sources */,
+				EC3E163A228C32DC00810DE7 /* ItoaTests.swift in Sources */,
 				ECA74CCA228C1056005E653D /* IsAlnumTests.swift in Sources */,
 				ECA74CC8228C0FCB005E653D /* IsDigitTests.swift in Sources */,
 				ECA74CAC228BED2D005E653D /* StrdupTests.swift in Sources */,
