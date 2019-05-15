@@ -95,6 +95,7 @@
 		ECA74CBE228C094B005E653D /* StrnstrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CBD228C094B005E653D /* StrnstrTests.swift */; };
 		ECA74CC0228C0A3F005E653D /* StrcmpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CBF228C0A3F005E653D /* StrcmpTests.swift */; };
 		ECA74CC2228C0B04005E653D /* Strncmp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CC1228C0B04005E653D /* Strncmp.swift */; };
+		ECA74CC4228C0C36005E653D /* AtoiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CC3228C0C36005E653D /* AtoiTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,6 +200,7 @@
 		ECA74CBD228C094B005E653D /* StrnstrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrnstrTests.swift; sourceTree = "<group>"; };
 		ECA74CBF228C0A3F005E653D /* StrcmpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrcmpTests.swift; sourceTree = "<group>"; };
 		ECA74CC1228C0B04005E653D /* Strncmp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strncmp.swift; sourceTree = "<group>"; };
+		ECA74CC3228C0C36005E653D /* AtoiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtoiTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +317,7 @@
 		EC89F07E228A9E6F002ED417 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				ECA74CC3228C0C36005E653D /* AtoiTests.swift */,
 				ECA74CC1228C0B04005E653D /* Strncmp.swift */,
 				ECA74CBF228C0A3F005E653D /* StrcmpTests.swift */,
 				ECA74CBD228C094B005E653D /* StrnstrTests.swift */,
@@ -519,6 +522,7 @@
 				EC8C1F35228B01BA0032719E /* BzeroTests.swift in Sources */,
 				ECA74CB8228C05FE005E653D /* StrchrTests.swift in Sources */,
 				ECA74CC0228C0A3F005E653D /* StrcmpTests.swift in Sources */,
+				ECA74CC4228C0C36005E653D /* AtoiTests.swift in Sources */,
 				ECA74CB4228BF714005E653D /* StrncatTests.swift in Sources */,
 				ECA74CBE228C094B005E653D /* StrnstrTests.swift in Sources */,
 				ECA74CB0228BF10D005E653D /* Strncpy.swift in Sources */,
