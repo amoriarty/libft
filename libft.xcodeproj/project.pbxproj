@@ -107,6 +107,8 @@
 		ECA74CD6228C162E005E653D /* MemdelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CD5228C162E005E653D /* MemdelTests.swift */; };
 		ECA74CD8228C1AF1005E653D /* StrnewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CD7228C1AF1005E653D /* StrnewTests.swift */; };
 		ECA74CDA228C1BDE005E653D /* StrdelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CD9228C1BDE005E653D /* StrdelTests.swift */; };
+		ECA74CDC228C1D05005E653D /* StriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CDB228C1D05005E653D /* StriterTests.swift */; };
+		ECA74CDE228C21C3005E653D /* StriteriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CDD228C21C3005E653D /* StriteriTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -223,6 +225,8 @@
 		ECA74CD5228C162E005E653D /* MemdelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemdelTests.swift; sourceTree = "<group>"; };
 		ECA74CD7228C1AF1005E653D /* StrnewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrnewTests.swift; sourceTree = "<group>"; };
 		ECA74CD9228C1BDE005E653D /* StrdelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrdelTests.swift; sourceTree = "<group>"; };
+		ECA74CDB228C1D05005E653D /* StriterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StriterTests.swift; sourceTree = "<group>"; };
+		ECA74CDD228C21C3005E653D /* StriteriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StriteriTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +343,8 @@
 		EC89F07E228A9E6F002ED417 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				ECA74CDD228C21C3005E653D /* StriteriTests.swift */,
+				ECA74CDB228C1D05005E653D /* StriterTests.swift */,
 				ECA74CD9228C1BDE005E653D /* StrdelTests.swift */,
 				ECA74CD7228C1AF1005E653D /* StrnewTests.swift */,
 				ECA74CD5228C162E005E653D /* MemdelTests.swift */,
@@ -570,6 +576,7 @@
 				ECA74CBA228C077E005E653D /* StrrchrTests.swift in Sources */,
 				EC8C1F39228B0E450032719E /* MemccpyTests.swift in Sources */,
 				EC8C1F3B228B13D90032719E /* MemmoveTests.swift in Sources */,
+				ECA74CDE228C21C3005E653D /* StriteriTests.swift in Sources */,
 				ECA74CBC228C0823005E653D /* StrstrTests.swift in Sources */,
 				ECA74CB6228BF870005E653D /* StrlcatTests.swift in Sources */,
 				ECA74CB2228BF245005E653D /* StrcatTests.swift in Sources */,
@@ -581,6 +588,7 @@
 				EC8C1F3F228B21170032719E /* MemcmpTests.swift in Sources */,
 				ECA74CCC228C10AF005E653D /* IsAsciiTests.swift in Sources */,
 				EC89F080228A9E6F002ED417 /* MemsetTests.swift in Sources */,
+				ECA74CDC228C1D05005E653D /* StriterTests.swift in Sources */,
 				ECA74CAA228BEBD3005E653D /* SrtlenTests.swift in Sources */,
 				ECA74CD4228C153C005E653D /* MemallocTests.swift in Sources */,
 			);

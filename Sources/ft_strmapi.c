@@ -12,7 +12,10 @@
 
 #include "libft.h"
 
-// TODO: Probably duplicate of strmap
+/// Apply function `f` with an index parameter to string into a newly allocated string
+/// @param s String to apply `f` to
+/// @param f Function to apply on string
+/// @returns Newly allocated string where `f` is applied
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
