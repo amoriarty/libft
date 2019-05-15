@@ -15,6 +15,11 @@ class SrtlenTests: XCTestCase {
         XCTAssert(ft_strlen(source) == source.count)
     }
 
+    func testLargeSize() {
+        let source = String(repeating: "A", count: 0xFFFFFF)
+        XCTAssert(ft_strlen(source) == source.count)
+    }
+
     func testEmpty() {
         let source = ""
         XCTAssert(ft_strlen(source) == source.count)

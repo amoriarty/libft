@@ -20,6 +20,16 @@ class StrdupTests: XCTestCase {
         free(buffer)
     }
 
+    func testLargeSize() {
+        let source = String(repeating: "A", count: 0xFFFFFFF)
+        let buffer = ft_strdup(source)
+
+        XCTAssert(buffer != nil)
+        XCTAssert(memcmp(buffer!, source, source.count) == 0)
+
+        free(buffer)
+    }
+
     func testEmpty() {
         let source = ""
         let buffer = ft_strdup(source)
