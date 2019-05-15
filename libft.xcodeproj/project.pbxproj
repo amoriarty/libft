@@ -12,6 +12,11 @@
 		EC3E1638228C31B400810DE7 /* StrtrimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1637228C31B400810DE7 /* StrtrimTests.swift */; };
 		EC3E163A228C32DC00810DE7 /* ItoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1639228C32DC00810DE7 /* ItoaTests.swift */; };
 		EC3E163C228C348800810DE7 /* StrsplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E163B228C348800810DE7 /* StrsplitTests.swift */; };
+		EC3E163E228C3D1C00810DE7 /* PutcharTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E163D228C3D1C00810DE7 /* PutcharTests.swift */; };
+		EC3E1640228C423500810DE7 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E163F228C423500810DE7 /* FileHelper.swift */; };
+		EC3E1642228C444300810DE7 /* PutstrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1641228C444300810DE7 /* PutstrTests.swift */; };
+		EC3E1644228C452900810DE7 /* PutendlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1643228C452900810DE7 /* PutendlTests.swift */; };
+		EC3E1646228C458C00810DE7 /* PutnbrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1645228C458C00810DE7 /* PutnbrTests.swift */; };
 		EC89F036228A9C68002ED417 /* ft_strnew.c in Sources */ = {isa = PBXBuildFile; fileRef = EC89EFF3228A9C63002ED417 /* ft_strnew.c */; };
 		EC89F037228A9C68002ED417 /* libft.h in Headers */ = {isa = PBXBuildFile; fileRef = EC89EFF4228A9C63002ED417 /* libft.h */; };
 		EC89F038228A9C68002ED417 /* ft_memset.c in Sources */ = {isa = PBXBuildFile; fileRef = EC89EFF5228A9C63002ED417 /* ft_memset.c */; };
@@ -137,6 +142,11 @@
 		EC3E1637228C31B400810DE7 /* StrtrimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrtrimTests.swift; sourceTree = "<group>"; };
 		EC3E1639228C32DC00810DE7 /* ItoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItoaTests.swift; sourceTree = "<group>"; };
 		EC3E163B228C348800810DE7 /* StrsplitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrsplitTests.swift; sourceTree = "<group>"; };
+		EC3E163D228C3D1C00810DE7 /* PutcharTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutcharTests.swift; sourceTree = "<group>"; };
+		EC3E163F228C423500810DE7 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		EC3E1641228C444300810DE7 /* PutstrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutstrTests.swift; sourceTree = "<group>"; };
+		EC3E1643228C452900810DE7 /* PutendlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutendlTests.swift; sourceTree = "<group>"; };
+		EC3E1645228C458C00810DE7 /* PutnbrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutnbrTests.swift; sourceTree = "<group>"; };
 		EC89EFEB228A9BC5002ED417 /* libft.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libft.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC89EFF3228A9C63002ED417 /* ft_strnew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_strnew.c; sourceTree = "<group>"; };
 		EC89EFF4228A9C63002ED417 /* libft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libft.h; sourceTree = "<group>"; };
@@ -363,6 +373,10 @@
 		EC89F07E228A9E6F002ED417 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				EC3E1645228C458C00810DE7 /* PutnbrTests.swift */,
+				EC3E1643228C452900810DE7 /* PutendlTests.swift */,
+				EC3E1641228C444300810DE7 /* PutstrTests.swift */,
+				EC3E163D228C3D1C00810DE7 /* PutcharTests.swift */,
 				EC3E163B228C348800810DE7 /* StrsplitTests.swift */,
 				EC3E1639228C32DC00810DE7 /* ItoaTests.swift */,
 				EC3E1637228C31B400810DE7 /* StrtrimTests.swift */,
@@ -407,6 +421,7 @@
 				EC8C1F36228B04A20032719E /* MemcpyTests.swift */,
 				EC8C1F34228B01BA0032719E /* BzeroTests.swift */,
 				EC89F07F228A9E6F002ED417 /* MemsetTests.swift */,
+				EC3E163F228C423500810DE7 /* FileHelper.swift */,
 				EC89F081228A9E6F002ED417 /* Info.plist */,
 				EC89F089228AA1CB002ED417 /* Tests-Bridging-Header.h */,
 			);
@@ -594,6 +609,7 @@
 				ECA74CC0228C0A3F005E653D /* StrcmpTests.swift in Sources */,
 				ECA74CC4228C0C36005E653D /* AtoiTests.swift in Sources */,
 				ECA74CB4228BF714005E653D /* StrncatTests.swift in Sources */,
+				EC3E1642228C444300810DE7 /* PutstrTests.swift in Sources */,
 				ECA74CBE228C094B005E653D /* StrnstrTests.swift in Sources */,
 				ECA74CB0228BF10D005E653D /* StrncpyTests.swift in Sources */,
 				ECA74CC2228C0B04005E653D /* StrncmpTests.swift in Sources */,
@@ -606,6 +622,9 @@
 				EC8C1F3D228B1A520032719E /* MemchrTests.swift in Sources */,
 				EC8C1F37228B04A20032719E /* MemcpyTests.swift in Sources */,
 				ECA74CBA228C077E005E653D /* StrrchrTests.swift in Sources */,
+				EC3E1640228C423500810DE7 /* FileHelper.swift in Sources */,
+				EC3E1646228C458C00810DE7 /* PutnbrTests.swift in Sources */,
+				EC3E163E228C3D1C00810DE7 /* PutcharTests.swift in Sources */,
 				EC8C1F39228B0E450032719E /* MemccpyTests.swift in Sources */,
 				EC8C1F3B228B13D90032719E /* MemmoveTests.swift in Sources */,
 				ECA74CDE228C21C3005E653D /* StriteriTests.swift in Sources */,
@@ -628,6 +647,7 @@
 				ECA74CEA228C2E45005E653D /* StrnequTests.swift in Sources */,
 				EC89F080228A9E6F002ED417 /* MemsetTests.swift in Sources */,
 				ECA74CDC228C1D05005E653D /* StriterTests.swift in Sources */,
+				EC3E1644228C452900810DE7 /* PutendlTests.swift in Sources */,
 				ECA74CAA228BEBD3005E653D /* SrtlenTests.swift in Sources */,
 				EC3E1636228C309800810DE7 /* StrjoinTests.swift in Sources */,
 				ECA74CD4228C153C005E653D /* MemallocTests.swift in Sources */,
