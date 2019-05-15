@@ -87,6 +87,7 @@
 		ECA74CAE228BEE81005E653D /* StrcpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CAD228BEE81005E653D /* StrcpyTests.swift */; };
 		ECA74CB0228BF10D005E653D /* Strncpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CAF228BF10D005E653D /* Strncpy.swift */; };
 		ECA74CB2228BF245005E653D /* StrcatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CB1228BF245005E653D /* StrcatTests.swift */; };
+		ECA74CB4228BF714005E653D /* StrncatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CB3228BF714005E653D /* StrncatTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +184,7 @@
 		ECA74CAD228BEE81005E653D /* StrcpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrcpyTests.swift; sourceTree = "<group>"; };
 		ECA74CAF228BF10D005E653D /* Strncpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strncpy.swift; sourceTree = "<group>"; };
 		ECA74CB1228BF245005E653D /* StrcatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrcatTests.swift; sourceTree = "<group>"; };
+		ECA74CB3228BF714005E653D /* StrncatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrncatTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +301,7 @@
 		EC89F07E228A9E6F002ED417 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				ECA74CB3228BF714005E653D /* StrncatTests.swift */,
 				ECA74CB1228BF245005E653D /* StrcatTests.swift */,
 				ECA74CAF228BF10D005E653D /* Strncpy.swift */,
 				ECA74CAD228BEE81005E653D /* StrcpyTests.swift */,
@@ -493,6 +496,7 @@
 			files = (
 				ECA74CAE228BEE81005E653D /* StrcpyTests.swift in Sources */,
 				EC8C1F35228B01BA0032719E /* BzeroTests.swift in Sources */,
+				ECA74CB4228BF714005E653D /* StrncatTests.swift in Sources */,
 				ECA74CB0228BF10D005E653D /* Strncpy.swift in Sources */,
 				ECA74CAC228BED2D005E653D /* StrdupTests.swift in Sources */,
 				EC8C1F3D228B1A520032719E /* MemchrTests.swift in Sources */,
