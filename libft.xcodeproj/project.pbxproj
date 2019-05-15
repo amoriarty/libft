@@ -101,6 +101,8 @@
 		ECA74CCA228C1056005E653D /* IsAlnumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CC9228C1056005E653D /* IsAlnumTests.swift */; };
 		ECA74CCC228C10AF005E653D /* IsAsciiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CCB228C10AF005E653D /* IsAsciiTests.swift */; };
 		ECA74CCE228C1106005E653D /* IsPrintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CCD228C1106005E653D /* IsPrintTests.swift */; };
+		ECA74CD0228C1157005E653D /* ToUpperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CCF228C1157005E653D /* ToUpperTests.swift */; };
+		ECA74CD2228C1196005E653D /* ToLowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CD1228C1196005E653D /* ToLowerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -211,6 +213,8 @@
 		ECA74CC9228C1056005E653D /* IsAlnumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsAlnumTests.swift; sourceTree = "<group>"; };
 		ECA74CCB228C10AF005E653D /* IsAsciiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsAsciiTests.swift; sourceTree = "<group>"; };
 		ECA74CCD228C1106005E653D /* IsPrintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPrintTests.swift; sourceTree = "<group>"; };
+		ECA74CCF228C1157005E653D /* ToUpperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToUpperTests.swift; sourceTree = "<group>"; };
+		ECA74CD1228C1196005E653D /* ToLowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToLowerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,6 +331,8 @@
 		EC89F07E228A9E6F002ED417 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				ECA74CD1228C1196005E653D /* ToLowerTests.swift */,
+				ECA74CCF228C1157005E653D /* ToUpperTests.swift */,
 				ECA74CCD228C1106005E653D /* IsPrintTests.swift */,
 				ECA74CCB228C10AF005E653D /* IsAsciiTests.swift */,
 				ECA74CC9228C1056005E653D /* IsAlnumTests.swift */,
@@ -533,6 +539,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA74CD2228C1196005E653D /* ToLowerTests.swift in Sources */,
 				ECA74CAE228BEE81005E653D /* StrcpyTests.swift in Sources */,
 				EC8C1F35228B01BA0032719E /* BzeroTests.swift in Sources */,
 				ECA74CB8228C05FE005E653D /* StrchrTests.swift in Sources */,
@@ -554,6 +561,7 @@
 				ECA74CB6228BF870005E653D /* StrlcatTests.swift in Sources */,
 				ECA74CB2228BF245005E653D /* StrcatTests.swift in Sources */,
 				ECA74CC6228C0F28005E653D /* IsAlphaTests.swift in Sources */,
+				ECA74CD0228C1157005E653D /* ToUpperTests.swift in Sources */,
 				ECA74CCE228C1106005E653D /* IsPrintTests.swift in Sources */,
 				EC8C1F3F228B21170032719E /* MemcmpTests.swift in Sources */,
 				ECA74CCC228C10AF005E653D /* IsAsciiTests.swift in Sources */,
