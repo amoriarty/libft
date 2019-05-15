@@ -12,7 +12,10 @@
 
 #include "libft.h"
 
-// TODO: REMOVE THAT
+/// Locate character in string, from the end of the string
+/// @param s String where locate character
+/// @param c Character to locate in string
+/// @returns Pointer to character find in string
 char		*ft_strrchr(const char *s, int c)
 {
 	int		len;

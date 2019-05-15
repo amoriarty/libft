@@ -89,6 +89,8 @@
 		ECA74CB2228BF245005E653D /* StrcatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CB1228BF245005E653D /* StrcatTests.swift */; };
 		ECA74CB4228BF714005E653D /* StrncatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CB3228BF714005E653D /* StrncatTests.swift */; };
 		ECA74CB6228BF870005E653D /* StrlcatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CB5228BF870005E653D /* StrlcatTests.swift */; };
+		ECA74CB8228C05FE005E653D /* StrchrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CB7228C05FE005E653D /* StrchrTests.swift */; };
+		ECA74CBA228C077E005E653D /* StrrchrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CB9228C077E005E653D /* StrrchrTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +189,8 @@
 		ECA74CB1228BF245005E653D /* StrcatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrcatTests.swift; sourceTree = "<group>"; };
 		ECA74CB3228BF714005E653D /* StrncatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrncatTests.swift; sourceTree = "<group>"; };
 		ECA74CB5228BF870005E653D /* StrlcatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrlcatTests.swift; sourceTree = "<group>"; };
+		ECA74CB7228C05FE005E653D /* StrchrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrchrTests.swift; sourceTree = "<group>"; };
+		ECA74CB9228C077E005E653D /* StrrchrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrrchrTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +307,8 @@
 		EC89F07E228A9E6F002ED417 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				ECA74CB9228C077E005E653D /* StrrchrTests.swift */,
+				ECA74CB7228C05FE005E653D /* StrchrTests.swift */,
 				ECA74CB5228BF870005E653D /* StrlcatTests.swift */,
 				ECA74CB3228BF714005E653D /* StrncatTests.swift */,
 				ECA74CB1228BF245005E653D /* StrcatTests.swift */,
@@ -499,11 +505,13 @@
 			files = (
 				ECA74CAE228BEE81005E653D /* StrcpyTests.swift in Sources */,
 				EC8C1F35228B01BA0032719E /* BzeroTests.swift in Sources */,
+				ECA74CB8228C05FE005E653D /* StrchrTests.swift in Sources */,
 				ECA74CB4228BF714005E653D /* StrncatTests.swift in Sources */,
 				ECA74CB0228BF10D005E653D /* Strncpy.swift in Sources */,
 				ECA74CAC228BED2D005E653D /* StrdupTests.swift in Sources */,
 				EC8C1F3D228B1A520032719E /* MemchrTests.swift in Sources */,
 				EC8C1F37228B04A20032719E /* MemcpyTests.swift in Sources */,
+				ECA74CBA228C077E005E653D /* StrrchrTests.swift in Sources */,
 				EC8C1F39228B0E450032719E /* MemccpyTests.swift in Sources */,
 				EC8C1F3B228B13D90032719E /* MemmoveTests.swift in Sources */,
 				ECA74CB6228BF870005E653D /* StrlcatTests.swift in Sources */,
