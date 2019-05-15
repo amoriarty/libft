@@ -17,8 +17,7 @@
 # define SUCCESS 1
 # define FAILURE 0
 # define ERROR -1
-# define BUFF_SIZE 1
-# define CANCEL "\033[0;m"
+# define BUFF_SIZE 2048
 # include <unistd.h>
 # include <stdlib.h>
 # define EOL '\n'
@@ -33,8 +32,6 @@ void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char const *s, int fd);
 void			ft_putendl_fd(char const *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
-void			ft_puterror(char *name, char *error);
-void			ft_perror(void);
 size_t			ft_strlen(const char *s);
 char			*ft_strdup(const char *s1);
 char			*ft_strcpy(char *dst, const char *src);
@@ -46,7 +43,6 @@ char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
 char			*ft_strstr(const char *s1, const char *s2);
 char			*ft_strnstr(const char *s1, const char *s2, size_t n);
-char			*ft_strimp(const char **split, const char c);
 int				ft_atoi(const char *str);
 int				ft_strcmp(const char *s1, const char *s2);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
@@ -82,25 +78,6 @@ char			*ft_itoa(int n);
 char			*ft_strtrim(char const *s);
 char			**ft_strsplit(char const *s, char c);
 size_t			ft_digitlen(int n);
-void			ft_putcolor(char *str, char *color);
-void			ft_putcolor_fd(char *str, char *color, int fd);
-void			ft_puterror(char *name, char *error);
 int				get_next_line(const int fd, char **line);
-
-typedef struct	s_list
-{
-	void			*content;
-	size_t			content_size;
-	struct s_list	*next;
-}				t_list;
-
-t_list			*ft_lstnew(void *content, size_t content_size);
-void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
-void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
-void			ft_lstadd(t_list **alst, t_list *new);
-void			ft_lstend(t_list **alst, t_list *new);
-void			ft_lstdelete(t_list **del, t_list *prec, t_list *suivant);
-void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 #endif
