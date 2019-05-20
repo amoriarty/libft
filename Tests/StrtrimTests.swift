@@ -20,10 +20,6 @@ class StrtrimTests: XCTestCase {
         free(trimmed)
     }
 
-    func testNull() {
-        XCTAssert(ft_strtrim(nil) == nil)
-    }
-
     func testPerfomance() {
         let source = "\t\t   ft_strtrim: basic tests   \t\n"
 

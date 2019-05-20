@@ -19,10 +19,6 @@ class StrdelTests: XCTestCase {
         }
     }
 
-    func testNull() {
-        ft_strdel(nil)
-    }
-
     func testPerfomance() {
         measure {
             for _ in 0...1000 {

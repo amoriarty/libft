@@ -22,12 +22,6 @@ class StrjoinTests: XCTestCase {
         free(joined)
     }
 
-    func testNull() {
-        XCTAssert(ft_strjoin(nil, "") != nil)
-        XCTAssert(ft_strjoin("", nil) != nil)
-        XCTAssert(ft_strjoin(nil, nil) == nil)
-    }
-
     func testPerformance() {
         let left = "ft_strjoin: "
         let right = "basic tests"

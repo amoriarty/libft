@@ -40,13 +40,6 @@ class StrncmpTests: XCTestCase {
         XCTAssert(ft_strcmp("", "") == 0)
     }
 
-    func testNull() {
-        let source = "ft_strncmp: null test"
-        XCTAssert(ft_strncmp(nil, source, source.count) == 0)
-        XCTAssert(ft_strncmp(source, nil, source.count) == 0)
-        XCTAssert(ft_strncmp(nil, nil, source.count) == 0)
-    }
-
     func testPerformance() {
         let source = "ft_strncmp: performance test"
 

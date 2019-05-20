@@ -40,13 +40,6 @@ class StrnequTests: XCTestCase {
         XCTAssert(ft_strcmp("", "") == 1)
     }
 
-    func testNull() {
-        let source = "ft_strnequ: null test"
-        XCTAssert(ft_strnequ(nil, source, source.count) == 0)
-        XCTAssert(ft_strnequ(source, nil, source.count) == 0)
-        XCTAssert(ft_strnequ(nil, nil, source.count) == 0)
-    }
-
     func testPerformance() {
         let source = "ft_strnequ: performance test"
 

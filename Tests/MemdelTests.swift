@@ -19,10 +19,6 @@ class MemdelTests: XCTestCase {
         }
     }
 
-    func testNull() {
-        ft_memdel(nil)
-    }
-
     func testPerformance() {
         measure {
             for _ in 0...1000 {

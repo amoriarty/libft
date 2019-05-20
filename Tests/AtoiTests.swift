@@ -35,10 +35,6 @@ class AtoiTests: XCTestCase {
         XCTAssert(ft_atoi(value) == atoi(value))
     }
 
-    func testNull() {
-        XCTAssert(ft_atoi(nil) == 0)
-    }
-
     func testPerformance() {
         let max = String(INT_MAX)
 

@@ -30,10 +30,6 @@ class StrsubTests: XCTestCase {
         free(buffer)
     }
 
-    func testNull() {
-        XCTAssert(ft_strsub(nil, 0, 42) == nil)
-    }
-
     func testPerfomance() {
         let source = "ft_strsub: basic test"
 

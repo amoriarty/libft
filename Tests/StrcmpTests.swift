@@ -28,13 +28,6 @@ class StrcmpTests: XCTestCase {
         XCTAssert(ft_strcmp("", "") == 0)
     }
 
-    func testNull() {
-        let source = "ft_strcmp: null test"
-        XCTAssert(ft_strcmp(nil, source) == 0)
-        XCTAssert(ft_strcmp(source, nil) == 0)
-        XCTAssert(ft_strcmp(nil, nil) == 0)
-    }
-
     func testPerformance() {
         let source = "ft_strcmp: performance test"
 

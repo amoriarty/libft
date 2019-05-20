@@ -27,13 +27,6 @@ class StrequTests: XCTestCase {
         XCTAssert(ft_strequ("", "") == 1)
     }
 
-    func testNull() {
-        let source = "ft_strequ: null test"
-        XCTAssert(ft_strequ(nil, source) == 0)
-        XCTAssert(ft_strequ(source, nil) == 0)
-        XCTAssert(ft_strequ(nil, nil) == 0)
-    }
-
     func testPerformance() {
         let source = "ft_strequ: performance test"
 

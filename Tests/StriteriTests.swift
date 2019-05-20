@@ -24,13 +24,6 @@ class StriteriTests: XCTestCase {
         XCTAssert(memcmp(buffer, source.uppercased(), source.count) == 0)
     }
 
-    func testNull() {
-        ft_striteri(nil) {
-            let value = Int32($1!.pointee)
-            $1?.pointee = Int8(toupper(value))
-        }
-    }
-
     func testPerfomance() {
         let source = "hello world!"
         let buffer = malloc(source.count)!.assumingMemoryBound(to: Int8.self)

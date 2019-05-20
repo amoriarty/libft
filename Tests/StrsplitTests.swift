@@ -25,10 +25,6 @@ class StrsplitTests: XCTestCase {
         free(splitted)
     }
 
-    func testNull() {
-        XCTAssert(ft_strsplit(nil, 42) == nil)
-    }
-
     func testPerformance() {
         let source = "ft_strsplit***perfomance**test*"
 
