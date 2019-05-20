@@ -18,9 +18,8 @@
 /// @returns Concatanate string
 char		*ft_strcat(char *left, const char *right)
 {
-    size_t  offset;
+    size_t  length;
 
-    offset = ft_strlen(left);
-    ft_strcpy(left + offset, right);
-    return (left);
+    length = ft_strlen(right);
+    return (ft_strncat(left, right, length));
 }

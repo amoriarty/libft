@@ -21,6 +21,9 @@ class StrncatTests: XCTestCase {
         XCTAssert(ft_strncat(buffer, right, source.count) == buffer)
         XCTAssert(memcmp(buffer, source, source.count) == 0)
 
+        ft_putendl(source)
+        ft_putendl(buffer)
+
         free(buffer)
     }
 
@@ -61,16 +64,6 @@ class StrncatTests: XCTestCase {
         memcpy(buffer, source, source.count)
         XCTAssert(ft_strncat(buffer, source, source.count) == buffer)
         XCTAssert(memcmp(buffer, source, source.count) == 0)
-        free(buffer)
-    }
-
-    func testNull() {
-        let source = "ft_strncat: null test"
-        let buffer = malloc(source.count)!.assumingMemoryBound(to: Int8.self)
-
-        XCTAssert(ft_strncat(nil, source, source.count) == nil)
-        XCTAssert(ft_strncat(buffer, nil, source.count) == buffer)
-
         free(buffer)
     }
 

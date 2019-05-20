@@ -36,6 +36,8 @@ char    *ft_strdup(const char *source);
 char    *ft_strcpy(char *destination, const char *source);
 char    *ft_strncpy(char *destination, const char *source, size_t length);
 char    *ft_strcat(char *left, const char *right);
+char    *ft_strncat(char *left, const char *right, size_t length);
+
 void    ft_putchar(char c);
 void    ft_putstr(char const *s);
 void    ft_putnbr(int n);
@@ -44,7 +46,6 @@ void    ft_putchar_fd(char c, int fd);
 void    ft_putstr_fd(char const *s, int fd);
 void    ft_putendl_fd(char const *s, int fd);
 void    ft_putnbr_fd(int n, int fd);
-char    *ft_strncat(char *s1, const char *s2, size_t n);
 size_t  ft_strlcat(char *dst, const char *src, size_t n);
 char    *ft_strchr(const char *s, int c);
 char    *ft_strrchr(const char *s, int c);

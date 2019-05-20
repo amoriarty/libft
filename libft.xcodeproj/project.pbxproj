@@ -279,8 +279,6 @@
 		EC89EFF2228A9C0A002ED417 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				EC89F010228A9C65002ED417 /* ft_atoi.c */,
-				EC89F011228A9C65002ED417 /* ft_itoa.c */,
 				EC89F013228A9C65002ED417 /* ft_bzero.c */,
 				EC89EFF5228A9C63002ED417 /* ft_memset.c */,
 				EC89F026228A9C67002ED417 /* ft_memcpy.c */,
@@ -293,6 +291,9 @@
 				EC89F018228A9C66002ED417 /* ft_strcpy.c */,
 				EC89F00C228A9C65002ED417 /* ft_strncpy.c */,
 				EC89F01B228A9C66002ED417 /* ft_strcat.c */,
+				EC89F000228A9C64002ED417 /* ft_strncat.c */,
+				EC89F010228A9C65002ED417 /* ft_atoi.c */,
+				EC89F011228A9C65002ED417 /* ft_itoa.c */,
 				EC89F01A228A9C66002ED417 /* ft_digitlen.c */,
 				EC89F030228A9C68002ED417 /* ft_isalnum.c */,
 				EC89F005228A9C64002ED417 /* ft_isalpha.c */,
@@ -321,7 +322,6 @@
 				EC89EFFF228A9C64002ED417 /* ft_strlcat.c */,
 				EC89F035228A9C68002ED417 /* ft_strmap.c */,
 				EC89F029228A9C67002ED417 /* ft_strmapi.c */,
-				EC89F000228A9C64002ED417 /* ft_strncat.c */,
 				EC89F028228A9C67002ED417 /* ft_strncmp.c */,
 				EC89EFFA228A9C63002ED417 /* ft_strnequ.c */,
 				EC89EFF3228A9C63002ED417 /* ft_strnew.c */,
@@ -354,6 +354,7 @@
 				ECA74CAD228BEE81005E653D /* StrcpyTests.swift */,
 				ECA74CAF228BF10D005E653D /* StrncpyTests.swift */,
 				ECA74CB1228BF245005E653D /* StrcatTests.swift */,
+				ECA74CB3228BF714005E653D /* StrncatTests.swift */,
 				EC3E1647228C48BF00810DE7 /* DigitlenTests.swift */,
 				EC3E1645228C458C00810DE7 /* PutnbrTests.swift */,
 				EC3E1643228C452900810DE7 /* PutendlTests.swift */,
@@ -390,7 +391,6 @@
 				ECA74CB9228C077E005E653D /* StrrchrTests.swift */,
 				ECA74CB7228C05FE005E653D /* StrchrTests.swift */,
 				ECA74CB5228BF870005E653D /* StrlcatTests.swift */,
-				ECA74CB3228BF714005E653D /* StrncatTests.swift */,
 				EC3E163F228C423500810DE7 /* FileHelper.swift */,
 				EC89F081228A9E6F002ED417 /* Info.plist */,
 				EC89F089228AA1CB002ED417 /* Tests-Bridging-Header.h */,

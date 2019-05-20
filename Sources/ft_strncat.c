@@ -13,25 +13,17 @@
 #include "libft.h"
 
 /// Size-bounded concatanate string
-/// @param s1 Left hand string to concatanate
-/// @param s2 Right hand string to concatanate
-/// @param n Size to concatenate
+/// @param left Left hand string to concatanate
+/// @param right Right hand string to concatanate
+/// @param length Size to concatenate
 /// @returns Head pointer to concatanate string
-char		*ft_strncat(char *s1, const char *s2, size_t n)
+char		*ft_strncat(char *left, const char *right, size_t length)
 {
-	unsigned int		i;
-	unsigned int		x;
+    size_t  offset;
+    size_t  right_length;
 
-	i = 0;
-	x = 0;
-	while (s1[i] != '\0')
-		i++;
-	while (s2[x] != '\0' && x < n)
-	{
-		s1[i] = s2[x];
-		i++;
-		x++;
-	}
-	s1[i] = '\0';
-	return (s1);
+    offset = ft_strlen(left);
+    right_length = ft_strlen(right);
+    ft_strncpy(left + offset, right, length < right_length ? length : right_length);
+    return (left);
 }
