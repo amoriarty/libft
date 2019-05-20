@@ -11,8 +11,11 @@ import XCTest
 class MemallocTests: XCTestCase {
 
     func testBasic() {
-        let buffer = ft_memalloc(42)
+        let size = 42
+        let buffer = ft_memalloc(size)
+
         XCTAssert(buffer != nil)
+        bzero(buffer, size)
         free(buffer)
     }
 
