@@ -13,24 +13,14 @@
 #include "libft.h"
 
 /// Size-bounded string copying
-/// @param dst Destination string
-/// @param src Source string
-/// @param n Size to copy
+/// @param destination Destination string
+/// @param source Source string
+/// @param length Size to copy
 /// @returns Head pointer to destination string
-char		*ft_strncpy(char *dst, const char *src, size_t n)
+char		*ft_strncpy(char *destination, const char *source, size_t length)
 {
-	unsigned int		i;
+    size_t  source_length;
 
-	i = 0;
-	while (src[i] != '\0' && i < n && src && dst)
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	while (i < n && src && dst)
-	{
-		dst[i] = '\0';
-		i++;
-	}
-	return (dst);
+    source_length = ft_strlen(source);
+    return ((char *) ft_memcpy(destination, source, length < source_length ? length : source_length));
 }
