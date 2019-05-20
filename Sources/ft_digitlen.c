@@ -13,22 +13,11 @@
 #include "libft.h"
 
 /// Calculate the number of character composing an integer
-/// @param n Integer to calculate lenght
-size_t					ft_digitlen(int n)
+/// @param number Integer to calculate lenght
+size_t  ft_digitlen(int number)
 {
-	size_t				res;
+    char    *string;
 
-	res = 0;
-	if (n < 0)
-	{
-		res++;
-		n *= -1;
-	}
-	if (n > 9)
-	{
-		res++;
-		return (res + ft_digitlen(n / 10));
-	}
-	res++;
-	return (res);
+    string = ft_itoa(number);
+    return (ft_strlen(string));
 }

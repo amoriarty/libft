@@ -22,7 +22,8 @@ static int	ft_trim(char c)
 
 /// Convert ASCII string to integer
 /// @param str String to convert to integer
-int			ft_atoi(const char *str)
+#warning 'ft_atoi' isn't updated
+int ft_atoi(const char *str)
 {
 	int		res;
 	int		i;

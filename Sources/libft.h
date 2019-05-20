@@ -43,6 +43,8 @@ char    *ft_strnstr(const char *haystack, const char *needle, size_t length);
 int     ft_strcmp(const char *left, const char *right);
 int     ft_strncmp(const char *left, const char *right, size_t length);
 
+size_t  ft_digitlen(int number);
+
 void    ft_putchar(char c);
 void    ft_putstr(char const *s);
 void    ft_putnbr(int n);
@@ -76,7 +78,6 @@ char    *ft_strjoin(char const *s1, char const *s2);
 char    *ft_itoa(int n);
 char    *ft_strtrim(char const *s);
 char    **ft_strsplit(char const *s, char c);
-size_t  ft_digitlen(int n);
 int	    get_next_line(const int fd, char **line);
 
 #endif
