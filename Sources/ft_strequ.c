@@ -13,17 +13,10 @@
 #include "libft.h"
 
 /// Compare string
-/// @param s1 Left hand string to compare
-/// @param s2 Right hand string to compare
+/// @param left Left hand string to compare
+/// @param right Right hand string to compare
 /// @return True if strings are identicals, false otherwise.
-int			ft_strequ(char const *s1, char const *s2)
+t_bool  ft_strequ(char const *left, char const *right)
 {
-	int		i;
-
-	if (s1 == NULL || s2 == NULL)
-		return (0);
-	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0')
-		i++;
-	return ((s1[i] != s2[i]) ? FALSE : TRUE);
+    return (ft_strcmp(left, right) == 0 ? TRUE : FALSE);
 }

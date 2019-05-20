@@ -13,10 +13,13 @@
 #include "libft.h"
 
 /// Write a string to a file descriptor, append by a carriage return
-/// @param s String to write
+/// @param string String to write
 /// @param fd File descriptor to write to
-void		ft_putendl_fd(char const *s, int fd)
+void		ft_putendl_fd(char const *string, int fd)
 {
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
+    char    *joinned;
+
+    joinned = ft_strjoin(string, "\n");
+	ft_putstr_fd(joinned, fd);
+    ft_strdel(&joinned);
 }

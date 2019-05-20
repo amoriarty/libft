@@ -15,7 +15,7 @@ class StrtrimTests: XCTestCase {
         let trimmed = ft_strtrim(source)
 
         XCTAssert(trimmed != nil)
-        XCTAssert(memcmp(trimmed!, source.trimmingCharacters(in: .whitespacesAndNewlines), source.count) == 0)
+        XCTAssert(strcmp(trimmed, source.trimmingCharacters(in: .whitespacesAndNewlines)) == 0)
 
         free(trimmed)
     }

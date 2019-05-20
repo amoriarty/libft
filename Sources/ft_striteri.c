@@ -12,23 +12,17 @@
 
 #include "libft.h"
 
-/// Apply `f` on each character of a string, precising it's index as first argument
-/// @param s String to apply `f` to
-/// @param f Function to apply on each character
-void		ft_striteri(char *s, void (*f)(unsigned int, char *))
+/// Apply `function` on each character of a string, precising it's index as first argument
+/// @param string String to apply `f` to
+/// @param function Function to apply on each character
+void    ft_striteri(char *string, void (*function)(unsigned int, char *))
 {
-	unsigned int	i;
-	unsigned int	len;
+    unsigned int    iterator;
 
-	if (s != NULL && f != NULL)
-	{
-		i = 0;
-		len = ft_strlen(s);
-		while (i < len)
-		{
-			(*f)(i, s);
-			s++;
-			i++;
-		}
-	}
+    iterator = 0;
+    while (string[iterator])
+    {
+        (*function)(iterator, string + iterator);
+        iterator += 1;
+    }
 }

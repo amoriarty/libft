@@ -13,12 +13,8 @@
 #include "libft.h"
 
 /// Deallocate string
-/// @param as String to deallocate
-void		ft_strdel(char **as)
+/// @param memory String to deallocate
+void    ft_strdel(char **memory)
 {
-	if (as != NULL)
-	{
-		free(*as);
-		*as = NULL;
-	}
+    ft_memdel((void **) memory);
 }

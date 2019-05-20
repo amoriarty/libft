@@ -18,7 +18,7 @@
 /// @param length Size to compare
 /// @returns Zero if string are identicals, the difference between the two
 ///     first differing character otherwise
-int			ft_strncmp(const char *left, const char *right, size_t length)
+int ft_strncmp(const char *left, const char *right, size_t length)
 {
     return (ft_memcmp(left, right, length));
 }

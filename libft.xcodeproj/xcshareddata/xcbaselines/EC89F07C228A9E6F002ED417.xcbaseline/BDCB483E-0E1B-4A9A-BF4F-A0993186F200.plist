@@ -420,6 +420,19 @@
 				</dict>
 			</dict>
 		</dict>
+		<key>StrequTests</key>
+		<dict>
+			<key>testPerformance()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.00094092</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>Local Baseline</string>
+				</dict>
+			</dict>
+		</dict>
 		<key>StriterTests</key>
 		<dict>
 			<key>testPerfomance()</key>

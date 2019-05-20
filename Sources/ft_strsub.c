@@ -13,26 +13,15 @@
 #include "libft.h"
 
 /// Locate and copy a substring of a string into a newly allocated string
-/// @param s String to copy
-/// @param start Start of the substring in `s`
-/// @param len Length of the substring to copy
+/// @param source String to copy
+/// @param start Start of the substring in `source`
+/// @param length Length of the substring to copy
 /// @returns Newly allocated string, copy of the substring defined
-char		*ft_strsub(char const *s, unsigned int start, size_t len)
+char		*ft_strsub(char const *source, unsigned int start, size_t length)
 {
-	size_t		x;
-	char		*res;
+    char    *substring;
 
-	if (s == NULL)
-		return (NULL);
-	x = 0;
-	res = ft_strnew((len));
-	if (res == NULL)
-		return (NULL);
-	while (x < len)
-	{
-		res[x] = s[start];
-		x++;
-		start++;
-	}
-	return (res);
+    substring = ft_strnew(length);
+    ft_strncpy(substring, source + start, length);
+    return (substring);
 }

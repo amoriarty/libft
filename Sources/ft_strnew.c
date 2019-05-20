@@ -15,12 +15,14 @@
 /// Allocate a new string
 /// @param size Size to allocate
 /// @returns Newly allocated string
-char		*ft_strnew(size_t size)
+char    *ft_strnew(size_t size)
 {
-	char	*str;
+    char    *string;
 
-	if ((str = (char *)malloc(sizeof(char) * size + 1)) == NULL)
-		return (NULL);
-	ft_bzero(str, size + 1);
-	return (str);
+    if (size == 0)
+        return (NULL);
+    size += 1;
+    string = (char *) ft_memalloc(size);
+    ft_bzero(string, size);
+    return (string);
 }

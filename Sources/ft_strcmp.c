@@ -17,7 +17,7 @@
 /// @param right Right hand string to compare
 /// @returns Zero if strings are identicals, the difference between the two
 ///     first differing characters
-int			ft_strcmp(const char *left, const char *right)
+int ft_strcmp(const char *left, const char *right)
 {
     size_t  length;
     size_t  left_length;

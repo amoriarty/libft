@@ -13,9 +13,12 @@
 #include "libft.h"
 
 /// Write a string to a file descriptor
-/// @param s String to write
+/// @param string String to write
 /// @param fd File descriptor to write to
-void		ft_putstr_fd(char const *s, int fd)
+void		ft_putstr_fd(char const *string, int fd)
 {
-	write(fd, s, ft_strlen(s));
+    size_t  length;
+
+    length = ft_strlen(string);
+	write(fd, string, length);
 }

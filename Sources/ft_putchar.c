@@ -13,8 +13,8 @@
 #include "libft.h"
 
 /// Write a character to STDOUT
-/// @param c Character to write
-void		ft_putchar(char c)
+/// @param character Character to write
+void		ft_putchar(char character)
 {
-	ft_putchar_fd(c, STDOUT_FILENO);
+	ft_putchar_fd(character, STDOUT_FILENO);
 }

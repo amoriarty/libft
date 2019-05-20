@@ -13,9 +13,9 @@
 #include "libft.h"
 
 /// Printing character test (space character inclusive)
-/// @param c Character to test
+/// @param character Character to test
 /// @returns True is character is a printing character, false otherwise
-t_bool  ft_isprint(int c)
+t_bool  ft_isprint(int character)
 {
-    return (c > 31 && c < 127);
+    return (character > 31 && character < 127);
 }

@@ -17,9 +17,9 @@
 /// @returns Converted string
 char    *ft_itoa(int number)
 {
-    int     quotient;
-    int     absolute;
     int     iterator;
+    int     absolute;
+    int     remainder;
     char    result[12];
 
     if (number == 0)
@@ -32,9 +32,9 @@ char    *ft_itoa(int number)
     while (absolute > 0)
     {
         iterator -= 1;
-        quotient = absolute % 10;
-        result[iterator] = ft_tochar(quotient);
-        absolute -= quotient;
+        remainder = absolute % 10;
+        result[iterator] = ft_tochar(remainder);
+        absolute -= remainder;
         absolute /= 10;
     }
     if (number < 0)

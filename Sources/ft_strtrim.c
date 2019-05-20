@@ -13,33 +13,18 @@
 #include "libft.h"
 
 /// Trim blank character at start and end of a string
-/// @param s String to trim
+/// @param source String to trim
 /// @returns Newly allocated string without blank character
-char			*ft_strtrim(char const *s)
+char			*ft_strtrim(char const *source)
 {
-	int		i;
-	int		x;
-	char	*res;
+    unsigned int    start;
+    size_t          end;
 
-	if (s == NULL)
-		return (NULL);
-	i = 0;
-	x = 0;
-	if ((res = ft_strnew(ft_strlen(s))) == NULL)
-		return (NULL);
-	while (ft_isblank(s[i]) == TRUE)
-		i++;
-	while (s[i] != '\0')
-	{
-		res[x] = s[i];
-		i++;
-		x++;
-	}
-	x--;
-	while (ft_isblank(res[x]) == TRUE)
-	{
-		res[x] = '\0';
-		x--;
-	}
-	return (res);
+    start = 0;
+    end = ft_strlen(source) - 1;
+    while (ft_isblank(source[start]))
+        start += 1;
+    while (ft_isblank(source[end]))
+        end -= 1;
+    return ft_strsub(source, start, end - start + 1);
 }

@@ -46,6 +46,18 @@ char    *ft_strstr(const char *haystack, const char *needle);
 char    *ft_strnstr(const char *haystack, const char *needle, size_t length);
 int     ft_strcmp(const char *left, const char *right);
 int     ft_strncmp(const char *left, const char *right, size_t length);
+char    *ft_strnew(size_t size);
+void    ft_strdel(char **memory);
+void    ft_strclr(char *string);
+void    ft_striter(char *string, void (*function)(char *));
+void    ft_striteri(char *string, void (*function)(unsigned int, char *));
+char    *ft_strmap(char const *source, char (*function)(char));
+char    *ft_strmapi(char const *source, char (*function)(unsigned int, char));
+t_bool  ft_strequ(char const *left, char const *right);
+t_bool  ft_strnequ(char const *left, char const *right, size_t length);
+char    *ft_strsub(char const *source, unsigned int start, size_t length);
+char    *ft_strjoin(char const *left, char const *right);
+char    *ft_strtrim(char const *source);
 
 t_bool  ft_isupper(int character);
 t_bool  ft_islower(int character);
@@ -75,19 +87,6 @@ void    ft_putstr_fd(char const *s, int fd);
 void    ft_putendl_fd(char const *s, int fd);
 void    ft_putnbr_fd(int n, int fd);
 
-char    *ft_strnew(size_t size);
-void    ft_strdel(char **as);
-void    ft_strclr(char *s);
-void    ft_striter(char *s, void(*f)(char *));
-void    ft_striteri(char *s, void(*f)(unsigned int, char *));
-char    *ft_strmap(char const *s, char (*f)(char));
-char    *ft_strmapi(char const *s, char (*f)(unsigned int, char));
-int	    ft_strequ(char const *s1, char const *s2);
-int	    ft_strnequ(char const *s1, char const *s2, size_t n);
-char    *ft_strsub(char const *s, unsigned int start, size_t len);
-char    *ft_strjoin(char const *s1, char const *s2);
-
-char    *ft_strtrim(char const *s);
 char    **ft_strsplit(char const *s, char c);
 int	    get_next_line(const int fd, char **line);
 

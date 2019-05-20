@@ -17,7 +17,10 @@
 size_t  ft_digitlen(int number)
 {
     char    *string;
+    size_t  length;
 
     string = ft_itoa(number);
-    return (ft_strlen(string));
+    length = ft_strlen(string);
+    ft_strdel(&string);
+    return (length);
 }

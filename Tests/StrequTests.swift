@@ -14,17 +14,17 @@ class StrequTests: XCTestCase {
         let left = "ft_strequ: basics test"
         let right = "ft_strequ: basics tests"
 
-        XCTAssert(ft_strequ(left, left) == 1)
-        XCTAssert(ft_strequ(left, right) == 0)
+        XCTAssert(ft_strequ(left, left) == TRUE)
+        XCTAssert(ft_strequ(left, right) == FALSE)
     }
 
     func testLargeSize() {
         let source = String(repeating: "A", count: 0xFFFFFF)
-        XCTAssert(ft_strequ(source, source) == 1)
+        XCTAssert(ft_strequ(source, source) == TRUE)
     }
 
     func testEmpty() {
-        XCTAssert(ft_strequ("", "") == 1)
+        XCTAssert(ft_strequ("", "") == TRUE)
     }
 
     func testPerformance() {

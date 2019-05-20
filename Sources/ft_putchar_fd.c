@@ -13,9 +13,9 @@
 #include "libft.h"
 
 /// Write a character on a file descriptor
-/// @param c Character to write
+/// @param character Character to write
 /// @param fd File descriptor to write to
-void		ft_putchar_fd(char c, int fd)
+void		ft_putchar_fd(char character, int fd)
 {
-	write(fd, &c, 1);
+	write(fd, &character, 1);
 }

@@ -13,13 +13,13 @@
 #include "libft.h"
 
 /// Write an integer to a file descriptor
-/// @param n Integer to write
+/// @param number Integer to write
 /// @param fd File descriptor to write to
-void		ft_putnbr_fd(int n, int fd)
+void		ft_putnbr_fd(int number, int fd)
 {
-	char	*tmp;
+	char	*string;
 
-	tmp = ft_itoa(n);
-	ft_putstr_fd(ft_itoa(n), fd);
-	free(tmp);
+	string = ft_itoa(number);
+	ft_putstr_fd(string, fd);
+    ft_strdel(&string);
 }

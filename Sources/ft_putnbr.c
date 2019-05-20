@@ -13,8 +13,8 @@
 #include "libft.h"
 
 /// Write an integer to STDOUT
-/// @param n Integer to write
-void		ft_putnbr(int n)
+/// @param number Integer to write
+void		ft_putnbr(int number)
 {
-	ft_putnbr_fd(n, STDOUT_FILENO);
+	ft_putnbr_fd(number, STDOUT_FILENO);
 }

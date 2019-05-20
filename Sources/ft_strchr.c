@@ -22,16 +22,4 @@ char    *ft_strchr(const char *source, int character)
 
     length = ft_strlen(source);
     return ((char *) ft_memchr(source, character, length));
-//    char    *tmp;
-//
-//    tmp = (char *)s;
-//    while (*tmp)
-//    {
-//        if (*tmp == c)
-//            return (tmp);
-//        tmp++;
-//    }
-//    if (*tmp == c)
-//        return (tmp);
-//    return (NULL);
 }

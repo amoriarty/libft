@@ -12,30 +12,23 @@
 
 #include "libft.h"
 
-/// Apply function `f` with an index parameter to string into a newly allocated string
-/// @param s String to apply `f` to
-/// @param f Function to apply on string
-/// @returns Newly allocated string where `f` is applied
-char		*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+/// Apply function `function` with an index parameter to string into a newly allocated string
+/// @param source String to apply `function` to
+/// @param function Function to apply on string
+/// @returns Newly allocated string where `function` is applied
+char    *ft_strmapi(char const *source, char (*function)(unsigned int, char))
 {
-	unsigned int	i;
-	unsigned int	len;
-	char			*map;
+    size_t          length;
+    char            *mapped;
+    unsigned int    iterator;
 
-	if (s == NULL || f == NULL)
-		return (NULL);
-	i = 0;
-	len = ft_strlen(s);
-	map = ft_strnew(ft_strlen(s));
-	if (map == NULL)
-		return (NULL);
-	if (f == NULL)
-		return (ft_strdup(s));
-	while (i < len)
-	{
-		map[i] = (*f)(i, s[i]);
-		i++;
-	}
-	map[i] = '\0';
-	return (map);
+    iterator = 0;
+    length = ft_strlen(source);
+    mapped = ft_strnew(length);
+    while (source[iterator])
+    {
+        mapped[iterator] = (*function)(iterator, source[iterator]);
+        iterator += 1;
+    }
+    return (mapped);
 }

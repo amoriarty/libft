@@ -13,8 +13,8 @@
 #include "libft.h"
 
 /// Write a string to STDOUT, follow by a carriage return.
-/// @param s String to write on STDOUT.
-void		ft_putendl(char const *s)
+/// @param string String to write on STDOUT.
+void		ft_putendl(char const *string)
 {
-	ft_putendl_fd(s, STDOUT_FILENO);
+	ft_putendl_fd(string, STDOUT_FILENO);
 }

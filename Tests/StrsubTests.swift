@@ -24,9 +24,7 @@ class StrsubTests: XCTestCase {
         let source = "ft_strsub: no size test"
         let buffer = ft_strsub(source, 0, 0)
 
-        XCTAssert(buffer != nil)
-        XCTAssert(memcmp(buffer!, "", 2) == 0)
-
+        XCTAssert(buffer == nil)
         free(buffer)
     }
 

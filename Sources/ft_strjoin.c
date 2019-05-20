@@ -13,28 +13,17 @@
 #include "libft.h"
 
 /// Concatenate string into a newly allocate string
-/// @param s1 Left hand string to concatenate
-/// @param s2 Right hand string to concatenate
+/// @param left Left hand string to concatenate
+/// @param right Right hand string to concatenate
 /// @returns Newly allocated string, concatanation of the two strings
-char		*ft_strjoin(char const *s1, char const *s2)
+char		*ft_strjoin(char const *left, char const *right)
 {
-	int		i;
-	int		x;
-	char	*res;
+    size_t  length;
+    char    *joined;
 
-	if (s1 == NULL)
-		return (ft_strdup(s2));
-	if (s2 == NULL)
-		return (NULL);
-	i = 0;
-	x = 0;
-	if ((res = ft_strnew(ft_strlen(s1) + ft_strlen(s2))) == NULL)
-		return (NULL);
-	while (s1[i] != '\0')
-		res[x++] = s1[i++];
-	i = 0;
-	while (s2[i] != '\0')
-		res[x++] = s2[i++];
-	res[x] = '\0';
-	return (res);
+    length = ft_strlen(left) + ft_strlen(right);
+    joined = ft_strnew(length);
+    ft_strcpy(joined, left);
+    ft_strcat(joined, right);
+    return (joined);
 }

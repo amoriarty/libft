@@ -19,11 +19,6 @@ class StrmapiTests: XCTestCase {
         free(mapped)
     }
 
-    func testNull() {
-        let mapped = ft_strmapi(nil) { Int8(toupper(Int32($1))) }
-        XCTAssert(mapped == nil)
-    }
-
     func testPerfomance() {
         let source = "hello world!"
 
