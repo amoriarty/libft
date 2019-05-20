@@ -13,17 +13,9 @@
 #include "libft.h"
 
 /// Write zeroes to a byte string
-/// @param s String to write zeroes on
-/// @param n Size of the string
-void		ft_bzero(void *s, size_t n)
+/// @param buffer String to write zeroes on
+/// @param length Size of the string
+void		ft_bzero(void *buffer, size_t length)
 {
-	size_t		i;
-
-	i = 0;
-	while (i < n)
-	{
-		*(char *)s = 0;
-		s++;
-		i++;
-	}
+    ft_memset(buffer, 0, length);
 }

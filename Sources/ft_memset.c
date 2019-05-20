@@ -13,22 +13,23 @@
 #include "libft.h"
 
 /// Fill a byte string with a byte value
-/// @param b Destination memory
-/// @param c Byte value to write
-/// @param len Size to write
+/// @param buffer Destination memory
+/// @param character Byte value to write
+/// @param length Size to write
 /// @returns Start of memory pointer
-void		*ft_memset(void *b, int c, size_t len)
+void		        *ft_memset(void *buffer, int character, size_t length)
 {
-	size_t		i;
-	char		*pb;
+    size_t          iterator;
+    unsigned char   *pointer;
 
-	i = 0;
-	pb = (char *)b;
-	while (i < len)
-	{
-		*(char *)b = (char)c;
-		b++;
-		i++;
-	}
-	return ((void *)pb);
+    iterator = 0;
+    pointer = (unsigned char *)buffer;
+    if (buffer == NULL)
+        return (NULL);
+    while (iterator < length)
+    {
+        *(pointer + iterator) = (unsigned char)character;
+        iterator += 1;
+    }
+    return (buffer);
 }

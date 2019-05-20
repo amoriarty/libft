@@ -280,7 +280,11 @@
 			isa = PBXGroup;
 			children = (
 				EC89F010228A9C65002ED417 /* ft_atoi.c */,
+				EC89F011228A9C65002ED417 /* ft_itoa.c */,
 				EC89F013228A9C65002ED417 /* ft_bzero.c */,
+				EC89EFF5228A9C63002ED417 /* ft_memset.c */,
+				EC89F026228A9C67002ED417 /* ft_memcpy.c */,
+				EC89F009228A9C64002ED417 /* ft_memccpy.c */,
 				EC89F01A228A9C66002ED417 /* ft_digitlen.c */,
 				EC89F030228A9C68002ED417 /* ft_isalnum.c */,
 				EC89F005228A9C64002ED417 /* ft_isalpha.c */,
@@ -288,15 +292,11 @@
 				EC89F032228A9C68002ED417 /* ft_isblank.c */,
 				EC89F00E228A9C65002ED417 /* ft_isdigit.c */,
 				EC89F023228A9C67002ED417 /* ft_isprint.c */,
-				EC89F011228A9C65002ED417 /* ft_itoa.c */,
 				EC89F00D228A9C65002ED417 /* ft_memalloc.c */,
-				EC89F009228A9C64002ED417 /* ft_memccpy.c */,
 				EC89F019228A9C66002ED417 /* ft_memchr.c */,
 				EC89F034228A9C68002ED417 /* ft_memcmp.c */,
-				EC89F026228A9C67002ED417 /* ft_memcpy.c */,
 				EC89EFF9228A9C63002ED417 /* ft_memdel.c */,
 				EC89F007228A9C64002ED417 /* ft_memmove.c */,
-				EC89EFF5228A9C63002ED417 /* ft_memset.c */,
 				EC89F006228A9C64002ED417 /* ft_putchar_fd.c */,
 				EC89F02C228A9C68002ED417 /* ft_putchar.c */,
 				EC89F001228A9C64002ED417 /* ft_putendl_fd.c */,
@@ -342,6 +342,8 @@
 		EC89F07E228A9E6F002ED417 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				EC8C1F34228B01BA0032719E /* BzeroTests.swift */,
+				EC89F07F228A9E6F002ED417 /* MemsetTests.swift */,
 				EC3E1647228C48BF00810DE7 /* DigitlenTests.swift */,
 				EC3E1645228C458C00810DE7 /* PutnbrTests.swift */,
 				EC3E1643228C452900810DE7 /* PutendlTests.swift */,
@@ -389,8 +391,6 @@
 				EC8C1F3A228B13D90032719E /* MemmoveTests.swift */,
 				EC8C1F38228B0E450032719E /* MemccpyTests.swift */,
 				EC8C1F36228B04A20032719E /* MemcpyTests.swift */,
-				EC8C1F34228B01BA0032719E /* BzeroTests.swift */,
-				EC89F07F228A9E6F002ED417 /* MemsetTests.swift */,
 				EC3E163F228C423500810DE7 /* FileHelper.swift */,
 				EC89F081228A9E6F002ED417 /* Info.plist */,
 				EC89F089228AA1CB002ED417 /* Tests-Bridging-Header.h */,
