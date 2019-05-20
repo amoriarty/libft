@@ -27,7 +27,7 @@ typedef char	t_bool;
 void            ft_bzero(void *buffer, size_t length);
 void            *ft_memset(void *buffer, unsigned int character, size_t length);
 void            *ft_memcpy(void *destination, const void *source, size_t length);
-void            *ft_memccpy(void *dst, const void *src, int c, size_t n);
+void            *ft_memccpy(void *destination, const void *source, int c, size_t length);
 void			ft_putchar(char c);
 void			ft_putstr(char const *s);
 void			ft_putnbr(int n);

@@ -12,28 +12,25 @@
 
 #include "libft.h"
 
-/// Copy string until character found
-/// @param dst Destination string
-/// @param src Source string
-/// @param c Character stoping copy to be executed
-/// @param n Size to copy
-/// @returns Destination string
-void		*ft_memccpy(void *dst, const void *src, int c, size_t n)
+/// Copy string until character found, including it
+/// @param destination Destination string
+/// @param source Source string
+/// @param character Character stoping copy to be executed
+/// @param length Size to copy
+/// @returns Pointer after founded character in destination string, NULL otherwise
+void		*ft_memccpy(void *destination, const void *source, int character, size_t length)
 {
-	size_t		i;
+    void    *character_pointer;
+    size_t  adjusted_length;
 
-	i = 0;
-	while (i < n)
-	{
-		*(unsigned char *)dst = *(unsigned char *)src;
-		if (*(unsigned char *)dst == (unsigned char)c)
-		{
-			dst++;
-			return (dst);
-		}
-		i++;
-		dst++;
-		src++;
-	}
-	return (NULL);
+    if (destination == NULL)
+        return (NULL);
+    if (source == NULL)
+        return (destination);
+    character_pointer = ft_memchr(source, character, length);
+    adjusted_length = character_pointer != NULL
+                        ? (size_t) (character_pointer - source) + 1
+                        : length;
+    ft_memcpy(destination, source, adjusted_length);
+    return (character_pointer != NULL ? destination + adjusted_length : NULL);
 }

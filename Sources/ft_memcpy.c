@@ -23,7 +23,9 @@ void		*ft_memcpy(void *destination, const void *source, size_t length)
 
     iterator = 0;
     if (destination == NULL || source == NULL)
-        return (destination != NULL ? destination : NULL);
+        return (NULL);
+    if (source == NULL)
+        return (destination);
     while (iterator < length) {
         ft_memset(destination + iterator, *(unsigned char *)(source + iterator), 1);
         iterator += 1;
