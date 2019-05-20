@@ -40,6 +40,8 @@ char    *ft_strchr(const char *source, int character);
 char    *ft_strrchr(const char *source, int character);
 char    *ft_strstr(const char *haystack, const char *needle);
 char    *ft_strnstr(const char *haystack, const char *needle, size_t length);
+int     ft_strcmp(const char *left, const char *right);
+int     ft_strncmp(const char *left, const char *right, size_t length);
 
 void    ft_putchar(char c);
 void    ft_putstr(char const *s);
@@ -50,8 +52,6 @@ void    ft_putstr_fd(char const *s, int fd);
 void    ft_putendl_fd(char const *s, int fd);
 void    ft_putnbr_fd(int n, int fd);
 int	    ft_atoi(const char *str);
-int	    ft_strcmp(const char *s1, const char *s2);
-int	    ft_strncmp(const char *s1, const char *s2, size_t n);
 int	    ft_isalpha(int c);
 int	    ft_isdigit(int c);
 int	    ft_isalnum(int c);

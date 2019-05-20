@@ -16,7 +16,6 @@ class StrcmpTests: XCTestCase {
 
         XCTAssert(ft_strcmp(left, left) == strcmp(left, left))
         XCTAssert(ft_strcmp(left, right) == strcmp(left, right))
-        XCTAssert(ft_strcmp(left, right) == strcmp(left, right))
     }
 
     func testLargeSize() {
