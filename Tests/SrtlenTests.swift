@@ -25,10 +25,6 @@ class SrtlenTests: XCTestCase {
         XCTAssert(ft_strlen(source) == source.count)
     }
 
-    func testNull() {
-        XCTAssert(ft_strlen(nil) == 0)
-    }
-
     func testPerfomance() {
         let source = "ft_strlen: perfomance test"
 

@@ -27,8 +27,6 @@ int			ft_memcmp(const void *left, const void *right, size_t length)
     iterator = 0;
     left_pointer = (unsigned char *) left;
     right_pointer = (unsigned char *) right;
-    if (left == NULL || right == NULL)
-        return (0);
     while (iterator < length)
     {
         if (left_pointer[iterator] != right_pointer[iterator])

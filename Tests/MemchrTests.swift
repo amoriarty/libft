@@ -44,10 +44,6 @@ class MemchrTests: XCTestCase {
         XCTAssert(ft_memchr(source, 0, 0) == nil)
     }
 
-    func testNull() {
-        XCTAssert(ft_memchr(nil, 0, 42) == nil)
-    }
-
     func testPerfomance() {
         let source = "ft_memchr: basic tests"
 

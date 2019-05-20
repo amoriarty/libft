@@ -13,21 +13,14 @@
 #include "libft.h"
 
 /// Save a copy of a string
-/// @param s1 String to copy
+/// @param source String to copy
 /// @return Newly allocated copied string 
-char		*ft_strdup(const char *s1)
+char		*ft_strdup(const char *source)
 {
-	int		i;
-	char	*s2;
+    char    *duplicate;
+    size_t  length;
 
-	i = 0;
-	if (!(s2 = ft_strnew(ft_strlen(s1))))
-		return (NULL);
-	while (s1[i] != '\0')
-	{
-		s2[i] = s1[i];
-		i++;
-	}
-	s2[i] = '\0';
-	return (s2);
+    length = ft_strlen(source);
+    duplicate = ft_strnew(length);
+    return (ft_strcpy(duplicate, source));
 }

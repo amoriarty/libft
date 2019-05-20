@@ -57,16 +57,6 @@ class MemccpyTests: XCTestCase {
         free(buffer)
     }
 
-    func testNull() {
-        let character: Int32 = 58
-        let source = "ft_memccpy: no size test"
-        let buffer = malloc(source.count)!
-
-        XCTAssert(ft_memccpy(buffer, nil, character, source.count) == buffer)
-        XCTAssert(ft_memccpy(nil, source, character, source.count) == nil)
-        XCTAssert(ft_memccpy(nil, nil, character, source.count) == nil)
-    }
-
     func testPerformance() {
         let source = "ft_memccpy: basic tests"
         let buffer = malloc(source.count)!

@@ -24,13 +24,6 @@ class MemcmpTests: XCTestCase {
         XCTAssert(ft_memcmp(source, source, source.count) == 0)
     }
 
-    func testNull() {
-        let source = "ft_memcmp: null test"
-        XCTAssert(ft_memcmp(nil, source, source.count) == 0)
-        XCTAssert(ft_memcmp(source, nil, source.count) == 0)
-        XCTAssert(ft_memcmp(nil, nil, source.count) == 0)
-    }
-
     func testPerformance() {
         let source = "ft_memcmp: performance test"
 

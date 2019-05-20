@@ -23,10 +23,6 @@ void    *ft_memccpy(void *destination, const void *source, int character, size_t
     void    *character_pointer;
     size_t  adjusted_length;
 
-    if (destination == NULL)
-        return (NULL);
-    if (source == NULL)
-        return (destination);
     character_pointer = ft_memchr(source, character, length);
     adjusted_length = character_pointer != NULL
                         ? (size_t) (character_pointer - source) + 1

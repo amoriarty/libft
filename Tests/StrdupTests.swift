@@ -39,10 +39,6 @@ class StrdupTests: XCTestCase {
         free(buffer)
     }
 
-    func testNull() {
-        XCTAssert(ft_strdup(nil) == nil)
-    }
-
     func testPerfomance() {
         let source = "ft_strdup: perfomance test"
 
