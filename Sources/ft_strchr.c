@@ -16,7 +16,7 @@
 /// @param source String where locate character
 /// @param character Character to locate in string
 /// @returns Pointer to character find in string
-char    *ft_strchr(const char *source, unsigned int character)
+char    *ft_strchr(const char *source, int character)
 {
     size_t  length;
 

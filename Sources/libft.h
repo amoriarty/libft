@@ -36,7 +36,8 @@ char    *ft_strcpy(char *destination, const char *source);
 char    *ft_strncpy(char *destination, const char *source, size_t length);
 char    *ft_strcat(char *left, const char *right);
 char    *ft_strncat(char *left, const char *right, size_t length);
-char    *ft_strchr(const char *source, unsigned int character);
+char    *ft_strchr(const char *source, int character);
+char    *ft_strrchr(const char *source, int character);
 
 void    ft_putchar(char c);
 void    ft_putstr(char const *s);
@@ -46,7 +47,6 @@ void    ft_putchar_fd(char c, int fd);
 void    ft_putstr_fd(char const *s, int fd);
 void    ft_putendl_fd(char const *s, int fd);
 void    ft_putnbr_fd(int n, int fd);
-char    *ft_strrchr(const char *s, int c);
 char    *ft_strstr(const char *s1, const char *s2);
 char    *ft_strnstr(const char *s1, const char *s2, size_t n);
 int	    ft_atoi(const char *str);

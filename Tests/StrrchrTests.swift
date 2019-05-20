@@ -31,10 +31,6 @@ class StrrchrTests: XCTestCase {
         XCTAssert(ft_strrchr(source, character) == strrchr(source, character))
     }
 
-    func testNull() {
-        XCTAssert(ft_strrchr(nil, 58) == nil)
-    }
-
     func testPerfomance() {
         let character: Int32 = 58
         let source = "ft_strrchr: perfomance test"

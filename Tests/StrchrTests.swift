@@ -11,25 +11,25 @@ import XCTest
 class StrchrTests: XCTestCase {
 
     func testBasic() {
-        let foundable: UInt32 = 58
-        let notFoundable: UInt32 = 90
+        let foundable: Int32 = 58
+        let notFoundable: Int32 = 90
         let source = "ft_strchr: basic test"
 
 
-        XCTAssert(memcmp(ft_strchr(source, foundable), strchr(source, Int32(foundable)), source.count) == 0)
+        XCTAssert(memcmp(ft_strchr(source, foundable), strchr(source, foundable), source.count) == 0)
         XCTAssert(ft_strchr(source, notFoundable) == strchr(source, Int32(notFoundable)))
     }
 
     func testLargeSize() {
-        let character: UInt32 = 58
+        let character: Int32 = 58
         let source = String(repeating: "A", count: 0xFFFFFFF)
-        XCTAssert(ft_strchr(source, character) == strchr(source, Int32(character)))
+        XCTAssert(ft_strchr(source, character) == strchr(source, character))
     }
 
     func testEmpty() {
-        let character: UInt32 = 58
+        let character: Int32 = 58
         let source = ""
-        XCTAssert(ft_strchr(source, character) == strchr(source, Int32(character)))
+        XCTAssert(ft_strchr(source, character) == strchr(source, character))
     }
 
     func testPerfomance() {
@@ -38,7 +38,7 @@ class StrchrTests: XCTestCase {
 
         measure {
             for _ in 0...1000 {
-                ft_strchr(source, UInt32(character))
+                ft_strchr(source, character)
             }
         }
     }
