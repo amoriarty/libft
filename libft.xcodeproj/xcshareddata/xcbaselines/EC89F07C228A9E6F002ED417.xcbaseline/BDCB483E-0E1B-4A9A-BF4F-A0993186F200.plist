@@ -95,6 +95,19 @@
 				</dict>
 			</dict>
 		</dict>
+		<key>IsLowerTests</key>
+		<dict>
+			<key>testPerfomance()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.18476</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>Local Baseline</string>
+				</dict>
+			</dict>
+		</dict>
 		<key>IsPrintTests</key>
 		<dict>
 			<key>testPerformance()</key>
@@ -103,6 +116,19 @@
 				<dict>
 					<key>baselineAverage</key>
 					<real>0.16858</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>Local Baseline</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>IsUpperTests</key>
+		<dict>
+			<key>testPerfomance()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.16148</real>
 					<key>baselineIntegrationDisplayName</key>
 					<string>Local Baseline</string>
 				</dict>

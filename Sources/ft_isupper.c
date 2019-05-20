@@ -11,7 +11,6 @@
 /// Alphabetic uppercase character test
 /// @param character Character to test
 /// @returns True is character is alphabetic and uppercase, false otherwise
-#warning 'ft_isupper' didn't have tests
 t_bool  ft_isupper(int character)
 {
     return (character >= 'A' && character <= 'Z');
