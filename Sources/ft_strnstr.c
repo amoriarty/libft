@@ -13,32 +13,22 @@
 #include "libft.h"
 
 /// Locate a substring in a string
-/// @param s1 String to locate substring in
-/// @param s2 Substring to locate string
-/// @param n Size to search for
+/// @param haystack String to locate substring in
+/// @param needle Substring to locate string
+/// @param length Size to search for
 /// @returns Pointer to head of the needle in the haystack if found, NULL otherwise
-char				*ft_strnstr(const char *s1, const char *s2, size_t n)
+char    *ft_strnstr(const char *haystack, const char *needle, size_t length)
 {
-	size_t		i;
-	size_t		x;
+    size_t  iterator;
+    size_t  needle_length;
 
-	i = -1;
-	if (!(s2[0]))
-		return ((char *)s1);
-	if (n == 0)
-		return (NULL);
-	while (s1[++i] && i < n && (ft_strlen(s2) + i <= n))
-	{
-		x = 0;
-		if (s1[i] == s2[x])
-		{
-			while (s1[i + x] == s2[x] && s1[i + x] && s2[x])
-			{
-				x++;
-				if (!(s2[x]))
-					return ((char *)s1 + i);
-			}
-		}
-	}
-	return (NULL);
+    iterator = 0;
+    needle_length = ft_strlen(needle);
+    while (iterator < length)
+    {
+        if (ft_strncmp(haystack + iterator, needle, needle_length) == 0)
+            return ((char *) haystack + iterator);
+        iterator += 1;
+    }
+    return (NULL);
 }

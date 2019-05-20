@@ -36,13 +36,6 @@ class StrnstrTests: XCTestCase {
         XCTAssert(ft_strnstr(haystack, needle, haystack.count) == strnstr(haystack, needle, haystack.count))
     }
 
-    func testNull() {
-        let haystack = "ft_strnstr: null test"
-        let needle = "ft_strnstr"
-        XCTAssert(ft_strnstr(nil, needle, haystack.count) == nil)
-        XCTAssert(ft_strnstr(haystack, nil, haystack.count) == nil)
-    }
-
     func testPerfomance() {
         let haystack = "ft_strnstr: perfomance test"
         let needle = "ft_strnstr"

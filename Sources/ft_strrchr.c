@@ -16,7 +16,7 @@
 /// @param source String where locate character
 /// @param character Character to locate in string
 /// @returns Pointer to character find in string
-char		*ft_strrchr(const char *source, int character)
+char    *ft_strrchr(const char *source, int character)
 {
     int iterator;
 

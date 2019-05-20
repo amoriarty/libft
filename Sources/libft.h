@@ -38,6 +38,8 @@ char    *ft_strcat(char *left, const char *right);
 char    *ft_strncat(char *left, const char *right, size_t length);
 char    *ft_strchr(const char *source, int character);
 char    *ft_strrchr(const char *source, int character);
+char    *ft_strstr(const char *haystack, const char *needle);
+char    *ft_strnstr(const char *haystack, const char *needle, size_t length);
 
 void    ft_putchar(char c);
 void    ft_putstr(char const *s);
@@ -47,8 +49,6 @@ void    ft_putchar_fd(char c, int fd);
 void    ft_putstr_fd(char const *s, int fd);
 void    ft_putendl_fd(char const *s, int fd);
 void    ft_putnbr_fd(int n, int fd);
-char    *ft_strstr(const char *s1, const char *s2);
-char    *ft_strnstr(const char *s1, const char *s2, size_t n);
 int	    ft_atoi(const char *str);
 int	    ft_strcmp(const char *s1, const char *s2);
 int	    ft_strncmp(const char *s1, const char *s2, size_t n);
