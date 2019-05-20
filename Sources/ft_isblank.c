@@ -15,10 +15,12 @@
 /// Space or tab character test
 /// @param c Character to test
 /// @returns True if character is a space or tab, false otherwise
-int			ft_isblank(int c)
+t_bool ft_isblank(int c)
 {
-	if (c == ' ' || c == '\n' || c == '\t'
-			|| c == '\a' || c == '\v' || c == '\f')
-		return (TRUE);
-	return (FALSE);
+	return ((c == ' '
+            || c == '\n'
+            || c == '\t'
+            || c == '\a'
+            || c == '\v'
+            || c == '\f') ? TRUE : FALSE);
 }

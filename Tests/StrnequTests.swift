@@ -37,7 +37,7 @@ class StrnequTests: XCTestCase {
     }
 
     func testEmpty() {
-        XCTAssert(ft_strcmp("", "") == 1)
+        XCTAssert(ft_strnequ("", "", 1) == 1)
     }
 
     func testPerformance() {

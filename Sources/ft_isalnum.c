@@ -13,9 +13,9 @@
 #include "libft.h"
 
 /// Alphanumeric character test
-/// @param c Character to test
+/// @param character Character to test
 /// @return True if character is alphanumerical, false otherwise
-int			ft_isalnum(int c)
+t_bool  ft_isalnum(int character)
 {
-	return ((ft_isalpha(c) == TRUE || ft_isdigit(c) == TRUE) ? TRUE : FALSE);
+    return (ft_isalpha(character) || ft_isdigit(character));
 }

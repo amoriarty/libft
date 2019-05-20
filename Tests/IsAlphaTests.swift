@@ -12,7 +12,7 @@ class IsAlphaTests: XCTestCase {
 
     func testBasic() {
         for character: Int32 in 0...127 {
-            XCTAssert(ft_isalpha(character) == isalpha(character))
+            XCTAssert(ft_isalpha(character).rawValue == isalpha(character))
         }
     }
 

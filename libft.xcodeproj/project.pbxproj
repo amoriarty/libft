@@ -18,6 +18,8 @@
 		EC3E1644228C452900810DE7 /* PutendlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1643228C452900810DE7 /* PutendlTests.swift */; };
 		EC3E1646228C458C00810DE7 /* PutnbrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1645228C458C00810DE7 /* PutnbrTests.swift */; };
 		EC3E1648228C48BF00810DE7 /* DigitlenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1647228C48BF00810DE7 /* DigitlenTests.swift */; };
+		EC64C7592292BB9700958375 /* ft_isupper.c in Sources */ = {isa = PBXBuildFile; fileRef = EC64C7582292BB9700958375 /* ft_isupper.c */; };
+		EC64C75B2292BBDE00958375 /* ft_islower.c in Sources */ = {isa = PBXBuildFile; fileRef = EC64C75A2292BBDE00958375 /* ft_islower.c */; };
 		EC89F036228A9C68002ED417 /* ft_strnew.c in Sources */ = {isa = PBXBuildFile; fileRef = EC89EFF3228A9C63002ED417 /* ft_strnew.c */; };
 		EC89F037228A9C68002ED417 /* libft.h in Headers */ = {isa = PBXBuildFile; fileRef = EC89EFF4228A9C63002ED417 /* libft.h */; };
 		EC89F038228A9C68002ED417 /* ft_memset.c in Sources */ = {isa = PBXBuildFile; fileRef = EC89EFF5228A9C63002ED417 /* ft_memset.c */; };
@@ -134,6 +136,8 @@
 		EC3E1643228C452900810DE7 /* PutendlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutendlTests.swift; sourceTree = "<group>"; };
 		EC3E1645228C458C00810DE7 /* PutnbrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutnbrTests.swift; sourceTree = "<group>"; };
 		EC3E1647228C48BF00810DE7 /* DigitlenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitlenTests.swift; sourceTree = "<group>"; };
+		EC64C7582292BB9700958375 /* ft_isupper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_isupper.c; sourceTree = "<group>"; };
+		EC64C75A2292BBDE00958375 /* ft_islower.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_islower.c; sourceTree = "<group>"; };
 		EC89EFEB228A9BC5002ED417 /* libft.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libft.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC89EFF3228A9C63002ED417 /* ft_strnew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_strnew.c; sourceTree = "<group>"; };
 		EC89EFF4228A9C63002ED417 /* libft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libft.h; sourceTree = "<group>"; };
@@ -291,13 +295,16 @@
 				EC89F028228A9C67002ED417 /* ft_strncmp.c */,
 				EC89F010228A9C65002ED417 /* ft_atoi.c */,
 				EC89F011228A9C65002ED417 /* ft_itoa.c */,
-				EC89F01A228A9C66002ED417 /* ft_digitlen.c */,
 				EC89F030228A9C68002ED417 /* ft_isalnum.c */,
 				EC89F005228A9C64002ED417 /* ft_isalpha.c */,
 				EC89F02E228A9C68002ED417 /* ft_isascii.c */,
 				EC89F032228A9C68002ED417 /* ft_isblank.c */,
 				EC89F00E228A9C65002ED417 /* ft_isdigit.c */,
 				EC89F023228A9C67002ED417 /* ft_isprint.c */,
+				EC64C7582292BB9700958375 /* ft_isupper.c */,
+				EC64C75A2292BBDE00958375 /* ft_islower.c */,
+				EC89F017228A9C66002ED417 /* ft_toupper.c */,
+				EC89EFF7228A9C63002ED417 /* ft_tolower.c */,
 				EC89F00D228A9C65002ED417 /* ft_memalloc.c */,
 				EC89EFF9228A9C63002ED417 /* ft_memdel.c */,
 				EC89F006228A9C64002ED417 /* ft_putchar_fd.c */,
@@ -321,8 +328,7 @@
 				EC89F024228A9C67002ED417 /* ft_strsplit.c */,
 				EC89F01D228A9C66002ED417 /* ft_strsub.c */,
 				EC89F012228A9C65002ED417 /* ft_strtrim.c */,
-				EC89EFF7228A9C63002ED417 /* ft_tolower.c */,
-				EC89F017228A9C66002ED417 /* ft_toupper.c */,
+				EC89F01A228A9C66002ED417 /* ft_digitlen.c */,
 				EC89EFFB228A9C63002ED417 /* get_next_line.c */,
 				EC89EFF4228A9C63002ED417 /* libft.h */,
 			);
@@ -350,6 +356,11 @@
 				ECA74CBD228C094B005E653D /* StrnstrTests.swift */,
 				ECA74CBF228C0A3F005E653D /* StrcmpTests.swift */,
 				ECA74CC1228C0B04005E653D /* StrncmpTests.swift */,
+				ECA74CCD228C1106005E653D /* IsPrintTests.swift */,
+				ECA74CCB228C10AF005E653D /* IsAsciiTests.swift */,
+				ECA74CC9228C1056005E653D /* IsAlnumTests.swift */,
+				ECA74CC7228C0FCB005E653D /* IsDigitTests.swift */,
+				ECA74CC5228C0F28005E653D /* IsAlphaTests.swift */,
 				EC3E1647228C48BF00810DE7 /* DigitlenTests.swift */,
 				EC3E1645228C458C00810DE7 /* PutnbrTests.swift */,
 				EC3E1643228C452900810DE7 /* PutendlTests.swift */,
@@ -373,11 +384,6 @@
 				ECA74CD3228C153C005E653D /* MemallocTests.swift */,
 				ECA74CD1228C1196005E653D /* ToLowerTests.swift */,
 				ECA74CCF228C1157005E653D /* ToUpperTests.swift */,
-				ECA74CCD228C1106005E653D /* IsPrintTests.swift */,
-				ECA74CCB228C10AF005E653D /* IsAsciiTests.swift */,
-				ECA74CC9228C1056005E653D /* IsAlnumTests.swift */,
-				ECA74CC7228C0FCB005E653D /* IsDigitTests.swift */,
-				ECA74CC5228C0F28005E653D /* IsAlphaTests.swift */,
 				ECA74CC3228C0C36005E653D /* AtoiTests.swift */,
 				EC3E163F228C423500810DE7 /* FileHelper.swift */,
 				EC89F081228A9E6F002ED417 /* Info.plist */,
@@ -493,6 +499,7 @@
 				EC89F05B228A9C69002ED417 /* ft_strcpy.c in Sources */,
 				EC89F078228A9C69002ED417 /* ft_strmap.c in Sources */,
 				EC89F06A228A9C69002ED417 /* ft_strclr.c in Sources */,
+				EC64C7592292BB9700958375 /* ft_isupper.c in Sources */,
 				EC89F054228A9C69002ED417 /* ft_itoa.c in Sources */,
 				EC89F071228A9C69002ED417 /* ft_isascii.c in Sources */,
 				EC89F05E228A9C69002ED417 /* ft_strcat.c in Sources */,
@@ -523,6 +530,7 @@
 				EC89F03D228A9C69002ED417 /* ft_strnequ.c in Sources */,
 				EC89F066228A9C69002ED417 /* ft_isprint.c in Sources */,
 				EC89F061228A9C69002ED417 /* ft_putstr_fd.c in Sources */,
+				EC64C75B2292BBDE00958375 /* ft_islower.c in Sources */,
 				EC89F053228A9C69002ED417 /* ft_atoi.c in Sources */,
 				EC89F065228A9C69002ED417 /* ft_strjoin.c in Sources */,
 				EC89F052228A9C69002ED417 /* ft_strrchr.c in Sources */,

@@ -13,9 +13,9 @@
 #include "libft.h"
 
 /// Alphabetic character test
-/// @param c Character to test
+/// @param character Character to test
 /// @returns True is character is alphabetic, false otherwise
-int			ft_isalpha(int c)
+t_bool  ft_isalpha(int character)
 {
-	return (((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')) ? TRUE : FALSE);
+    return (ft_islower(character) || ft_isupper(character));
 }

@@ -12,7 +12,7 @@ class IsPrintTests: XCTestCase {
 
     func testBasic() {
         for character: Int32 in 0...127 {
-            XCTAssert(ft_isprint(character) == isprint(character))
+            XCTAssert(ft_isprint(character).rawValue == isprint(character))
         }
     }
 

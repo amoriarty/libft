@@ -12,7 +12,7 @@ class IsAlnumTests: XCTestCase {
 
     func testBasic() {
         for character: Int32 in 0...127 {
-            XCTAssert(ft_isalnum(character) == isalnum(character))
+            XCTAssert(ft_isalnum(character).rawValue == isalnum(character))
         }
     }
 

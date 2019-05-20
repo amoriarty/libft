@@ -12,7 +12,7 @@ class IsAsciiTests: XCTestCase {
 
     func testBasic() {
         for character: Int32 in 0...256 {
-            XCTAssert(ft_isascii(character) == isascii(character))
+            XCTAssert(ft_isascii(character).rawValue == isascii(character))
         }
     }
 

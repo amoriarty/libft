@@ -12,38 +12,27 @@
 
 #include "libft.h"
 
-static int	ft_trim(char c)
-{
-	if (c == ' ' || c == '\t' || c == '\f' || c == '\v' || c == '\r'
-			|| c == '\n')
-		return (TRUE);
-	return (FALSE);
-}
-
 /// Convert ASCII string to integer
-/// @param str String to convert to integer
-#warning 'ft_atoi' isn't updated
-int ft_atoi(const char *str)
+/// @param string String to convert to integer
+int ft_atoi(const char *string)
 {
-	int		res;
-	int		i;
-	int		sign;
+    int     result;
+    int     iterator;
+    char    *trimmed;
 
-	sign = 1;
-	res = 0;
-	i = 0;
-	while (ft_trim(str[i]) && str[i])
-		i++;
-	if (str[i] == '-' || str[i] == '+')
-		i++;
-	if (str[i - 1] == '-')
-		sign = -1;
-	while (str[i])
-	{
-		if (str[i] < '0' || str[i] > '9')
-			return (res * sign);
-		res = res * 10 + (str[i] - '0');
-		i++;
-	}
-	return (res * sign);
+    result = 0;
+    trimmed = ft_strtrim(string);
+    iterator = trimmed[0] == '-' || trimmed[0] == '+' ? 1 : 0;
+    while (string[iterator])
+    {
+        if (!ft_isdigit(string[iterator]))
+            break;
+        result *= 10;
+        result += string[iterator] - '0';
+        iterator += 1;
+    }
+    if (trimmed[0] == '-')
+        result *= -1;
+    ft_strdel(&trimmed);
+    return (result);
 }

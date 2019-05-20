@@ -12,7 +12,7 @@ class IsDigitTests: XCTestCase {
 
     func testBasic() {
         for character: Int32 in 0...127 {
-            XCTAssert(ft_isdigit(character) == isdigit(character))
+            XCTAssert(ft_isdigit(character).rawValue == isdigit(character))
         }
     }
 

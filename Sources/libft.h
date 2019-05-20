@@ -12,17 +12,18 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# define TRUE 1
-# define FALSE 0
-# define SUCCESS 1
-# define FAILURE 0
-# define ERROR -1
-# define BUFF_SIZE 2048
 # include <unistd.h>
 # include <stdlib.h>
 # define EOL '\n'
+# define BUFF_SIZE 2048
+# define ERROR -1
 
-typedef char	t_bool;
+typedef enum e_bool t_bool;
+enum    e_bool
+{
+    FALSE,
+    TRUE
+};
 
 void    ft_bzero(void *buffer, size_t length);
 void    *ft_memset(void *buffer, unsigned int character, size_t length);
@@ -30,6 +31,7 @@ void    *ft_memcpy(void *destination, const void *source, size_t length);
 void    *ft_memccpy(void *destination, const void *source, int c, size_t length);
 void    *ft_memchr(const void *source, unsigned int character, size_t length);
 int     ft_memcmp(const void *left, const void *right, size_t length);
+
 size_t  ft_strlen(const char *source);
 char    *ft_strdup(const char *source);
 char    *ft_strcpy(char *destination, const char *source);
@@ -43,7 +45,21 @@ char    *ft_strnstr(const char *haystack, const char *needle, size_t length);
 int     ft_strcmp(const char *left, const char *right);
 int     ft_strncmp(const char *left, const char *right, size_t length);
 
+t_bool  ft_isupper(int character);
+t_bool  ft_islower(int character);
+t_bool  ft_isalpha(int character);
+t_bool  ft_isdigit(int character);
+t_bool  ft_isalnum(int character);
+t_bool  ft_isascii(int character);
+t_bool  ft_isprint(int character);
+t_bool  ft_isblank(int character);
+
+int     ft_toupper(int character);
+int     ft_tolower(int character);
+
 size_t  ft_digitlen(int number);
+int     ft_atoi(const char *string);
+char    *ft_itoa(int number);
 
 void    ft_putchar(char c);
 void    ft_putstr(char const *s);
@@ -53,15 +69,6 @@ void    ft_putchar_fd(char c, int fd);
 void    ft_putstr_fd(char const *s, int fd);
 void    ft_putendl_fd(char const *s, int fd);
 void    ft_putnbr_fd(int n, int fd);
-int	    ft_atoi(const char *str);
-int	    ft_isalpha(int c);
-int	    ft_isdigit(int c);
-int	    ft_isalnum(int c);
-int	    ft_isascii(int c);
-int	    ft_isprint(int c);
-int	    ft_isblank(int c);
-int	    ft_toupper(int c);
-int	    ft_tolower(int c);
 void    *ft_memalloc(size_t size);
 void    ft_memdel(void **ap);
 char    *ft_strnew(size_t size);
@@ -75,7 +82,7 @@ int	    ft_strequ(char const *s1, char const *s2);
 int	    ft_strnequ(char const *s1, char const *s2, size_t n);
 char    *ft_strsub(char const *s, unsigned int start, size_t len);
 char    *ft_strjoin(char const *s1, char const *s2);
-char    *ft_itoa(int n);
+
 char    *ft_strtrim(char const *s);
 char    **ft_strsplit(char const *s, char c);
 int	    get_next_line(const int fd, char **line);
