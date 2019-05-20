@@ -11,10 +11,10 @@ import XCTest
 class MemchrTests: XCTestCase {
 
     func testBasic() {
-        let foundable: Int32 = 58
-        let notFoundable: Int32 = 90
+        let foundable: UInt32 = 58
+        let notFoundable: UInt32 = 90
         let source = "ft_memchr: basic tests"
-        let original = memchr(source, foundable, source.count)!
+        let original = memchr(source, Int32(foundable), source.count)!
         let tested = ft_memchr(source, foundable, source.count)
 
         XCTAssert(tested != nil)
@@ -29,9 +29,9 @@ class MemchrTests: XCTestCase {
     }
 
     func testNullByte() {
-        let character: Int32 = 0
+        let character: UInt32 = 0
         let source = "ft_memchr: \0 tests"
-        let original = memchr(source, character, source.count)!
+        let original = memchr(source, Int32(character), source.count)!
         let tested = ft_memchr(source, character, source.count)
 
         XCTAssert(tested != nil)

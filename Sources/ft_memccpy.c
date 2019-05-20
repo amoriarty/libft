@@ -18,7 +18,7 @@
 /// @param character Character stoping copy to be executed
 /// @param length Size to copy
 /// @returns Pointer after founded character in destination string, NULL otherwise
-void		*ft_memccpy(void *destination, const void *source, int character, size_t length)
+void    *ft_memccpy(void *destination, const void *source, int character, size_t length)
 {
     void    *character_pointer;
     size_t  adjusted_length;

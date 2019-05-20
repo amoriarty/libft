@@ -13,35 +13,12 @@
 #include "libft.h"
 
 /// Copy byte string, allocating memory if needed
-/// @param dst Destination memory
-/// @param src Source memory
-/// @param len Size to copy
+/// @param destination Destination memory
+/// @param source Source memory
+/// @param length Size to copy
 /// @returns Pointer to newly allocated memory
-void		*ft_memmove(void *dst, const void *src, size_t len)
+#warning 'ft_memmove' shouldn't behave as 'ft_memcpy' or should be removed
+void    *ft_memmove(void *destination, const void *source, size_t length)
 {
-	size_t		i;
-	char		*tmp;
-
-	i = 0;
-	tmp = ft_memalloc(len);
-	while (i < len)
-	{
-		tmp[i] = *(char *)src;
-		src++;
-		i++;
-	}
-	i = 0;
-	while (i < len)
-	{
-		*(char *)dst = tmp[i];
-		dst++;
-		i++;
-	}
-	i = 0;
-	while (i < len)
-	{
-		i++;
-		dst--;
-	}
-	return (dst);
+    return (ft_memcpy(destination, source, length));
 }

@@ -15,7 +15,7 @@
 /// Write zeroes to a byte string
 /// @param buffer String to write zeroes on
 /// @param length Size of the string
-void		ft_bzero(void *buffer, size_t length)
+void    ft_bzero(void *buffer, size_t length)
 {
     ft_memset(buffer, 0, length);
 }

@@ -17,7 +17,7 @@
 /// @param character Byte value to write
 /// @param length Size to write
 /// @returns Start of memory pointer
-void		        *ft_memset(void *buffer, unsigned int character, size_t length)
+void    *ft_memset(void *buffer, unsigned int character, size_t length)
 {
     size_t          iterator;
     unsigned char   *pointer;

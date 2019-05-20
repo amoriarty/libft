@@ -17,12 +17,12 @@
 /// @param source Source memory
 /// @param length Size to copy
 /// @returns Pointer of the destination memory
-void		*ft_memcpy(void *destination, const void *source, size_t length)
+void    *ft_memcpy(void *destination, const void *source, size_t length)
 {
     size_t  iterator;
 
     iterator = 0;
-    if (destination == NULL || source == NULL)
+    if (destination == NULL)
         return (NULL);
     if (source == NULL)
         return (destination);
