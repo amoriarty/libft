@@ -17,18 +17,18 @@
 /// @param character Byte value to write
 /// @param length Size to write
 /// @returns Start of memory pointer
-void		        *ft_memset(void *buffer, int character, size_t length)
+void		        *ft_memset(void *buffer, unsigned int character, size_t length)
 {
     size_t          iterator;
     unsigned char   *pointer;
 
     iterator = 0;
-    pointer = (unsigned char *)buffer;
+    pointer = (unsigned char *) buffer;
     if (buffer == NULL)
         return (NULL);
     while (iterator < length)
     {
-        *(pointer + iterator) = (unsigned char)character;
+        *(pointer + iterator) = (unsigned char) character;
         iterator += 1;
     }
     return (buffer);

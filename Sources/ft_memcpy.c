@@ -13,23 +13,20 @@
 #include "libft.h"
 
 /// Copy memory area
-/// @param dst Destination memory
-/// @param src Source memory
-/// @param n Size to copy
+/// @param destination Destination memory
+/// @param source Source memory
+/// @param length Size to copy
 /// @returns Pointer of the destination memory
-void		*ft_memcpy(void *dst, const void *src, size_t n)
+void		*ft_memcpy(void *destination, const void *source, size_t length)
 {
-	size_t		i;
-	char		*pdst;
+    size_t  iterator;
 
-	i = 0;
-	pdst = (char *)dst;
-	while (i < n)
-	{
-		*(char *)dst = *(char *)src;
-		i++;
-		dst++;
-		src++;
-	}
-	return ((void *)pdst);
+    iterator = 0;
+    if (destination == NULL || source == NULL)
+        return (destination != NULL ? destination : NULL);
+    while (iterator < length) {
+        ft_memset(destination + iterator, *(unsigned char *)(source + iterator), 1);
+        iterator += 1;
+    }
+    return (destination);
 }

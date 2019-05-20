@@ -24,6 +24,10 @@
 
 typedef char	t_bool;
 
+void            ft_bzero(void *buffer, size_t length);
+void            *ft_memset(void *buffer, unsigned int character, size_t length);
+void            *ft_memcpy(void *destination, const void *source, size_t length);
+void            *ft_memccpy(void *dst, const void *src, int c, size_t n);
 void			ft_putchar(char c);
 void			ft_putstr(char const *s);
 void			ft_putnbr(int n);
@@ -54,10 +58,6 @@ int				ft_isprint(int c);
 int				ft_isblank(int c);
 int				ft_toupper(int c);
 int				ft_tolower(int c);
-void			*ft_memset(void *buffer, int character, size_t length);
-void			ft_bzero(void *buffer, size_t length);
-void			*ft_memcpy(void *dst, const void *src, size_t n);
-void			*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void			*ft_memmove(void *dst, const void *src, size_t len);
 void			*ft_memchr(const void *s, int c, size_t n);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
