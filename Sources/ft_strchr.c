@@ -13,21 +13,25 @@
 #include "libft.h"
 
 /// Locate character in string
-/// @param s String where locate character
-/// @param c Character to locate in string
+/// @param source String where locate character
+/// @param character Character to locate in string
 /// @returns Pointer to character find in string
-char		*ft_strchr(const char *s, int c)
+char    *ft_strchr(const char *source, unsigned int character)
 {
-	char	*tmp;
+    size_t  length;
 
-	tmp = (char *)s;
-	while (*tmp)
-	{
-		if (*tmp == c)
-			return (tmp);
-		tmp++;
-	}
-	if (*tmp == c)
-		return (tmp);
-	return (NULL);
+    length = ft_strlen(source);
+    return ((char *) ft_memchr(source, character, length));
+//    char    *tmp;
+//
+//    tmp = (char *)s;
+//    while (*tmp)
+//    {
+//        if (*tmp == c)
+//            return (tmp);
+//        tmp++;
+//    }
+//    if (*tmp == c)
+//        return (tmp);
+//    return (NULL);
 }

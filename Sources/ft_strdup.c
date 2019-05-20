@@ -15,7 +15,7 @@
 /// Save a copy of a string
 /// @param source String to copy
 /// @return Newly allocated copied string 
-char		*ft_strdup(const char *source)
+char    *ft_strdup(const char *source)
 {
     char    *duplicate;
     size_t  length;

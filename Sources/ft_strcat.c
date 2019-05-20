@@ -16,7 +16,7 @@
 /// @param left First part of the string, where right will be append
 /// @param right String to append
 /// @returns Concatanate string
-char		*ft_strcat(char *left, const char *right)
+char    *ft_strcat(char *left, const char *right)
 {
     size_t  length;
 

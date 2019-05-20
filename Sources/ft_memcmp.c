@@ -18,7 +18,7 @@
 /// @param length Size of string
 /// @returns Zero if the two strings is identical, the difference between
 ///     the two first differing character
-int			ft_memcmp(const void *left, const void *right, size_t length)
+int ft_memcmp(const void *left, const void *right, size_t length)
 {
     size_t          iterator;
     unsigned char   *left_pointer;

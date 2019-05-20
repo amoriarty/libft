@@ -17,7 +17,7 @@
 /// @param source Source string
 /// @param length Size to copy
 /// @returns Head pointer to destination string
-char		*ft_strncpy(char *destination, const char *source, size_t length)
+char    *ft_strncpy(char *destination, const char *source, size_t length)
 {
     size_t  source_length;
 

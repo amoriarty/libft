@@ -15,7 +15,7 @@
 /// Find length of string
 /// @param source String to calculate length
 /// @returns Size of the string
-size_t		ft_strlen(const char *source)
+size_t  ft_strlen(const char *source)
 {
     size_t  iterator;
 
