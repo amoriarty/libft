@@ -48,16 +48,6 @@ class StrcatTests: XCTestCase {
         free(buffer)
     }
 
-    func testNull() {
-        let source = "ft_strcat: null test"
-        let buffer = malloc(source.count)!.assumingMemoryBound(to: Int8.self)
-
-        XCTAssert(ft_strcat(nil, source) == nil)
-        XCTAssert(ft_strcat(buffer, nil) == buffer)
-
-        free(buffer)
-    }
-
     func testPerfomance() {
         let left = "ft_strcat: "
         let right = "perfomance test"

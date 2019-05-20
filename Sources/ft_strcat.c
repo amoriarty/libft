@@ -13,24 +13,14 @@
 #include "libft.h"
 
 /// Concatenate strings
-/// @param s1 First part of the string, where s2 will be append
-/// @param s2 String to append
+/// @param left First part of the string, where right will be append
+/// @param right String to append
 /// @returns Concatanate string
-char		*ft_strcat(char *s1, const char *s2)
+char		*ft_strcat(char *left, const char *right)
 {
-	int		i;
-	int		x;
+    size_t  offset;
 
-	i = 0;
-	x = 0;
-	while (s1[i] != '\0')
-		i++;
-	while (s2[x] != '\0')
-	{
-		s1[i] = s2[x];
-		i++;
-		x++;
-	}
-	s1[i] = '\0';
-	return (s1);
+    offset = ft_strlen(left);
+    ft_strcpy(left + offset, right);
+    return (left);
 }
