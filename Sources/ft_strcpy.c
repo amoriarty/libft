@@ -13,23 +13,13 @@
 #include "libft.h"
 
 /// Copy strings
-/// @param dst Destination string
-/// @param src Source string
+/// @param destination Destination string
+/// @param source Source string
 /// @returns Pointer of the head of destination string
-char		*ft_strcpy(char *dst, const char *src)
+char		*ft_strcpy(char *destination, const char *source)
 {
-	int		i;
+    size_t  length;
 
-	i = 0;
-	if (sizeof(dst) >= sizeof(src))
-	{
-		while (src[i] != '\0')
-		{
-			dst[i] = src[i];
-			i++;
-		}
-		dst[i] = '\0';
-		return (dst);
-	}
-	return (NULL);
+    length = ft_strlen(source);
+    return ((char *) ft_memcpy(destination, source, length));
 }

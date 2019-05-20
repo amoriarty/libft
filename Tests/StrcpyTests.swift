@@ -43,18 +43,6 @@ class StrcpyTests: XCTestCase {
         free(buffer)
     }
 
-    func testNull() {
-        let source = "ft_strcpy: null test"
-        let buffer = malloc(source.count)!.assumingMemoryBound(to: Int8.self)
-
-        bzero(buffer, source.count)
-        XCTAssert(ft_strcpy(nil, nil) == nil)
-        XCTAssert(ft_strcpy(nil, source) == nil)
-        XCTAssert(ft_strcpy(buffer, nil) == buffer)
-
-        free(buffer)
-    }
-
     func testPerformance() {
         let source = "ft_strcpy: perfomance test"
         let buffer = malloc(source.count)!.assumingMemoryBound(to: Int8.self)
