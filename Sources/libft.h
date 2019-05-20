@@ -58,8 +58,11 @@ t_bool  ft_isblank(int character);
 
 int     ft_toupper(int character);
 int     ft_tolower(int character);
+int     ft_toint(char character);
+char    ft_tochar(int number);
 
 size_t  ft_digitlen(int number);
+int     ft_abs(int number);
 int     ft_atoi(const char *string);
 char    *ft_itoa(int number);
 

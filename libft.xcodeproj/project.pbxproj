@@ -114,6 +114,10 @@
 		ECA74CEA228C2E45005E653D /* StrnequTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CE9228C2E45005E653D /* StrnequTests.swift */; };
 		ECA9BD782292EB110000F90F /* IsLowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD772292EB110000F90F /* IsLowerTests.swift */; };
 		ECA9BD7A2292EC040000F90F /* IsUpperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD792292EC040000F90F /* IsUpperTests.swift */; };
+		ECA9BD7C2292F1CA0000F90F /* ft_abs.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD7B2292F1CA0000F90F /* ft_abs.c */; };
+		ECA9BD7E2292F20D0000F90F /* AbsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD7D2292F20D0000F90F /* AbsTests.swift */; };
+		ECA9BD802292F4BF0000F90F /* ft_tochar.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD7F2292F4BF0000F90F /* ft_tochar.c */; };
+		ECA9BD822292F5A10000F90F /* ft_toint.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD812292F5A10000F90F /* ft_toint.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +241,10 @@
 		ECA74CE9228C2E45005E653D /* StrnequTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrnequTests.swift; sourceTree = "<group>"; };
 		ECA9BD772292EB110000F90F /* IsLowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsLowerTests.swift; sourceTree = "<group>"; };
 		ECA9BD792292EC040000F90F /* IsUpperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsUpperTests.swift; sourceTree = "<group>"; };
+		ECA9BD7B2292F1CA0000F90F /* ft_abs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_abs.c; sourceTree = "<group>"; };
+		ECA9BD7D2292F20D0000F90F /* AbsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsTests.swift; sourceTree = "<group>"; };
+		ECA9BD7F2292F4BF0000F90F /* ft_tochar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_tochar.c; sourceTree = "<group>"; };
+		ECA9BD812292F5A10000F90F /* ft_toint.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_toint.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,6 +319,8 @@
 				EC64C75A2292BBDE00958375 /* ft_islower.c */,
 				EC89F017228A9C66002ED417 /* ft_toupper.c */,
 				EC89EFF7228A9C63002ED417 /* ft_tolower.c */,
+				ECA9BD7F2292F4BF0000F90F /* ft_tochar.c */,
+				ECA9BD812292F5A10000F90F /* ft_toint.c */,
 				EC89F006228A9C64002ED417 /* ft_putchar_fd.c */,
 				EC89F02C228A9C68002ED417 /* ft_putchar.c */,
 				EC89F001228A9C64002ED417 /* ft_putendl_fd.c */,
@@ -333,6 +343,7 @@
 				EC89F01D228A9C66002ED417 /* ft_strsub.c */,
 				EC89F012228A9C65002ED417 /* ft_strtrim.c */,
 				EC89F01A228A9C66002ED417 /* ft_digitlen.c */,
+				ECA9BD7B2292F1CA0000F90F /* ft_abs.c */,
 				EC89EFFB228A9C63002ED417 /* get_next_line.c */,
 				EC89EFF4228A9C63002ED417 /* libft.h */,
 			);
@@ -363,6 +374,7 @@
 				ECA74CBF228C0A3F005E653D /* StrcmpTests.swift */,
 				ECA74CC1228C0B04005E653D /* StrncmpTests.swift */,
 				ECA74CC3228C0C36005E653D /* AtoiTests.swift */,
+				EC3E1639228C32DC00810DE7 /* ItoaTests.swift */,
 				ECA74CCD228C1106005E653D /* IsPrintTests.swift */,
 				ECA74CCB228C10AF005E653D /* IsAsciiTests.swift */,
 				ECA74CC9228C1056005E653D /* IsAlnumTests.swift */,
@@ -378,7 +390,6 @@
 				EC3E1641228C444300810DE7 /* PutstrTests.swift */,
 				EC3E163D228C3D1C00810DE7 /* PutcharTests.swift */,
 				EC3E163B228C348800810DE7 /* StrsplitTests.swift */,
-				EC3E1639228C32DC00810DE7 /* ItoaTests.swift */,
 				EC3E1637228C31B400810DE7 /* StrtrimTests.swift */,
 				EC3E1635228C309800810DE7 /* StrjoinTests.swift */,
 				EC3E1633228C2F7900810DE7 /* StrsubTests.swift */,
@@ -391,6 +402,7 @@
 				ECA74CDB228C1D05005E653D /* StriterTests.swift */,
 				ECA74CD9228C1BDE005E653D /* StrdelTests.swift */,
 				ECA74CD7228C1AF1005E653D /* StrnewTests.swift */,
+				ECA9BD7D2292F20D0000F90F /* AbsTests.swift */,
 				EC3E163F228C423500810DE7 /* FileHelper.swift */,
 				EC89F081228A9E6F002ED417 /* Info.plist */,
 				EC89F089228AA1CB002ED417 /* Tests-Bridging-Header.h */,
@@ -506,6 +518,7 @@
 				EC89F078228A9C69002ED417 /* ft_strmap.c in Sources */,
 				EC89F06A228A9C69002ED417 /* ft_strclr.c in Sources */,
 				EC64C7592292BB9700958375 /* ft_isupper.c in Sources */,
+				ECA9BD802292F4BF0000F90F /* ft_tochar.c in Sources */,
 				EC89F054228A9C69002ED417 /* ft_itoa.c in Sources */,
 				EC89F071228A9C69002ED417 /* ft_isascii.c in Sources */,
 				EC89F05E228A9C69002ED417 /* ft_strcat.c in Sources */,
@@ -531,6 +544,7 @@
 				EC89F05A228A9C69002ED417 /* ft_toupper.c in Sources */,
 				EC89F067228A9C69002ED417 /* ft_strsplit.c in Sources */,
 				EC89F062228A9C69002ED417 /* ft_strchr.c in Sources */,
+				ECA9BD7C2292F1CA0000F90F /* ft_abs.c in Sources */,
 				EC89F044228A9C69002ED417 /* ft_putendl_fd.c in Sources */,
 				EC89F03E228A9C69002ED417 /* get_next_line.c in Sources */,
 				EC89F03D228A9C69002ED417 /* ft_strnequ.c in Sources */,
@@ -545,6 +559,7 @@
 				EC89F064228A9C69002ED417 /* ft_strnstr.c in Sources */,
 				EC89F03C228A9C69002ED417 /* ft_memdel.c in Sources */,
 				EC89F072228A9C69002ED417 /* ft_striter.c in Sources */,
+				ECA9BD822292F5A10000F90F /* ft_toint.c in Sources */,
 				EC89F048228A9C69002ED417 /* ft_isalpha.c in Sources */,
 				EC89F049228A9C69002ED417 /* ft_putchar_fd.c in Sources */,
 				EC89F041228A9C69002ED417 /* ft_strequ.c in Sources */,
@@ -590,6 +605,7 @@
 				ECA74CDE228C21C3005E653D /* StriteriTests.swift in Sources */,
 				EC3E163C228C348800810DE7 /* StrsplitTests.swift in Sources */,
 				ECA74CE2228C2956005E653D /* StrclrTests.swift in Sources */,
+				ECA9BD7E2292F20D0000F90F /* AbsTests.swift in Sources */,
 				ECA74CBC228C0823005E653D /* StrstrTests.swift in Sources */,
 				ECA74CE6228C2C69005E653D /* StrmapiTests.swift in Sources */,
 				ECA74CE8228C2CC6005E653D /* StrequTests.swift in Sources */,

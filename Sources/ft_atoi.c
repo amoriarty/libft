@@ -28,7 +28,7 @@ int ft_atoi(const char *string)
         if (!ft_isdigit(string[iterator]))
             break;
         result *= 10;
-        result += string[iterator] - '0';
+        result += ft_toint(string[iterator]);
         iterator += 1;
     }
     if (trimmed[0] == '-')
