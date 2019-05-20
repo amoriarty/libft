@@ -13,14 +13,14 @@
 #include "libft.h"
 
 /// Find length of string
-/// @param s String to calculate length
+/// @param source String to calculate length
 /// @returns Size of the string
-size_t		ft_strlen(const char *s)
+size_t		ft_strlen(const char *source)
 {
-	size_t	i;
+    size_t  iterator;
 
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
+    iterator = 0;
+    while (source[iterator] != 0)
+        iterator += 1;
+    return (iterator);
 }

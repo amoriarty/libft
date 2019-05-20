@@ -28,7 +28,7 @@ void    *ft_memchr(const void *source, unsigned int character, size_t length)
         return (NULL);
     while (iterator < length)
     {
-        if (*(pointer + iterator) == (unsigned char) character)
+        if (pointer[iterator] == (unsigned char) character)
             return (pointer + iterator);
         iterator += 1;
     }

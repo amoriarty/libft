@@ -31,6 +31,7 @@ void    *ft_memccpy(void *destination, const void *source, int c, size_t length)
 void    *ft_memmove(void *destination, const void *source, size_t length);
 void    *ft_memchr(const void *source, unsigned int character, size_t length);
 int     ft_memcmp(const void *left, const void *right, size_t length);
+size_t  ft_strlen(const char *source);
 void    ft_putchar(char c);
 void    ft_putstr(char const *s);
 void    ft_putnbr(int n);
@@ -39,7 +40,6 @@ void    ft_putchar_fd(char c, int fd);
 void    ft_putstr_fd(char const *s, int fd);
 void    ft_putendl_fd(char const *s, int fd);
 void    ft_putnbr_fd(int n, int fd);
-size_t  ft_strlen(const char *s);
 char    *ft_strdup(const char *s1);
 char    *ft_strcpy(char *dst, const char *src);
 char    *ft_strncpy(char *dst, const char *src, size_t n);

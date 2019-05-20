@@ -28,7 +28,7 @@ void    *ft_memset(void *buffer, unsigned int character, size_t length)
         return (NULL);
     while (iterator < length)
     {
-        *(pointer + iterator) = (unsigned char) character;
+        pointer[iterator] = (unsigned char) character;
         iterator += 1;
     }
     return (buffer);

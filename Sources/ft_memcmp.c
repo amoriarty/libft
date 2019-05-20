@@ -31,8 +31,8 @@ int			ft_memcmp(const void *left, const void *right, size_t length)
         return (0);
     while (iterator < length)
     {
-        if (*(left_pointer + iterator) != *(right_pointer + iterator))
-            return (*(left_pointer + iterator) - *(right_pointer + iterator));
+        if (left_pointer[iterator] != right_pointer[iterator])
+            return (left_pointer[iterator] - right_pointer[iterator]);
         iterator += 1;
     }
     return (0);
