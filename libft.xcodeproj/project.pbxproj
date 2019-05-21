@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		EC045A222293D0F60017D11A /* ToCharTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC045A212293D0F60017D11A /* ToCharTests.swift */; };
 		EC045A242293D1D30017D11A /* ToIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC045A232293D1D30017D11A /* ToIntTests.swift */; };
+		EC045A262293D2CD0017D11A /* GetNextLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC045A252293D2CC0017D11A /* GetNextLineTests.swift */; };
+		EC045A292293DA460017D11A /* loremipsum.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC045A272293DA450017D11A /* loremipsum.txt */; };
+		EC045A2A2293DA460017D11A /* basics.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC045A282293DA460017D11A /* basics.txt */; };
 		EC3E1634228C2F7900810DE7 /* StrsubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1633228C2F7900810DE7 /* StrsubTests.swift */; };
 		EC3E1636228C309800810DE7 /* StrjoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1635228C309800810DE7 /* StrjoinTests.swift */; };
 		EC3E1638228C31B400810DE7 /* StrtrimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1637228C31B400810DE7 /* StrtrimTests.swift */; };
@@ -135,6 +138,9 @@
 /* Begin PBXFileReference section */
 		EC045A212293D0F60017D11A /* ToCharTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToCharTests.swift; sourceTree = "<group>"; };
 		EC045A232293D1D30017D11A /* ToIntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToIntTests.swift; sourceTree = "<group>"; };
+		EC045A252293D2CC0017D11A /* GetNextLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNextLineTests.swift; sourceTree = "<group>"; };
+		EC045A272293DA450017D11A /* loremipsum.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = loremipsum.txt; sourceTree = "<group>"; };
+		EC045A282293DA460017D11A /* basics.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = basics.txt; sourceTree = "<group>"; };
 		EC3E1633228C2F7900810DE7 /* StrsubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrsubTests.swift; sourceTree = "<group>"; };
 		EC3E1635228C309800810DE7 /* StrjoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrjoinTests.swift; sourceTree = "<group>"; };
 		EC3E1637228C31B400810DE7 /* StrtrimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrtrimTests.swift; sourceTree = "<group>"; };
@@ -357,8 +363,7 @@
 		EC89F07E228A9E6F002ED417 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				EC045A232293D1D30017D11A /* ToIntTests.swift */,
-				EC045A212293D0F60017D11A /* ToCharTests.swift */,
+				ECA9BD7D2292F20D0000F90F /* AbsTests.swift */,
 				EC8C1F34228B01BA0032719E /* BzeroTests.swift */,
 				EC89F07F228A9E6F002ED417 /* MemsetTests.swift */,
 				EC8C1F36228B04A20032719E /* MemcpyTests.swift */,
@@ -402,16 +407,20 @@
 				ECA9BD792292EC040000F90F /* IsUpperTests.swift */,
 				ECA74CD1228C1196005E653D /* ToLowerTests.swift */,
 				ECA74CCF228C1157005E653D /* ToUpperTests.swift */,
+				EC045A232293D1D30017D11A /* ToIntTests.swift */,
+				EC045A212293D0F60017D11A /* ToCharTests.swift */,
 				EC3E1647228C48BF00810DE7 /* DigitlenTests.swift */,
 				EC3E1645228C458C00810DE7 /* PutnbrTests.swift */,
 				EC3E1643228C452900810DE7 /* PutendlTests.swift */,
 				EC3E1641228C444300810DE7 /* PutstrTests.swift */,
 				EC3E163D228C3D1C00810DE7 /* PutcharTests.swift */,
 				EC3E163B228C348800810DE7 /* StrsplitTests.swift */,
-				ECA9BD7D2292F20D0000F90F /* AbsTests.swift */,
+				EC045A252293D2CC0017D11A /* GetNextLineTests.swift */,
 				EC3E163F228C423500810DE7 /* FileHelper.swift */,
 				EC89F081228A9E6F002ED417 /* Info.plist */,
 				EC89F089228AA1CB002ED417 /* Tests-Bridging-Header.h */,
+				EC045A282293DA460017D11A /* basics.txt */,
+				EC045A272293DA450017D11A /* loremipsum.txt */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -507,6 +516,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC045A292293DA460017D11A /* loremipsum.txt in Resources */,
+				EC045A2A2293DA460017D11A /* basics.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA74CD2228C1196005E653D /* ToLowerTests.swift in Sources */,
+				EC045A262293D2CD0017D11A /* GetNextLineTests.swift in Sources */,
 				ECA74CAE228BEE81005E653D /* StrcpyTests.swift in Sources */,
 				EC8C1F35228B01BA0032719E /* BzeroTests.swift in Sources */,
 				ECA74CB8228C05FE005E653D /* StrchrTests.swift in Sources */,

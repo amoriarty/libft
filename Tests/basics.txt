@@ -1,0 +1,9 @@
+Hello World!
+This is a basic text file in order to test the get_next_line.
+You will find a much bigger text (really much bigger) in loremipsum.txt
+This lorem ipsum will probably be great for testing performance.
+Will this text will probably be great to just make sure quicly that the get_next_line works properly.
+
+
+Yeah, also has to test that everything works greats with multiple empty line (you never know !).
+Have a nice day!

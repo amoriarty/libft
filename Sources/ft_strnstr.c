@@ -26,7 +26,7 @@ char    *ft_strnstr(const char *haystack, const char *needle, size_t length)
     needle_length = ft_strlen(needle);
     while (iterator < length)
     {
-        if (ft_strncmp(haystack + iterator, needle, needle_length) == 0)
+        if (ft_strnequ(haystack + iterator, needle, needle_length))
             return ((char *) haystack + iterator);
         iterator += 1;
     }

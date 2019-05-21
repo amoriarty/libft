@@ -9,17 +9,37 @@
 import Foundation
 
 class FileHelper {
+    private let url: URL
+    private var fd: Int32!
 
-    static func open(at path: String) -> Int32? {
-        try? FileManager.default.removeItem(at: URL(fileURLWithPath: path))
-
-        let fd = Darwin.open(path, O_WRONLY | O_CREAT | O_APPEND, 0o666)
-        return fd != -1 ? fd : nil
+    private var path: String {
+        return url.path
     }
 
-    static func content(of path: String) -> String? {
-        let url = URL(fileURLWithPath: path)
-        return try? String(contentsOf: url, encoding: .utf8)
+    init(_ path: String) {
+        self.url = URL(fileURLWithPath: path)
+    }
+
+    init(_ url: URL) {
+        self.url = url
+    }
+
+    @discardableResult
+    func open() -> Int32 {
+        fd = Darwin.open(path, O_RDWR | O_CREAT | O_APPEND, 0o666)
+        return fd
+    }
+
+    func close() {
+        Darwin.close(fd)
+    }
+
+    func remove() {
+        try? FileManager.default.removeItem(at: url)
+    }
+
+    func read() -> String {
+        return try! String(contentsOf: url, encoding: .utf8)
     }
 
 }

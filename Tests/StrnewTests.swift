@@ -18,16 +18,17 @@ class StrnewTests: XCTestCase {
 
     func testNoSize() {
         let buffer = ft_strnew(0)
-        XCTAssert(buffer == nil)
+        XCTAssert(buffer != nil)
+        XCTAssert(strcmp(buffer, "") == 0)
     }
 
     func testZeroes() {
         let size = 42
         let buffer = ft_strnew(size)!
-        let compare = malloc(size + 1)!
+        let compare = malloc(size + 1)!.assumingMemoryBound(to: Int8.self)
 
         bzero(compare, size)
-        XCTAssert(memcmp(buffer, compare, size + 1) == 0)
+        XCTAssert(strcmp(buffer, compare) == 0)
 
         free(buffer)
         free(compare)

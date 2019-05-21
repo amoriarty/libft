@@ -34,7 +34,8 @@ class StrdupTests: XCTestCase {
         let source = ""
         let buffer = ft_strdup(source)
 
-        XCTAssert(buffer == nil)
+        XCTAssert(buffer != nil)
+        XCTAssert(strcmp(buffer, "") == 0)
     }
 
     func testPerfomance() {

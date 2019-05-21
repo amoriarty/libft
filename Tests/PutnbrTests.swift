@@ -11,24 +11,22 @@ import XCTest
 class PutnbrTests: XCTestCase {
 
     func testBasic() {
-        let path = "/tmp/putnbr_basic"
+        let file = FileHelper("/tmp/putnbr_basic")
         let source: Int32 = 42
+        file.remove()
 
-        guard let fd = FileHelper.open(at: path) else { fatalError() }
-        defer { close(fd) }
+        let fd = file.open()
+        defer { file.close() }
 
         ft_putnbr_fd(source, fd)
-
-        guard let content = FileHelper.content(of: path) else { fatalError() }
-        XCTAssert(content == String(source))
+        XCTAssert(file.read() == String(source))
     }
 
     func testPerfomance() {
-        let path = "/tmp/putnbr_perfomance"
+        let file = FileHelper("/tmp/putnbr_perfomance")
         let source: Int32 = 42
-
-        guard let fd = FileHelper.open(at: path) else { fatalError() }
-        defer { close(fd) }
+        let fd = file.open()
+        defer { file.close() }
 
         measure {
             for _ in 0...1000 {

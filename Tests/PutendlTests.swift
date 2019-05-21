@@ -11,24 +11,22 @@ import XCTest
 class PutendlTests: XCTestCase {
 
     func testBasic() {
-        let path = "/tmp/putstr_basic"
+        let file = FileHelper("/tmp/putstr_basic")
         let source = "Hello World!"
+        file.remove()
 
-        guard let fd = FileHelper.open(at: path) else { fatalError() }
-        defer { close(fd) }
+        let fd = file.open()
+        defer { file.close() }
 
         ft_putendl_fd(source, fd)
-
-        guard let content = FileHelper.content(of: path) else { fatalError() }
-        XCTAssert(content == source + "\n")
+        XCTAssert(file.read() == source + "\n")
     }
 
     func testPerfomance() {
-        let path = "/tmp/putstr_perfomance"
+        let file = FileHelper("/tmp/putstr_perfomance")
         let source = "Hello World!"
-
-        guard let fd = FileHelper.open(at: path) else { fatalError() }
-        defer { close(fd) }
+        let fd = file.open()
+        defer { file.close() }
 
         measure {
             for _ in 0...1000 {

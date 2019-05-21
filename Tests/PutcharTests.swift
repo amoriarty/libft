@@ -13,20 +13,20 @@ import os.log
 class PutcharTests: XCTestCase {
 
     func testBasic() {
-        let path = "/tmp/putchar_basic_test"
-        guard let fd = FileHelper.open(at: path) else { fatalError() }
-        defer { close(fd) }
+        let file = FileHelper("/tmp/putchar_basic_test")
+        file.remove()
+
+        let fd = file.open()
+        defer { file.close() }
 
         ft_putchar_fd(42, fd)
-
-        guard let content = FileHelper.content(of: path) else { fatalError() }
-        XCTAssert(content == "*")
+        XCTAssert(file.read() == "*")
     }
 
     func testPerfomance() {
-        let path = "/tmp/putchar_perfomance_test"
-        guard let fd = FileHelper.open(at: path) else { fatalError() }
-        defer { close(fd) }
+        let file = FileHelper("/tmp/putchar_perfomance_test")
+        let fd = file.open()
+        defer { file.close() }
 
         measure {
             for _ in 0...1000 {
