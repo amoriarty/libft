@@ -8,7 +8,6 @@
 
 #include "libft.h"
 
-#warning 'ft_toint' isn't tested
 /// Convert a digit character to it's corresponding interger
 /// @param character Character to convert
 /// @returns Converted integer, ERROR otherwise.

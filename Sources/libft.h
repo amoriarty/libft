@@ -18,12 +18,16 @@
 # define BUFF_SIZE 2048
 # define ERROR -1
 
+// MARK:- Boolean
+
 typedef enum e_bool t_bool;
 enum    e_bool
 {
     FALSE,
     TRUE
 };
+
+// MARK:- Memory
 
 void    ft_bzero(void *buffer, size_t length);
 void    *ft_memset(void *buffer, unsigned int character, size_t length);
@@ -33,6 +37,8 @@ void    *ft_memchr(const void *source, unsigned int character, size_t length);
 int     ft_memcmp(const void *left, const void *right, size_t length);
 void    *ft_memalloc(size_t size);
 void    ft_memdel(void **memory);
+
+// MARK:- String
 
 size_t  ft_strlen(const char *source);
 char    *ft_strdup(const char *source);
@@ -58,6 +64,9 @@ t_bool  ft_strnequ(char const *left, char const *right, size_t length);
 char    *ft_strsub(char const *source, unsigned int start, size_t length);
 char    *ft_strjoin(char const *left, char const *right);
 char    *ft_strtrim(char const *source);
+char    **ft_strsplit(char const *source, char character);
+
+// MARK:- Charactere Testing
 
 t_bool  ft_isupper(int character);
 t_bool  ft_islower(int character);
@@ -68,15 +77,21 @@ t_bool  ft_isascii(int character);
 t_bool  ft_isprint(int character);
 t_bool  ft_isblank(int character);
 
+// MARK:- Character Conversion
+
 int     ft_toupper(int character);
 int     ft_tolower(int character);
 int     ft_toint(char character);
 char    ft_tochar(int number);
 
+// MARK:- Integer / String Conversion
+
 size_t  ft_digitlen(int number);
 int     ft_abs(int number);
 int     ft_atoi(const char *string);
 char    *ft_itoa(int number);
+
+// MARK:- Print
 
 void    ft_putchar(char c);
 void    ft_putstr(char const *s);
@@ -87,7 +102,8 @@ void    ft_putstr_fd(char const *s, int fd);
 void    ft_putendl_fd(char const *s, int fd);
 void    ft_putnbr_fd(int n, int fd);
 
-char    **ft_strsplit(char const *s, char c);
+// MARK:- Files
+
 int	    get_next_line(const int fd, char **line);
 
 #endif

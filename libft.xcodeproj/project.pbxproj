@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC045A222293D0F60017D11A /* ToCharTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC045A212293D0F60017D11A /* ToCharTests.swift */; };
+		EC045A242293D1D30017D11A /* ToIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC045A232293D1D30017D11A /* ToIntTests.swift */; };
 		EC3E1634228C2F7900810DE7 /* StrsubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1633228C2F7900810DE7 /* StrsubTests.swift */; };
 		EC3E1636228C309800810DE7 /* StrjoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1635228C309800810DE7 /* StrjoinTests.swift */; };
 		EC3E1638228C31B400810DE7 /* StrtrimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1637228C31B400810DE7 /* StrtrimTests.swift */; };
@@ -131,6 +133,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC045A212293D0F60017D11A /* ToCharTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToCharTests.swift; sourceTree = "<group>"; };
+		EC045A232293D1D30017D11A /* ToIntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToIntTests.swift; sourceTree = "<group>"; };
 		EC3E1633228C2F7900810DE7 /* StrsubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrsubTests.swift; sourceTree = "<group>"; };
 		EC3E1635228C309800810DE7 /* StrjoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrjoinTests.swift; sourceTree = "<group>"; };
 		EC3E1637228C31B400810DE7 /* StrtrimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrtrimTests.swift; sourceTree = "<group>"; };
@@ -319,8 +323,11 @@
 				EC89F01D228A9C66002ED417 /* ft_strsub.c */,
 				EC89F022228A9C67002ED417 /* ft_strjoin.c */,
 				EC89F012228A9C65002ED417 /* ft_strtrim.c */,
+				EC89F024228A9C67002ED417 /* ft_strsplit.c */,
+				ECA9BD7B2292F1CA0000F90F /* ft_abs.c */,
 				EC89F010228A9C65002ED417 /* ft_atoi.c */,
 				EC89F011228A9C65002ED417 /* ft_itoa.c */,
+				EC89F01A228A9C66002ED417 /* ft_digitlen.c */,
 				EC89F030228A9C68002ED417 /* ft_isalnum.c */,
 				EC89F005228A9C64002ED417 /* ft_isalpha.c */,
 				EC89F02E228A9C68002ED417 /* ft_isascii.c */,
@@ -341,9 +348,6 @@
 				EC89F001228A9C64002ED417 /* ft_putendl_fd.c */,
 				EC89F00B228A9C65002ED417 /* ft_putnbr.c */,
 				EC89F01C228A9C66002ED417 /* ft_putnbr_fd.c */,
-				EC89F024228A9C67002ED417 /* ft_strsplit.c */,
-				EC89F01A228A9C66002ED417 /* ft_digitlen.c */,
-				ECA9BD7B2292F1CA0000F90F /* ft_abs.c */,
 				EC89EFFB228A9C63002ED417 /* get_next_line.c */,
 				EC89EFF4228A9C63002ED417 /* libft.h */,
 			);
@@ -353,6 +357,8 @@
 		EC89F07E228A9E6F002ED417 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				EC045A232293D1D30017D11A /* ToIntTests.swift */,
+				EC045A212293D0F60017D11A /* ToCharTests.swift */,
 				EC8C1F34228B01BA0032719E /* BzeroTests.swift */,
 				EC89F07F228A9E6F002ED417 /* MemsetTests.swift */,
 				EC8C1F36228B04A20032719E /* MemcpyTests.swift */,
@@ -620,7 +626,9 @@
 				ECA74CE4228C2A6A005E653D /* StrmapTests.swift in Sources */,
 				ECA74CCC228C10AF005E653D /* IsAsciiTests.swift in Sources */,
 				ECA74CEA228C2E45005E653D /* StrnequTests.swift in Sources */,
+				EC045A222293D0F60017D11A /* ToCharTests.swift in Sources */,
 				EC89F080228A9E6F002ED417 /* MemsetTests.swift in Sources */,
+				EC045A242293D1D30017D11A /* ToIntTests.swift in Sources */,
 				ECA74CDC228C1D05005E653D /* StriterTests.swift in Sources */,
 				EC3E1644228C452900810DE7 /* PutendlTests.swift in Sources */,
 				ECA74CAA228BEBD3005E653D /* SrtlenTests.swift in Sources */,

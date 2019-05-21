@@ -28,5 +28,5 @@ void    *ft_memccpy(void *destination, const void *source, int character, size_t
                         ? (size_t) (character_pointer - source) + 1
                         : length;
     ft_memcpy(destination, source, adjusted_length);
-    return (character_pointer != NULL ? destination + adjusted_length : NULL);
+    return (character_pointer ? destination + adjusted_length : NULL);
 }

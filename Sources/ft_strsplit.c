@@ -45,32 +45,33 @@ static size_t	get_word_length(const char *s, char c)
 	return (length);
 }
 
+#warning 'ft_strsplit' isn't update
 /// Split a character into an array of string, seperated by c
-/// @param s String to split
-/// @param c Splitting character
+/// @param source String to split
+/// @param character Splitting character
 /// @returns Array of splitting strings
-char			**ft_strsplit(const char *s, char c)
+char			**ft_strsplit(const char *source, char character)
 {
 	char	**tab;
 	int		i;
 	int		x;
 
-	if (s == NULL)
+	if (source == NULL)
 		return (NULL);
 	i = 0;
-	if (!(tab = (char **)malloc(sizeof(char*) * (count_words(s, c) + 1))))
+	if (!(tab = (char **)malloc(sizeof(char*) * (count_words(source, character) + 1))))
 		return (NULL);
-	while (*s)
+	while (*source)
 	{
-		while (*s == c)
-			s++;
-		if (*s != c && *s && ft_isprint(*s))
+		while (*source == character)
+			source++;
+		if (*source != character && *source && ft_isprint(*source))
 		{
 			x = 0;
-			if (!(tab[i] = ft_strnew(get_word_length(s, c))))
+			if (!(tab[i] = ft_strnew(get_word_length(source, character))))
 				return (NULL);
-			while (*s != c && *s && ft_isprint(*s))
-				tab[i][x++] = *s++;
+			while (*source != character && *source && ft_isprint(*source))
+				tab[i][x++] = *source++;
 			tab[i++][x] = '\0';
 		}
 	}
