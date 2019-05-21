@@ -20,8 +20,9 @@ class MemallocTests: XCTestCase {
     }
 
     func testNoSize() {
-        let buffer = ft_memalloc(0)
-        XCTAssert(buffer == nil)
+        let buffer = ft_memalloc(0)?.assumingMemoryBound(to: Int8.self)
+        XCTAssert(buffer != nil)
+        XCTAssert(strcmp(buffer, "") == 0)
     }
 
     func testPerfomance() {

@@ -123,6 +123,7 @@
 		ECA9BD7E2292F20D0000F90F /* AbsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD7D2292F20D0000F90F /* AbsTests.swift */; };
 		ECA9BD802292F4BF0000F90F /* ft_tochar.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD7F2292F4BF0000F90F /* ft_tochar.c */; };
 		ECA9BD822292F5A10000F90F /* ft_toint.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD812292F5A10000F90F /* ft_toint.c */; };
+		ECEACABF2294396900BFCD54 /* ft_strreplace.c in Sources */ = {isa = PBXBuildFile; fileRef = ECEACABE2294396900BFCD54 /* ft_strreplace.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -255,6 +256,7 @@
 		ECA9BD7D2292F20D0000F90F /* AbsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsTests.swift; sourceTree = "<group>"; };
 		ECA9BD7F2292F4BF0000F90F /* ft_tochar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_tochar.c; sourceTree = "<group>"; };
 		ECA9BD812292F5A10000F90F /* ft_toint.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_toint.c; sourceTree = "<group>"; };
+		ECEACABE2294396900BFCD54 /* ft_strreplace.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_strreplace.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,6 +332,7 @@
 				EC89F022228A9C67002ED417 /* ft_strjoin.c */,
 				EC89F012228A9C65002ED417 /* ft_strtrim.c */,
 				EC89F024228A9C67002ED417 /* ft_strsplit.c */,
+				ECEACABE2294396900BFCD54 /* ft_strreplace.c */,
 				ECA9BD7B2292F1CA0000F90F /* ft_abs.c */,
 				EC89F010228A9C65002ED417 /* ft_atoi.c */,
 				EC89F011228A9C65002ED417 /* ft_itoa.c */,
@@ -558,6 +561,7 @@
 				EC89F077228A9C69002ED417 /* ft_memcmp.c in Sources */,
 				EC89F06B228A9C69002ED417 /* ft_strncmp.c in Sources */,
 				EC89F03A228A9C69002ED417 /* ft_tolower.c in Sources */,
+				ECEACABF2294396900BFCD54 /* ft_strreplace.c in Sources */,
 				EC89F05A228A9C69002ED417 /* ft_toupper.c in Sources */,
 				EC89F067228A9C69002ED417 /* ft_strsplit.c in Sources */,
 				EC89F062228A9C69002ED417 /* ft_strchr.c in Sources */,

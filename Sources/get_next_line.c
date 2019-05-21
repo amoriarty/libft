@@ -12,67 +12,34 @@
 
 #include "libft.h"
 
-static int				text_copy(int const fd, char **line)
-{
-	int				ret;
-	char			*tmp;
-	char			buffer[BUFF_SIZE + 1];
 
-	ret = -2;
-	tmp = NULL;
-	while ((!ft_strchr(*line, EOL)))
-	{
-		if ((ret = read(fd, buffer, BUFF_SIZE)) <= 0)
-			return (ret);
-		tmp = *line;
-		buffer[ret] = 0;
-		if (!(*line = ft_strjoin(*line, buffer)))
-			return (ERROR);
-		ft_strdel(&tmp);
-		if (ret < BUFF_SIZE)
-			return (ret);
-	}
-	return (ret);
-}
-
-static char				*get_line(char *offset, char **line)
-{
-	char			*tmp;
-	char			*del;
-
-	del = offset;
-	if (offset && (tmp = ft_strchr(offset, EOL)))
-	{
-		*line = ft_strsub(offset, 0, ft_strlen(offset) - ft_strlen(tmp));
-		offset = ft_strdup(tmp + 1);
-		ft_strdel(&del);
-	}
-	else
-	{
-		*line = ft_strdup(offset);
-		ft_strclr(offset);
-	}
-	return (offset);
-}
 
 /// Get next line of file descriptor
 /// @param fd File descriptor to read
 /// @param line String to save next line
-/// @returns Number of characters read from file descriptor
-int						get_next_line(int const fd, char **line)
+/// @returns 1 if line has been read, 0 if reading is over or ERROR (-1) if an error occured.
+int     get_next_line(int const fd, char **line)
 {
-	int				ret;
-	static char		*offset;
+    size_t      length;
+    char        *carriage;
+    char        buffer[BUFF_SIZE + 1];
+    static char *remaining;
 
-	if (!line)
-		return (ERROR);
-	if (!offset)
-		offset = ft_strnew(0);
-	if ((ret = text_copy(fd, &offset)) == ERROR)
-		return (ERROR);
-	offset = get_line(offset, line);
-	if ((!ret && !ft_strlen(offset) && !ft_strlen(*line)))
-		return (0);
-	else
-		return (1);
+    ft_bzero(buffer, BUFF_SIZE + 1);
+    carriage = remaining ? ft_strchr(remaining, EOL) : NULL;
+    remaining = remaining ? remaining : ft_strnew(0);
+    if (carriage)
+    {
+        *carriage = 0;
+        *line = ft_strdup(remaining);
+        ft_strreplace(&remaining, ft_strdup(carriage + 1));
+        return (1);
+    }
+    length = read(fd, buffer, BUFF_SIZE);
+    if (length == ERROR)
+        return (ERROR);
+    if (length == 0)
+        return (0);
+    ft_strreplace(&remaining, ft_strjoin(remaining, buffer));
+    return (get_next_line(fd, line));
 }

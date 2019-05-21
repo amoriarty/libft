@@ -65,6 +65,7 @@ char    *ft_strsub(char const *source, unsigned int start, size_t length);
 char    *ft_strjoin(char const *left, char const *right);
 char    *ft_strtrim(char const *source);
 char    **ft_strsplit(char const *source, char character);
+void    ft_strreplace(char **destination, char *source);
 
 // MARK:- Charactere Testing
 

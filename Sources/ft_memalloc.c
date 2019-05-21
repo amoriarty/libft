@@ -17,7 +17,5 @@
 /// @returns Pointer to newly allocated memory, or NULL if an error occured
 void		*ft_memalloc(size_t size)
 {
-    if (size == 0)
-        return (NULL);
     return ((void *)malloc(sizeof(char) * size));
 }
