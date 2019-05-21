@@ -8,7 +8,6 @@
 
 import XCTest
 
-#warning("Doesn't test that index is correct")
 class StriteriTests: XCTestCase {
 
     func testBasic() {

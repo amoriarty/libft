@@ -8,7 +8,6 @@
 
 #include "libft.h"
 
-#warning 'ft_strreplace' isn't tested
 /// Deallocate content pointed by destination before assigning source
 /// @param destination Destination string
 /// @param source String to assign into destination

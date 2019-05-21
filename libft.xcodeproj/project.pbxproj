@@ -10,7 +10,6 @@
 		EC045A222293D0F60017D11A /* ToCharTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC045A212293D0F60017D11A /* ToCharTests.swift */; };
 		EC045A242293D1D30017D11A /* ToIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC045A232293D1D30017D11A /* ToIntTests.swift */; };
 		EC045A262293D2CD0017D11A /* GetNextLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC045A252293D2CC0017D11A /* GetNextLineTests.swift */; };
-		EC045A292293DA460017D11A /* loremipsum.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC045A272293DA450017D11A /* loremipsum.txt */; };
 		EC045A2A2293DA460017D11A /* basics.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC045A282293DA460017D11A /* basics.txt */; };
 		EC3E1634228C2F7900810DE7 /* StrsubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1633228C2F7900810DE7 /* StrsubTests.swift */; };
 		EC3E1636228C309800810DE7 /* StrjoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1635228C309800810DE7 /* StrjoinTests.swift */; };
@@ -124,6 +123,7 @@
 		ECA9BD802292F4BF0000F90F /* ft_tochar.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD7F2292F4BF0000F90F /* ft_tochar.c */; };
 		ECA9BD822292F5A10000F90F /* ft_toint.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD812292F5A10000F90F /* ft_toint.c */; };
 		ECEACABF2294396900BFCD54 /* ft_strreplace.c in Sources */ = {isa = PBXBuildFile; fileRef = ECEACABE2294396900BFCD54 /* ft_strreplace.c */; };
+		ECF193AF229444DA00BDFE34 /* StrreplaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF193AE229444DA00BDFE34 /* StrreplaceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,7 +140,6 @@
 		EC045A212293D0F60017D11A /* ToCharTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToCharTests.swift; sourceTree = "<group>"; };
 		EC045A232293D1D30017D11A /* ToIntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToIntTests.swift; sourceTree = "<group>"; };
 		EC045A252293D2CC0017D11A /* GetNextLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNextLineTests.swift; sourceTree = "<group>"; };
-		EC045A272293DA450017D11A /* loremipsum.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = loremipsum.txt; sourceTree = "<group>"; };
 		EC045A282293DA460017D11A /* basics.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = basics.txt; sourceTree = "<group>"; };
 		EC3E1633228C2F7900810DE7 /* StrsubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrsubTests.swift; sourceTree = "<group>"; };
 		EC3E1635228C309800810DE7 /* StrjoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrjoinTests.swift; sourceTree = "<group>"; };
@@ -257,6 +256,7 @@
 		ECA9BD7F2292F4BF0000F90F /* ft_tochar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_tochar.c; sourceTree = "<group>"; };
 		ECA9BD812292F5A10000F90F /* ft_toint.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_toint.c; sourceTree = "<group>"; };
 		ECEACABE2294396900BFCD54 /* ft_strreplace.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_strreplace.c; sourceTree = "<group>"; };
+		ECF193AE229444DA00BDFE34 /* StrreplaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrreplaceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -399,6 +399,7 @@
 				EC3E1633228C2F7900810DE7 /* StrsubTests.swift */,
 				EC3E1635228C309800810DE7 /* StrjoinTests.swift */,
 				EC3E1637228C31B400810DE7 /* StrtrimTests.swift */,
+				ECF193AE229444DA00BDFE34 /* StrreplaceTests.swift */,
 				ECA74CC3228C0C36005E653D /* AtoiTests.swift */,
 				EC3E1639228C32DC00810DE7 /* ItoaTests.swift */,
 				ECA74CCD228C1106005E653D /* IsPrintTests.swift */,
@@ -423,7 +424,6 @@
 				EC89F081228A9E6F002ED417 /* Info.plist */,
 				EC89F089228AA1CB002ED417 /* Tests-Bridging-Header.h */,
 				EC045A282293DA460017D11A /* basics.txt */,
-				EC045A272293DA450017D11A /* loremipsum.txt */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -519,7 +519,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC045A292293DA460017D11A /* loremipsum.txt in Resources */,
 				EC045A2A2293DA460017D11A /* basics.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,6 +625,7 @@
 				EC8C1F39228B0E450032719E /* MemccpyTests.swift in Sources */,
 				ECA74CDE228C21C3005E653D /* StriteriTests.swift in Sources */,
 				EC3E163C228C348800810DE7 /* StrsplitTests.swift in Sources */,
+				ECF193AF229444DA00BDFE34 /* StrreplaceTests.swift in Sources */,
 				ECA74CE2228C2956005E653D /* StrclrTests.swift in Sources */,
 				ECA9BD7E2292F20D0000F90F /* AbsTests.swift in Sources */,
 				ECA74CBC228C0823005E653D /* StrstrTests.swift in Sources */,
