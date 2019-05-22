@@ -16,7 +16,7 @@ void    list_remove_at(t_list *self, int index, void (*remove)(void *))
 {
     t_node          *entry;
     t_node          **indirect;
-    unsigned int    iterator;
+    size_t          iterator;
 
     iterator = 0;
     indirect = &self->head;

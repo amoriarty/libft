@@ -21,5 +21,4 @@ void    list_append(t_list *self, void *content)
     if (self->tail)
         self->tail->next = node;
     self->tail = node;
-
 }

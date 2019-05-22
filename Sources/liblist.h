@@ -27,6 +27,7 @@ void        list_free(t_list **self, void (*remove)(void *));
 void        list_append(t_list *self, void *content);
 void        list_for_each(t_list *self, void (*function)(void *));
 t_list      *list_map(t_list *self, void *(*function)(void *));
+void        list_remove(t_list *self, t_bool (*predicate)(void *content), void (*remove)(void *));
 void        list_remove_at(t_list *self, int index, void (*remove)(void *));
 void        list_remove_all(t_list *self, void (*remove)(void *));
 

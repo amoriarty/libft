@@ -131,6 +131,8 @@
 		ECA7BD8422954F55006DACE4 /* ListForEachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7BD8322954F55006DACE4 /* ListForEachTests.swift */; };
 		ECA7BD862295513C006DACE4 /* list_map.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA7BD852295513C006DACE4 /* list_map.c */; };
 		ECA7BD8822955323006DACE4 /* ListMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7BD8722955323006DACE4 /* ListMapTests.swift */; };
+		ECA7BD8A22956562006DACE4 /* list_remove.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA7BD8922956562006DACE4 /* list_remove.c */; };
+		ECA7BD8C22956714006DACE4 /* ListRemoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7BD8B22956714006DACE4 /* ListRemoveTests.swift */; };
 		ECA9BD782292EB110000F90F /* IsLowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD772292EB110000F90F /* IsLowerTests.swift */; };
 		ECA9BD7A2292EC040000F90F /* IsUpperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD792292EC040000F90F /* IsUpperTests.swift */; };
 		ECA9BD7C2292F1CA0000F90F /* ft_abs.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD7B2292F1CA0000F90F /* ft_abs.c */; };
@@ -282,6 +284,8 @@
 		ECA7BD8322954F55006DACE4 /* ListForEachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListForEachTests.swift; sourceTree = "<group>"; };
 		ECA7BD852295513C006DACE4 /* list_map.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_map.c; sourceTree = "<group>"; };
 		ECA7BD8722955323006DACE4 /* ListMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMapTests.swift; sourceTree = "<group>"; };
+		ECA7BD8922956562006DACE4 /* list_remove.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_remove.c; sourceTree = "<group>"; };
+		ECA7BD8B22956714006DACE4 /* ListRemoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRemoveTests.swift; sourceTree = "<group>"; };
 		ECA9BD772292EB110000F90F /* IsLowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IsLowerTests.swift; path = ../IsLowerTests.swift; sourceTree = "<group>"; };
 		ECA9BD792292EC040000F90F /* IsUpperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IsUpperTests.swift; path = ../IsUpperTests.swift; sourceTree = "<group>"; };
 		ECA9BD7B2292F1CA0000F90F /* ft_abs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_abs.c; sourceTree = "<group>"; };
@@ -322,6 +326,7 @@
 				EC3E7BB82294653300D6C68E /* ListAppendTests.swift */,
 				ECA7BD8322954F55006DACE4 /* ListForEachTests.swift */,
 				ECA7BD8722955323006DACE4 /* ListMapTests.swift */,
+				ECA7BD8B22956714006DACE4 /* ListRemoveTests.swift */,
 				EC888E252295215E005841E2 /* ListRemoveAtTests.swift */,
 				EC888E2B22954123005841E2 /* ListRemoveAllTests.swift */,
 				EC3E7BB6229463D300D6C68E /* NodeNewTests.swift */,
@@ -404,6 +409,7 @@
 				EC3E7BB2229461A600D6C68E /* list_append.c */,
 				ECA7BD8122954EEF006DACE4 /* list_for_each.c */,
 				ECA7BD852295513C006DACE4 /* list_map.c */,
+				ECA7BD8922956562006DACE4 /* list_remove.c */,
 				EC888E2322952053005841E2 /* list_remove_at.c */,
 				EC888E292295406A005841E2 /* list_remove_all.c */,
 				EC3E7BB42294626600D6C68E /* node_new.c */,
@@ -671,6 +677,7 @@
 				EC89F056228A9C69002ED417 /* ft_bzero.c in Sources */,
 				EC89F04E228A9C69002ED417 /* ft_putnbr.c in Sources */,
 				EC89F064228A9C69002ED417 /* ft_strnstr.c in Sources */,
+				ECA7BD8A22956562006DACE4 /* list_remove.c in Sources */,
 				EC89F03C228A9C69002ED417 /* ft_memdel.c in Sources */,
 				EC89F072228A9C69002ED417 /* ft_striter.c in Sources */,
 				ECA7BD8222954EEF006DACE4 /* list_for_each.c in Sources */,
@@ -705,6 +712,7 @@
 				ECA74CB0228BF10D005E653D /* StrncpyTests.swift in Sources */,
 				ECA74CC2228C0B04005E653D /* StrncmpTests.swift in Sources */,
 				EC3E1634228C2F7900810DE7 /* StrsubTests.swift in Sources */,
+				ECA7BD8C22956714006DACE4 /* ListRemoveTests.swift in Sources */,
 				EC3E163A228C32DC00810DE7 /* ItoaTests.swift in Sources */,
 				ECA74CCA228C1056005E653D /* IsAlnumTests.swift in Sources */,
 				ECA9BD7A2292EC040000F90F /* IsUpperTests.swift in Sources */,
