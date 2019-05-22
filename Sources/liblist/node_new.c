@@ -15,5 +15,6 @@ t_node  *node_new(void *content)
     node = (t_node *) malloc(sizeof(t_node));
     node->content = content;
     node->next = NULL;
+    node->previous = NULL;
     return (node);
 }

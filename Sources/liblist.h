@@ -24,15 +24,18 @@ struct      s_list
 
 t_list      *list_new(void);
 void        list_append(t_list *self, void *content);
+void        list_remove(t_list *self, int index, void (*remove)(void *));
 
 // MARK:- Node
 
 struct      s_node
 {
-    t_node  *next;
     void    *content;
+    t_node  *next;
+    t_node  *previous;
 };
 
 t_node      *node_new(void *content);
+void        node_free(t_node *self, void (*remove)(void *));
 
 #endif

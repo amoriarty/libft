@@ -13,11 +13,13 @@ void    list_append(t_list *self, void *content)
 {
     t_node  *node;
 
-    node = node_new(content);
     self->count += 1;
+    node = node_new(content);
+    node->previous = self->tail;
     if (!self->head)
         self->head = node;
     if (self->tail)
         self->tail->next = node;
     self->tail = node;
+
 }

@@ -24,8 +24,12 @@ class ListAppendTests: XCTestCase {
         XCTAssert(list?.pointee.count == 3)
         XCTAssert(list?.pointee.head.pointee.content == b0)
         XCTAssert(list?.pointee.tail.pointee.content == b2)
+        XCTAssert(list?.pointee.head.pointee.previous == nil)
+        XCTAssert(list?.pointee.tail.pointee.next == nil)
         XCTAssert(list?.pointee.head.pointee.next.pointee.content == b1)
+        XCTAssert(list?.pointee.head.pointee.next.pointee.previous == list?.pointee.head)
         XCTAssert(list?.pointee.head.pointee.next.pointee.next.pointee.content == b2)
+        XCTAssert(list?.pointee.head.pointee.next.pointee.next.pointee.previous == list?.pointee.head.pointee.next)
     }
 
 }
