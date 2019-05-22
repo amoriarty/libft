@@ -21,7 +21,7 @@ t_list          *list_map(t_list *self, void *(*function)(void *))
     walk = self->head;
     while (walk)
     {
-        list_append(new, (*function)(walk->content));
+        list_append(new, function(walk->content));
         walk = walk->next;
     }
     return (new);

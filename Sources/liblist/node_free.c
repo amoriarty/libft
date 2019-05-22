@@ -13,6 +13,6 @@
 /// @param remove Function to deallocate content
 void    node_free(t_node *self, void (*remove)(void *))
 {
-    (*remove)(self->content);
+    remove(self->content);
     free(self);
 }

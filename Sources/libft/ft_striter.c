@@ -22,7 +22,7 @@ void    ft_striter(char *string, void (*function)(char *))
     iterator = 0;
     while (string[iterator])
     {
-        (*function)(string + iterator);
+        function(string + iterator);
         iterator += 1;
     }
 }

@@ -22,7 +22,7 @@ void    ft_striteri(char *string, void (*function)(unsigned int, char *))
     iterator = 0;
     while (string[iterator])
     {
-        (*function)(iterator, string + iterator);
+        function(iterator, string + iterator);
         iterator += 1;
     }
 }

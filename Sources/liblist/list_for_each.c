@@ -18,7 +18,7 @@ void        list_for_each(t_list *self, void (*function)(void *))
     walk = self->head;
     while (walk)
     {
-        (*function)(walk->content);
+        function(walk->content);
         walk = walk->next;
     }
 }

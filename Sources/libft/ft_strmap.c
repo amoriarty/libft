@@ -27,7 +27,7 @@ char    *ft_strmap(char const *source, char (*function)(char))
     mapped = ft_strnew(length);
     while (source[iterator])
     {
-        mapped[iterator] = (*function)(source[iterator]);
+        mapped[iterator] = function(source[iterator]);
         iterator += 1;
     }
     return (mapped);

@@ -19,7 +19,7 @@ void    list_remove(t_list *self, t_bool (*predicate)(void *content), void (*rem
     walk = self->head;
     while (walk)
     {
-        if ((*predicate)(walk->content))
+        if (predicate(walk->content))
         {
             if (walk->previous)
                 walk->previous->next = walk->next;
