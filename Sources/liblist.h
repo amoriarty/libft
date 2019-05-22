@@ -25,6 +25,7 @@ struct      s_list
 t_list      *list_new(void);
 void        list_append(t_list *self, void *content);
 void        list_remove(t_list *self, int index, void (*remove)(void *));
+void        list_remove_all(t_list *self, void (*remove)(void *));
 
 // MARK:- Node
 

@@ -32,6 +32,8 @@
 		EC888E2422952053005841E2 /* list_remove.c in Sources */ = {isa = PBXBuildFile; fileRef = EC888E2322952053005841E2 /* list_remove.c */; };
 		EC888E262295215E005841E2 /* ListRemoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC888E252295215E005841E2 /* ListRemoveTests.swift */; };
 		EC888E282295218B005841E2 /* node_free.c in Sources */ = {isa = PBXBuildFile; fileRef = EC888E272295218B005841E2 /* node_free.c */; };
+		EC888E2A2295406A005841E2 /* list_remove_all.c in Sources */ = {isa = PBXBuildFile; fileRef = EC888E292295406A005841E2 /* list_remove_all.c */; };
+		EC888E2C22954123005841E2 /* ListRemoveAllTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC888E2B22954123005841E2 /* ListRemoveAllTests.swift */; };
 		EC89F036228A9C68002ED417 /* ft_strnew.c in Sources */ = {isa = PBXBuildFile; fileRef = EC89EFF3228A9C63002ED417 /* ft_strnew.c */; };
 		EC89F037228A9C68002ED417 /* libft.h in Headers */ = {isa = PBXBuildFile; fileRef = EC89EFF4228A9C63002ED417 /* libft.h */; };
 		EC89F038228A9C68002ED417 /* ft_memset.c in Sources */ = {isa = PBXBuildFile; fileRef = EC89EFF5228A9C63002ED417 /* ft_memset.c */; };
@@ -171,6 +173,8 @@
 		EC888E2322952053005841E2 /* list_remove.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_remove.c; sourceTree = "<group>"; };
 		EC888E252295215E005841E2 /* ListRemoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRemoveTests.swift; sourceTree = "<group>"; };
 		EC888E272295218B005841E2 /* node_free.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = node_free.c; sourceTree = "<group>"; };
+		EC888E292295406A005841E2 /* list_remove_all.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_remove_all.c; sourceTree = "<group>"; };
+		EC888E2B22954123005841E2 /* ListRemoveAllTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRemoveAllTests.swift; sourceTree = "<group>"; };
 		EC89EFEB228A9BC5002ED417 /* libft.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libft.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC89EFF3228A9C63002ED417 /* ft_strnew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_strnew.c; sourceTree = "<group>"; };
 		EC89EFF4228A9C63002ED417 /* libft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libft.h; sourceTree = "<group>"; };
@@ -302,6 +306,7 @@
 				EC3E7BB02294604500D6C68E /* ListNewTests.swift */,
 				EC3E7BB82294653300D6C68E /* ListAppendTests.swift */,
 				EC888E252295215E005841E2 /* ListRemoveTests.swift */,
+				EC888E2B22954123005841E2 /* ListRemoveAllTests.swift */,
 				EC3E7BB6229463D300D6C68E /* NodeNewTests.swift */,
 			);
 			path = liblist;
@@ -379,6 +384,7 @@
 				ECF193B222945DB800BDFE34 /* list_new.c */,
 				EC3E7BB2229461A600D6C68E /* list_append.c */,
 				EC888E2322952053005841E2 /* list_remove.c */,
+				EC888E292295406A005841E2 /* list_remove_all.c */,
 				EC3E7BB42294626600D6C68E /* node_new.c */,
 				EC888E272295218B005841E2 /* node_free.c */,
 			);
@@ -603,6 +609,7 @@
 				EC89F071228A9C69002ED417 /* ft_isascii.c in Sources */,
 				EC89F05E228A9C69002ED417 /* ft_strcat.c in Sources */,
 				EC89F055228A9C69002ED417 /* ft_strtrim.c in Sources */,
+				EC888E2A2295406A005841E2 /* list_remove_all.c in Sources */,
 				EC89F05C228A9C69002ED417 /* ft_memchr.c in Sources */,
 				EC89F043228A9C69002ED417 /* ft_strncat.c in Sources */,
 				EC89F076228A9C69002ED417 /* ft_striteri.c in Sources */,
@@ -687,6 +694,7 @@
 				EC3E1646228C458C00810DE7 /* PutnbrTests.swift in Sources */,
 				ECA9BD782292EB110000F90F /* IsLowerTests.swift in Sources */,
 				EC3E163E228C3D1C00810DE7 /* PutcharTests.swift in Sources */,
+				EC888E2C22954123005841E2 /* ListRemoveAllTests.swift in Sources */,
 				EC8C1F39228B0E450032719E /* MemccpyTests.swift in Sources */,
 				ECA74CDE228C21C3005E653D /* StriteriTests.swift in Sources */,
 				EC3E163C228C348800810DE7 /* StrsplitTests.swift in Sources */,
