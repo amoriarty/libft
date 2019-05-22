@@ -20,7 +20,7 @@ char    *ft_strnew(size_t size)
     char    *string;
 
     size += 1;
-    string = (char *) ft_memalloc(size);
+    string = (char *) malloc(sizeof(char) * size);
     ft_bzero(string, size);
     return (string);
 }

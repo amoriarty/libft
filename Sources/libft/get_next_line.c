@@ -20,7 +20,7 @@
 /// @returns 1 if line has been read, 0 if reading is over or ERROR (-1) if an error occured.
 int     get_next_line(int const fd, char **line)
 {
-    size_t      length;
+    ssize_t     length;
     char        *carriage;
     char        buffer[BUFF_SIZE + 1];
     static char *remaining;

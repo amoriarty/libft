@@ -17,6 +17,7 @@
 # define EOL '\n'
 # define BUFF_SIZE 2048
 # define ERROR -1
+# warning '-Wall -Wextra -Werror' aren't added to configurations
 
 // MARK:- Boolean
 
@@ -35,7 +36,6 @@ void    *ft_memcpy(void *destination, const void *source, size_t length);
 void    *ft_memccpy(void *destination, const void *source, int c, size_t length);
 void    *ft_memchr(const void *source, unsigned int character, size_t length);
 int     ft_memcmp(const void *left, const void *right, size_t length);
-void    *ft_memalloc(size_t size);
 void    ft_memdel(void **memory);
 
 // MARK:- String
@@ -106,5 +106,9 @@ void    ft_putnbr_fd(int n, int fd);
 // MARK:- Files
 
 int	    get_next_line(const int fd, char **line);
+
+// MARK:- Errors
+
+void    fatal_error(const char *message);
 
 #endif
