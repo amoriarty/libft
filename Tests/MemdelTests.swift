@@ -11,19 +11,16 @@ import XCTest
 class MemdelTests: XCTestCase {
 
     func testBasic() {
-        var buffer: UnsafeMutableRawPointer! = malloc(42)
-
-        withUnsafeMutablePointer(to: &buffer) {
-            ft_memdel(Optional($0))
-            XCTAssert($0.pointee == nil)
-        }
+        var buffer = malloc(42)
+        ft_memdel(&buffer)
+        XCTAssert(buffer == nil)
     }
 
     func testPerformance() {
         measure {
             for _ in 0...1000 {
-                var buffer: UnsafeMutableRawPointer! = malloc(42)
-                withUnsafeMutablePointer(to: &buffer) { ft_memdel(Optional($0)) }
+                var buffer = malloc(42)
+                ft_memdel(&buffer)
             }
         }
     }

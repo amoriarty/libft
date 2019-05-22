@@ -1,5 +1,5 @@
 //
-//  ListRemoveTests.swift
+//  ListRemoveAtTests.swift
 //  Tests
 //
 //  Created by Alex Legent on 22/05/2019.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class ListRemoveTests: XCTestCase {
+class ListRemoveAtTests: XCTestCase {
 
     func testBasic() {
         let list = list_new();
@@ -24,17 +24,17 @@ class ListRemoveTests: XCTestCase {
         list_append(list, b3);
         list_append(list, b4);
 
-        list_remove(list, 0, free)
+        list_remove_at(list, 0, free)
         XCTAssert(list?.pointee.count == 4)
         XCTAssert(list?.pointee.head?.pointee.content == b1)
         XCTAssert(list?.pointee.head?.pointee.previous == nil)
 
-        list_remove(list, 3, free)
+        list_remove_at(list, 3, free)
         XCTAssert(list?.pointee.count == 3)
         XCTAssert(list?.pointee.tail?.pointee.content == b3)
         XCTAssert(list?.pointee.tail?.pointee.next == nil)
 
-        list_remove(list, 1, free)
+        list_remove_at(list, 1, free)
         XCTAssert(list?.pointee.count == 2)
         XCTAssert(list?.pointee.head.pointee.next == list?.pointee.tail)
         XCTAssert(list?.pointee.tail.pointee.previous == list?.pointee.head)

@@ -11,19 +11,16 @@ import XCTest
 class StrdelTests: XCTestCase {
 
     func testBasic() {
-        var buffer: UnsafeMutablePointer<Int8>! = malloc(42).assumingMemoryBound(to: Int8.self)
-
-        withUnsafeMutablePointer(to: &buffer) {
-            ft_strdel(Optional($0))
-            XCTAssert($0.pointee == nil)
-        }
+        var buffer: UnsafeMutablePointer<Int8>? = malloc(42).assumingMemoryBound(to: Int8.self)
+        ft_strdel(&buffer)
+        XCTAssert(buffer == nil)
     }
 
     func testPerfomance() {
         measure {
             for _ in 0...1000 {
-                var buffer: UnsafeMutablePointer<Int8>! = malloc(42).assumingMemoryBound(to: Int8.self)
-                withUnsafeMutablePointer(to: &buffer) { ft_strdel(Optional($0)) }
+                var buffer: UnsafeMutablePointer<Int8>? = malloc(42).assumingMemoryBound(to: Int8.self)
+                ft_strdel(&buffer)
             }
         }
     }

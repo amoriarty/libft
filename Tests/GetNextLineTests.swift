@@ -23,11 +23,9 @@ class GetNextLineTests: XCTestCase {
         lines.insert("", at: 9)
 
         for line in lines {
-            withUnsafeMutablePointer(to: &buffer) { pointer in
-                guard get_next_line(fd, Optional(pointer)) != 0 else { return }
-                XCTAssert(strcmp(pointer.pointee, String(line)) == 0)
-                free(pointer.pointee)
-            }
+            guard get_next_line(fd, &buffer) != 0 else { continue }
+            XCTAssert(strcmp(buffer, String(line)) == 0)
+            free(buffer)
         }
     }
 

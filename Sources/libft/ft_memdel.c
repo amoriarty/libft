@@ -16,8 +16,6 @@
 /// @param memory Pointer to the memory to deallocate
 void		ft_memdel(void **memory)
 {
-    if (!memory)
-        return;
     free(*memory);
     *memory = NULL;
 }

@@ -14,13 +14,9 @@ class StrreplaceTests: XCTestCase {
         let source = strdup("ft_strreplace: basic test")
         var buffer = strdup("Hello World!")
 
-        withUnsafeMutablePointer(to: &buffer) { pointer in
-            ft_strreplace(pointer, source)
-            XCTAssert(pointer.pointee != nil)
-            XCTAssert(pointer.pointee == source)
-            XCTAssert(strcmp(pointer.pointee, source) == 0)
-        }
-
+        ft_strreplace(&buffer, source)
+        XCTAssert(buffer == source)
+        XCTAssert(strcmp(buffer, source) == 0)
         free(source)
     }
 
@@ -30,9 +26,7 @@ class StrreplaceTests: XCTestCase {
 
         measure {
             for _ in 0...1000 {
-                withUnsafeMutablePointer(to: &buffer) { pointer in
-                    ft_strreplace(pointer, strdup(source))
-                }
+                ft_strreplace(&buffer, strdup(source))
             }
         }
 
