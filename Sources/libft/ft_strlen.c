@@ -17,10 +17,5 @@
 /// @returns Size of the string
 size_t  ft_strlen(const char *source)
 {
-    size_t  iterator;
-
-    iterator = 0;
-    while (source[iterator] != 0)
-        iterator += 1;
-    return (iterator);
+    return (ft_strclen(source, 0));
 }

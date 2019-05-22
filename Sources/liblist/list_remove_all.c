@@ -19,7 +19,8 @@ void    list_remove_all(t_list *self, void (*remove)(void *))
     self->head = NULL;
     self->tail = NULL;
     self->count = 0;
-    while (walk) {
+    while (walk)
+    {
         node_free(walk, remove);
         walk = walk->next;
     }

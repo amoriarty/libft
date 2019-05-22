@@ -11,70 +11,102 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "liblist.h"
 
-static int		count_words(const char *s, char c)
+static void *uncasted_strdup(void *source)
 {
-	int		words;
-	int		i;
-
-	words = 0;
-	i = 0;
-	while (s[i])
-	{
-		while (s[i] == c)
-			i++;
-		if (s[i] != c && s[i] && ft_isprint(s[i]))
-		{
-			words++;
-			while (s[i] != c && s[i])
-				i++;
-		}
-	}
-	return (words);
+    return (void *) ft_strdup((char *) source);
 }
 
-static size_t	get_word_length(const char *s, char c)
-{
-	size_t	length;
-	int		i;
-
-	length = 0;
-	i = 0;
-	while (s[i++] != c && s[i])
-		length++;
-	return (length);
-}
-
-#warning 'ft_strsplit' isn't update
 /// Split a character into an array of string, seperated by c
 /// @param source String to split
-/// @param character Splitting character
+/// @param seperator Splitting character
 /// @returns Array of splitting strings
-char			**ft_strsplit(const char *source, char character)
+char        **ft_strsplit(const char *source, char seperator)
 {
-	char	**tab;
-	int		i;
-	int		x;
+    size_t  length;
+    char    *offset;
+    char    *substring;
+    char    **result;
+    t_list  *list;
 
-	if (source == NULL)
-		return (NULL);
-	i = 0;
-	if (!(tab = (char **)malloc(sizeof(char*) * (count_words(source, character) + 1))))
-		return (NULL);
-	while (*source)
-	{
-		while (*source == character)
-			source++;
-		if (*source != character && *source && ft_isprint(*source))
-		{
-			x = 0;
-			if (!(tab[i] = ft_strnew(get_word_length(source, character))))
-				return (NULL);
-			while (*source != character && *source && ft_isprint(*source))
-				tab[i][x++] = *source++;
-			tab[i++][x] = '\0';
-		}
-	}
-	tab[i] = 0;
-	return (tab);
+    list = list_new();
+    offset = (char *) source;
+    while (*offset)
+    {
+        if (*offset == seperator)
+        {
+            offset += 1;
+            continue;
+        }
+        length = ft_strclen(offset, seperator);
+        substring = ft_strsub(offset, 0, length);
+        offset += length;
+        list_append(list, substring);
+    }
+    result = (char **) list_to_array(list, uncasted_strdup);
+    list_free(&list, free);
+    return (result);
 }
+
+//char            **ft_strsplit(const char *source, char character)
+//{
+//    char    **tab;
+//    int        i;
+//    int        x;
+//
+//    if (source == NULL)
+//        return (NULL);
+//    i = 0;
+//    if (!(tab = (char **)malloc(sizeof(char*) * (count_words(source, character) + 1))))
+//        return (NULL);
+//    while (*source)
+//    {
+//        while (*source == character)
+//            source++;
+//        if (*source != character && *source && ft_isprint(*source))
+//        {
+//            x = 0;
+//            if (!(tab[i] = ft_strnew(get_word_length(source, character))))
+//                return (NULL);
+//            while (*source != character && *source && ft_isprint(*source))
+//                tab[i][x++] = *source++;
+//            tab[i++][x] = '\0';
+//        }
+//    }
+//    tab[i] = 0;
+//    return (tab);
+//}
+
+//static int        count_words(const char *s, char c)
+//{
+//    int        words;
+//    int        i;
+//
+//    words = 0;
+//    i = 0;
+//    while (s[i])
+//    {
+//        while (s[i] == c)
+//            i++;
+//        if (s[i] != c && s[i] && ft_isprint(s[i]))
+//        {
+//            words++;
+//            while (s[i] != c && s[i])
+//                i++;
+//        }
+//    }
+//    return (words);
+//}
+//
+//static size_t    get_word_length(const char *s, char c)
+//{
+//    size_t    length;
+//    int        i;
+//
+//    length = 0;
+//    i = 0;
+//    while (s[i++] != c && s[i])
+//        length++;
+//    return (length);
+//}

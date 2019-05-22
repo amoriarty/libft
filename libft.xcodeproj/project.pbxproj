@@ -135,6 +135,8 @@
 		ECA7BD8C22956714006DACE4 /* ListRemoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7BD8B22956714006DACE4 /* ListRemoveTests.swift */; };
 		ECA7BD9022957565006DACE4 /* list_to_array.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA7BD8F22957565006DACE4 /* list_to_array.c */; };
 		ECA7BD922295764F006DACE4 /* ListToArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7BD912295764F006DACE4 /* ListToArrayTests.swift */; };
+		ECA7BD9422959600006DACE4 /* ft_strclen.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA7BD9322959600006DACE4 /* ft_strclen.c */; };
+		ECA7BD96229598EA006DACE4 /* StrclenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7BD95229598EA006DACE4 /* StrclenTests.swift */; };
 		ECA9BD782292EB110000F90F /* IsLowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD772292EB110000F90F /* IsLowerTests.swift */; };
 		ECA9BD7A2292EC040000F90F /* IsUpperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD792292EC040000F90F /* IsUpperTests.swift */; };
 		ECA9BD7C2292F1CA0000F90F /* ft_abs.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD7B2292F1CA0000F90F /* ft_abs.c */; };
@@ -290,6 +292,8 @@
 		ECA7BD8B22956714006DACE4 /* ListRemoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRemoveTests.swift; sourceTree = "<group>"; };
 		ECA7BD8F22957565006DACE4 /* list_to_array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_to_array.c; sourceTree = "<group>"; };
 		ECA7BD912295764F006DACE4 /* ListToArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListToArrayTests.swift; sourceTree = "<group>"; };
+		ECA7BD9322959600006DACE4 /* ft_strclen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_strclen.c; sourceTree = "<group>"; };
+		ECA7BD95229598EA006DACE4 /* StrclenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrclenTests.swift; sourceTree = "<group>"; };
 		ECA9BD772292EB110000F90F /* IsLowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IsLowerTests.swift; path = ../IsLowerTests.swift; sourceTree = "<group>"; };
 		ECA9BD792292EC040000F90F /* IsUpperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IsUpperTests.swift; path = ../IsUpperTests.swift; sourceTree = "<group>"; };
 		ECA9BD7B2292F1CA0000F90F /* ft_abs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_abs.c; sourceTree = "<group>"; };
@@ -351,6 +355,7 @@
 				EC89F034228A9C68002ED417 /* ft_memcmp.c */,
 				EC89EFF9228A9C63002ED417 /* ft_memdel.c */,
 				EC89F025228A9C67002ED417 /* ft_strlen.c */,
+				ECA7BD9322959600006DACE4 /* ft_strclen.c */,
 				EC89F02D228A9C68002ED417 /* ft_strdup.c */,
 				EC89F018228A9C66002ED417 /* ft_strcpy.c */,
 				EC89F00C228A9C65002ED417 /* ft_strncpy.c */,
@@ -478,6 +483,7 @@
 				EC8C1F3E228B21170032719E /* MemcmpTests.swift */,
 				ECA74CD5228C162E005E653D /* MemdelTests.swift */,
 				ECA74CA9228BEBD3005E653D /* SrtlenTests.swift */,
+				ECA7BD95229598EA006DACE4 /* StrclenTests.swift */,
 				ECA74CAB228BED2D005E653D /* StrdupTests.swift */,
 				ECA74CAD228BEE81005E653D /* StrcpyTests.swift */,
 				ECA74CAF228BF10D005E653D /* StrncpyTests.swift */,
@@ -501,6 +507,7 @@
 				EC3E1633228C2F7900810DE7 /* StrsubTests.swift */,
 				EC3E1635228C309800810DE7 /* StrjoinTests.swift */,
 				EC3E1637228C31B400810DE7 /* StrtrimTests.swift */,
+				EC3E163B228C348800810DE7 /* StrsplitTests.swift */,
 				ECF193AE229444DA00BDFE34 /* StrreplaceTests.swift */,
 				ECA74CC3228C0C36005E653D /* AtoiTests.swift */,
 				EC3E1639228C32DC00810DE7 /* ItoaTests.swift */,
@@ -520,7 +527,6 @@
 				EC3E1643228C452900810DE7 /* PutendlTests.swift */,
 				EC3E1641228C444300810DE7 /* PutstrTests.swift */,
 				EC3E163D228C3D1C00810DE7 /* PutcharTests.swift */,
-				EC3E163B228C348800810DE7 /* StrsplitTests.swift */,
 				EC045A252293D2CC0017D11A /* GetNextLineTests.swift */,
 			);
 			path = libft;
@@ -682,6 +688,7 @@
 				EC89F052228A9C69002ED417 /* ft_strrchr.c in Sources */,
 				EC89F056228A9C69002ED417 /* ft_bzero.c in Sources */,
 				EC89F04E228A9C69002ED417 /* ft_putnbr.c in Sources */,
+				ECA7BD9422959600006DACE4 /* ft_strclen.c in Sources */,
 				EC89F064228A9C69002ED417 /* ft_strnstr.c in Sources */,
 				ECA7BD8A22956562006DACE4 /* list_remove.c in Sources */,
 				EC89F03C228A9C69002ED417 /* ft_memdel.c in Sources */,
@@ -707,6 +714,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA74CD2228C1196005E653D /* ToLowerTests.swift in Sources */,
+				ECA7BD96229598EA006DACE4 /* StrclenTests.swift in Sources */,
 				EC045A262293D2CD0017D11A /* GetNextLineTests.swift in Sources */,
 				ECA74CAE228BEE81005E653D /* StrcpyTests.swift in Sources */,
 				EC8C1F35228B01BA0032719E /* BzeroTests.swift in Sources */,

@@ -41,6 +41,7 @@ void    ft_memdel(void **memory);
 // MARK:- String
 
 size_t  ft_strlen(const char *source);
+size_t  ft_strclen(const char *source, char character);
 char    *ft_strdup(const char *source);
 char    *ft_strcpy(char *destination, const char *source);
 char    *ft_strncpy(char *destination, const char *source, size_t length);
@@ -64,7 +65,7 @@ t_bool  ft_strnequ(char const *left, char const *right, size_t length);
 char    *ft_strsub(char const *source, unsigned int start, size_t length);
 char    *ft_strjoin(char const *left, char const *right);
 char    *ft_strtrim(char const *source);
-char    **ft_strsplit(char const *source, char character);
+char    **ft_strsplit(char const *source, char seperator);
 void    ft_strreplace(char **destination, char *source);
 
 // MARK:- Charactere Testing
