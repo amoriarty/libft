@@ -12,7 +12,7 @@
 /// @param self List to remove node from
 /// @param index Index of the node to remove
 /// @param remove Function to apply to deallocate node content
-void    list_remove_at(t_list *self, int index, void (*remove)(void *))
+void    list_remove_at(t_list *self, int index, void (*remove)(void *content))
 {
     t_node          *entry;
     t_node          **indirect;

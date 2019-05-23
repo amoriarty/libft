@@ -12,14 +12,14 @@
 /// @param self List to remove items from
 /// @param predicate Function returning true when item has to be removed
 /// @param remove Function deallocation node content before free the node itself
-void    list_remove(t_list *self, t_bool (*predicate)(void *content), void (*remove)(void *))
+void    list_remove(t_list *self, void *data, t_bool (*predicate)(void *data, void *content), void (*remove)(void *content))
 {
     t_node  *walk;
 
     walk = self->head;
     while (walk)
     {
-        if (predicate(walk->content))
+        if (predicate(data, walk->content))
         {
             if (walk->previous)
                 walk->previous->next = walk->next;

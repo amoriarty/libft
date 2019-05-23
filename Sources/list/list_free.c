@@ -11,7 +11,7 @@
 /// Deallocation all entries and the list itself.
 /// @param self List to free
 /// @param remove Function to deallocate node content
-void    list_free(t_list **self, void (*remove)(void *))
+void    list_free(t_list **self, void (*remove)(void *content))
 {
     list_remove_all(*self, remove);
     free(*self);

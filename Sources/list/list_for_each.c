@@ -11,7 +11,7 @@
 /// Apply `function` on every node content of the list
 /// @param self List to apply function on
 /// @param function Function to called on every node
-void        list_for_each(t_list *self, void (*function)(void *))
+void        list_for_each(t_list *self, void (*function)(void *content))
 {
     t_node  *walk;
 

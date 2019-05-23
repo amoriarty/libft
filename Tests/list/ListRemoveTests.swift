@@ -18,7 +18,7 @@ class ListRemoveTests: XCTestCase {
             list_append(list, strdup("list_remove: basic test"))
         }
 
-        list_remove(list, { pointer in
+        list_remove(list, nil, { data, pointer in
             let casted = pointer!.assumingMemoryBound(to: Int8.self)
             let duplicate = strdup("Hello World!")
             let boolean = ft_strequ(casted, duplicate)
@@ -44,7 +44,7 @@ class ListRemoveTests: XCTestCase {
             list_append(list, strdup("Hello World!"))
         }
 
-        list_remove(list, { pointer in
+        list_remove(list, nil, { data, pointer in
             let casted = pointer!.assumingMemoryBound(to: Int8.self)
             let duplicate = strdup("Hello World!")
             let boolean = ft_strequ(casted, duplicate)

@@ -15,6 +15,7 @@
 
 static void *uncasted_strdup(void *source);
 
+#warning 'ft_strsplit' should use 'list_strsplit' and 'list_to_array' instead.
 /// Split a character into an array of string, seperated by c
 /// @param source String to split
 /// @param seperator Splitting character

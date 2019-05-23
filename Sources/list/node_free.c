@@ -11,7 +11,7 @@
 /// Deallocate a node, applying `remove` function on content.
 /// @param self Node to delete
 /// @param remove Function to deallocate content
-void    node_free(t_node *self, void (*remove)(void *))
+void    node_free(t_node *self, void (*remove)(void *content))
 {
     remove(self->content);
     free(self);

@@ -13,7 +13,7 @@
 /// @param data Data pointer you can use to pass to your predicate function
 /// @param predicate Predicate function defining if element match
 /// @returns Content of the matching node if exists, null otherwise
-void    *list_first(t_list *self, void *data, t_bool (*predicate)(void *, void *))
+void    *list_first(t_list *self, void *data, t_bool (*predicate)(void *data, void *content))
 {
     t_node  *walk;
 

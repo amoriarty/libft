@@ -29,6 +29,8 @@
 		EC3E7BB92294653300D6C68E /* ListAppendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E7BB82294653300D6C68E /* ListAppendTests.swift */; };
 		EC64C7592292BB9700958375 /* ft_isupper.c in Sources */ = {isa = PBXBuildFile; fileRef = EC64C7582292BB9700958375 /* ft_isupper.c */; };
 		EC64C75B2292BBDE00958375 /* ft_islower.c in Sources */ = {isa = PBXBuildFile; fileRef = EC64C75A2292BBDE00958375 /* ft_islower.c */; };
+		EC66E4D52296A057002AA6DE /* list_contains.c in Sources */ = {isa = PBXBuildFile; fileRef = EC66E4D42296A057002AA6DE /* list_contains.c */; };
+		EC66E4D72296A11D002AA6DE /* ListContainsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC66E4D62296A11D002AA6DE /* ListContainsTests.swift */; };
 		EC888E2422952053005841E2 /* list_remove_at.c in Sources */ = {isa = PBXBuildFile; fileRef = EC888E2322952053005841E2 /* list_remove_at.c */; };
 		EC888E262295215E005841E2 /* ListRemoveAtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC888E252295215E005841E2 /* ListRemoveAtTests.swift */; };
 		EC888E282295218B005841E2 /* node_free.c in Sources */ = {isa = PBXBuildFile; fileRef = EC888E272295218B005841E2 /* node_free.c */; };
@@ -185,6 +187,8 @@
 		EC3E7BB82294653300D6C68E /* ListAppendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppendTests.swift; sourceTree = "<group>"; };
 		EC64C7582292BB9700958375 /* ft_isupper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_isupper.c; sourceTree = "<group>"; };
 		EC64C75A2292BBDE00958375 /* ft_islower.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_islower.c; sourceTree = "<group>"; };
+		EC66E4D42296A057002AA6DE /* list_contains.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_contains.c; sourceTree = "<group>"; };
+		EC66E4D62296A11D002AA6DE /* ListContainsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContainsTests.swift; sourceTree = "<group>"; };
 		EC888E2322952053005841E2 /* list_remove_at.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_remove_at.c; sourceTree = "<group>"; };
 		EC888E252295215E005841E2 /* ListRemoveAtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRemoveAtTests.swift; sourceTree = "<group>"; };
 		EC888E272295218B005841E2 /* node_free.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = node_free.c; sourceTree = "<group>"; };
@@ -336,6 +340,7 @@
 				EC3E7BB02294604500D6C68E /* ListNewTests.swift */,
 				EC888E2F2295433A005841E2 /* ListFreeTests.swift */,
 				ECA7BD9722968E15006DACE4 /* ListFirstTests.swift */,
+				EC66E4D62296A11D002AA6DE /* ListContainsTests.swift */,
 				EC3E7BB82294653300D6C68E /* ListAppendTests.swift */,
 				ECA7BD8322954F55006DACE4 /* ListForEachTests.swift */,
 				ECA7BD8722955323006DACE4 /* ListMapTests.swift */,
@@ -423,6 +428,7 @@
 				EC888E2D22954281005841E2 /* list_free.c */,
 				EC3E7BB2229461A600D6C68E /* list_append.c */,
 				ECA7BD9922968F69006DACE4 /* list_first.c */,
+				EC66E4D42296A057002AA6DE /* list_contains.c */,
 				ECA7BD8122954EEF006DACE4 /* list_for_each.c */,
 				ECA7BD852295513C006DACE4 /* list_map.c */,
 				ECA7BD8F22957565006DACE4 /* list_to_array.c */,
@@ -662,6 +668,7 @@
 				EC89F057228A9C69002ED417 /* ft_strstr.c in Sources */,
 				EC89F05F228A9C69002ED417 /* ft_putnbr_fd.c in Sources */,
 				EC89F046228A9C69002ED417 /* ft_strdel.c in Sources */,
+				EC66E4D52296A057002AA6DE /* list_contains.c in Sources */,
 				EC89F060228A9C69002ED417 /* ft_strsub.c in Sources */,
 				EC89F03B228A9C69002ED417 /* ft_putendl.c in Sources */,
 				EC3E7BB52294626600D6C68E /* node_new.c in Sources */,
@@ -752,6 +759,7 @@
 				ECA7BD9822968E15006DACE4 /* ListFirstTests.swift in Sources */,
 				EC8C1F39228B0E450032719E /* MemccpyTests.swift in Sources */,
 				ECA74CDE228C21C3005E653D /* StriteriTests.swift in Sources */,
+				EC66E4D72296A11D002AA6DE /* ListContainsTests.swift in Sources */,
 				EC3E163C228C348800810DE7 /* StrsplitTests.swift in Sources */,
 				EC3E7BB92294653300D6C68E /* ListAppendTests.swift in Sources */,
 				ECF193AF229444DA00BDFE34 /* StrreplaceTests.swift in Sources */,

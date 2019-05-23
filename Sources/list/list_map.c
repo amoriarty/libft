@@ -12,7 +12,7 @@
 /// @param self List to map
 /// @param function Function mapping content to another one
 /// @returns Newly allocated list, with mapped content
-t_list          *list_map(t_list *self, void *(*function)(void *))
+t_list          *list_map(t_list *self, void *(*function)(void *content))
 {
     t_list      *new;
     t_node      *walk;

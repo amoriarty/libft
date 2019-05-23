@@ -11,7 +11,7 @@
 /// Deallocate and remove all entries in a list.
 /// @param self List to remove all entries
 /// @param remove Function to apply to deallocate content node.
-void    list_remove_all(t_list *self, void (*remove)(void *))
+void    list_remove_all(t_list *self, void (*remove)(void *content))
 {
     t_node  *walk;
 

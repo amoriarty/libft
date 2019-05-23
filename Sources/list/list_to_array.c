@@ -11,7 +11,7 @@
 /// Convert list into a fixed size, null-terminated, array and duplicate node content.
 /// @param self List to convert
 /// @param duplicate Function use to duplicate content
-void    **list_to_array(t_list *self, void *(*duplicate)(void *))
+void    **list_to_array(t_list *self, void *(*duplicate)(void *content))
 {
     size_t  size;
     size_t  iterator;
