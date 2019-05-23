@@ -12,8 +12,6 @@
 
 #include "libft.h"
 
-
-
 /// Get next line of file descriptor
 /// @param fd File descriptor to read
 /// @param line String to save next line
