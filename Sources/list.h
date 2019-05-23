@@ -33,6 +33,7 @@ ssize_t     list_last_index(t_list *self, void *data, t_bool (*predicate)(void *
 void        *list_entry_at(t_list *self, size_t index);
 void        list_for_each(t_list *self, void (*function)(void *content));
 t_list      *list_map(t_list *self, void *(*function)(void *content));
+t_list      *list_filter(t_list *self, void *data, t_bool (*predicate)(void *data, void *content), void *(*duplicate)(void *content));
 void        **list_to_array(t_list *self, void *(*duplicate)(void *content));
 t_list      *list_from_array(void **array, size_t size, void *(*duplicate)(void *content));
 t_list      *list_strsplit(const char *source, char separator);
