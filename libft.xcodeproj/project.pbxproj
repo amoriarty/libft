@@ -196,6 +196,9 @@
 		EC3A4EC82296DCA000EAF468 /* ListReverseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReverseTests.swift; sourceTree = "<group>"; };
 		EC3A4ECA2296E03600EAF468 /* list_filter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_filter.c; sourceTree = "<group>"; };
 		EC3A4ECC2296E18F00EAF468 /* ListFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFilterTests.swift; sourceTree = "<group>"; };
+		EC3A4ECE2296E92F00EAF468 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EC3A4ECF2296E92F00EAF468 /* auteur */ = {isa = PBXFileReference; lastKnownFileType = text; path = auteur; sourceTree = "<group>"; };
+		EC3A4ED02296E92F00EAF468 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		EC3E1633228C2F7900810DE7 /* StrsubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrsubTests.swift; path = ../StrsubTests.swift; sourceTree = "<group>"; };
 		EC3E1635228C309800810DE7 /* StrjoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrjoinTests.swift; path = ../StrjoinTests.swift; sourceTree = "<group>"; };
 		EC3E1637228C31B400810DE7 /* StrtrimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrtrimTests.swift; path = ../StrtrimTests.swift; sourceTree = "<group>"; };
@@ -464,6 +467,8 @@
 		EC3E7BAF2294602000D6C68E /* list */ = {
 			isa = PBXGroup;
 			children = (
+				EC3E7BB42294626600D6C68E /* node_new.c */,
+				EC888E272295218B005841E2 /* node_free.c */,
 				ECF193B222945DB800BDFE34 /* list_new.c */,
 				EC888E2D22954281005841E2 /* list_free.c */,
 				EC3E7BB2229461A600D6C68E /* list_append.c */,
@@ -483,8 +488,6 @@
 				ECA7BD8922956562006DACE4 /* list_remove.c */,
 				EC888E2322952053005841E2 /* list_remove_at.c */,
 				EC888E292295406A005841E2 /* list_remove_all.c */,
-				EC3E7BB42294626600D6C68E /* node_new.c */,
-				EC888E272295218B005841E2 /* node_free.c */,
 			);
 			path = list;
 			sourceTree = "<group>";
@@ -492,6 +495,9 @@
 		EC89EFE2228A9BC5002ED417 = {
 			isa = PBXGroup;
 			children = (
+				EC3A4ECF2296E92F00EAF468 /* auteur */,
+				EC3A4ED02296E92F00EAF468 /* Makefile */,
+				EC3A4ECE2296E92F00EAF468 /* README.md */,
 				EC89EFF2228A9C0A002ED417 /* Sources */,
 				EC89F07E228A9E6F002ED417 /* Tests */,
 				EC89EFEC228A9BC5002ED417 /* Products */,
@@ -990,7 +996,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SYLSF63326;
 				EXECUTABLE_PREFIX = lib;
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Werror",
+				);
 				PRODUCT_NAME = ft;
 				SKIP_INSTALL = YES;
 			};
@@ -1002,7 +1012,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SYLSF63326;
 				EXECUTABLE_PREFIX = lib;
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Werror",
+				);
 				PRODUCT_NAME = ft;
 				SKIP_INSTALL = YES;
 			};

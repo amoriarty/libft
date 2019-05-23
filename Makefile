@@ -10,106 +10,116 @@
 #                                                                              #
 # **************************************************************************** #
 
-#This is a typical Makefile, re-usable anytime you want to compil C project.
-#All is in quiet for now, thank to do all the completion that needed for
+# This is a typical Makefile, re-usable anytime you want to compil C project.
+# All is in quiet for now, thank to do all the completion that needed for
 # specify project
 
-#Define name of program here
+# Define name of program here
 NAME= libft.a
 
-#SRC BLOC
-# define all the .c file in the variable SRC NAME
-SRC_PATH= ./
-SRC_NAME= is/ft_isalnum.c \
-          is/ft_isalpha.c \
-          is/ft_isascii.c \
-          is/ft_isblank.c \
-          is/ft_isdigit.c \
-          is/ft_isprint.c \
-          lst/ft_lstadd.c \
-          lst/ft_lstdel.c \
-          lst/ft_lstdelete.c \
-          lst/ft_lstdelone.c \
-          lst/ft_lstend.c \
-          lst/ft_lstiter.c \
-          lst/ft_lstmap.c \
-          lst/ft_lstnew.c \
-          memory/ft_bzero.c \
-          memory/ft_memalloc.c \
-          memory/ft_memccpy.c \
-          memory/ft_memchr.c \
-          memory/ft_memcmp.c \
-          memory/ft_memcpy.c \
-          memory/ft_memdel.c \
-          memory/ft_memmove.c \
-          memory/ft_memset.c \
-          print/ft_putchar.c \
-          print/ft_putchar_fd.c \
-          print/ft_putcolor.c \
-          print/ft_putcolor_fd.c \
-          print/ft_putendl.c \
-          print/ft_putendl_fd.c \
-          print/ft_putnbr.c \
-          print/ft_putnbr_fd.c \
-          print/ft_putstr.c \
-          print/ft_putstr_fd.c \
-          string/ft_strcat.c \
-          string/ft_strchr.c \
-          string/ft_strclr.c \
-          string/ft_strcmp.c \
-          string/ft_strcpy.c \
-          string/ft_strdel.c \
-          string/ft_strdup.c \
-          string/ft_strequ.c \
-          string/ft_striter.c \
-          string/ft_striteri.c \
-          string/ft_strjoin.c \
-          string/ft_strlcat.c \
-          string/ft_strlen.c \
-          string/ft_strmap.c \
-          string/ft_strmapi.c \
-          string/ft_strncat.c \
-          string/ft_strncmp.c \
-          string/ft_strncpy.c \
-          string/ft_strnequ.c \
-          string/ft_strnew.c \
-          string/ft_strnstr.c \
-          string/ft_strrchr.c \
-          string/ft_strsplit.c \
-          string/ft_strstr.c \
-          string/ft_strsub.c \
-          string/ft_strtrim.c \
-		  string/ft_strimp.c \
-          unclassed/ft_atoi.c \
-          unclassed/ft_digitlen.c \
-          unclassed/ft_itoa.c \
-          unclassed/ft_tolower.c \
-          unclassed/ft_toupper.c \
-          unclassed/get_next_line.c
+# SRC BLOC
+# Define all the .c file in the variable SRC NAME
+SRC_PATH= Sources/
+SRC_NAME= libft/ft_isalnum.c \
+          libft/ft_isalpha.c \
+          libft/ft_isascii.c \
+          libft/ft_isblank.c \
+          libft/ft_isdigit.c \
+          libft/ft_isprint.c \
+          libft/ft_bzero.c \
+          libft/ft_memccpy.c \
+          libft/ft_memchr.c \
+          libft/ft_memcmp.c \
+          libft/ft_memcpy.c \
+          libft/ft_memdel.c \
+          libft/ft_memset.c \
+          libft/ft_putchar.c \
+          libft/ft_putchar_fd.c \
+          libft/ft_putendl.c \
+          libft/ft_putendl_fd.c \
+          libft/ft_putnbr.c \
+          libft/ft_putnbr_fd.c \
+          libft/ft_putstr.c \
+          libft/ft_putstr_fd.c \
+          libft/ft_strcat.c \
+          libft/ft_strchr.c \
+          libft/ft_strclr.c \
+          libft/ft_strcmp.c \
+          libft/ft_strcpy.c \
+          libft/ft_strdel.c \
+          libft/ft_strdup.c \
+          libft/ft_strequ.c \
+          libft/ft_striter.c \
+          libft/ft_striteri.c \
+          libft/ft_strjoin.c \
+          libft/ft_strlen.c \
+          libft/ft_strclen.c \
+          libft/ft_strmap.c \
+          libft/ft_strmapi.c \
+          libft/ft_strncat.c \
+          libft/ft_strncmp.c \
+          libft/ft_strncpy.c \
+          libft/ft_strnequ.c \
+          libft/ft_strnew.c \
+          libft/ft_strnstr.c \
+          libft/ft_strrchr.c \
+          libft/ft_strsplit.c \
+          libft/ft_strstr.c \
+          libft/ft_strsub.c \
+          libft/ft_strtrim.c \
+          libft/ft_strreplace.c \
+          libft/ft_atoi.c \
+          libft/ft_digitlen.c \
+          libft/ft_itoa.c \
+          libft/ft_tolower.c \
+          libft/ft_toupper.c \
+          libft/get_next_line.c \
+          libft/fatal_error.c \
+          list/node_new.c \
+          list/node_free.c \
+          list/list_new.c \
+          list/list_free.c \
+          list/list_append.c \
+          list/list_first.c \
+          list/list_last.c \
+          list/list_first_index.c \
+          list/list_last_index.c \
+          list/list_entry_at.c \
+          list/list_contains.c \
+          list/list_for_each.c \
+          list/list_map.c \
+          list/list_filter.c \
+          list/list_to_array.c \
+          list/list_from_array.c \
+          list/list_strsplit.c \
+          list/list_reverse.c \
+          list/list_remove.c \
+          list/list_remove_at.c \
+          list/list_remove_all.c
 
 SRC= $(addprefix $(SRC_PATH), $(SRC_NAME))
 
-#OBJ BLOC
+# OBJ BLOC
 #Do nothing here
 OBJ_PATH= obj/
 OBJ_NAME= $(SRC_NAME:.c=.o)
 OBJ= $(addprefix $(OBJ_PATH), $(OBJ_NAME))
 
-#GCC BLOC
+# GCC BLOC
 #GCC flag, you don't have to modify this (but you're free to go)
-GCC= clang -Wall -Wextra -Werror -g
+GCC= clang -Wall -Wextra -Werror
 
-#INCLUDE BLOC
-#Don't forget to include the other librarie that yo use
+# INCLUDE BLOC
+# Don't forget to include the other librarie that yo use
 INC_LIB=
-INC_PATH= .
+INC_PATH= Sources/
 INC= -I $(INC_LIB) -I $(INC_PATH)
 
-#Once again, don't forget to includes library that you use !
+# Once again, don't forget to includes library that you use !
 LIB=
 
-#FRAMEWORK BLOC
-#Don't forget to add framework that you need !
+# FRAMEWORK BLOC
+# Don't forget to add framework that you need !
 FRAMEWORK= 
 
 all: $(NAME)
@@ -120,7 +130,7 @@ $(NAME): $(OBJ)
 	@echo "$(NAME) has been created."
 
 $(OBJ_PATH)%.o: $(SRC_PATH)%.c
-	@mkdir -p $(OBJ_PATH)/{is,lst,memory,print,string,unclassed}
+	@mkdir -p $(OBJ_PATH)/{libft,list}
 	$(GCC) -I $(INC_PATH) -o $@ -c $<
 
 clean:
@@ -134,10 +144,4 @@ fclean: clean
 
 re: fclean all
 
-main: $(NAME) main.o
-	$(GCC) -I $(INC_PATH) -L. -lft -o main main.o
-
-main.o:
-	$(GCC) -I $(INC_PATH) -o main.o -c main.c
-
-.PHONY: clean fclean re norme
+.PHONY: clean fclean re

@@ -17,7 +17,6 @@
 # define EOL '\n'
 # define BUFF_SIZE 2048
 # define ERROR -1
-# warning '-Wall -Wextra -Werror' aren't added to configurations
 
 // MARK:- Boolean
 
