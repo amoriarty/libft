@@ -18,9 +18,9 @@ class ListFirstTests: XCTestCase {
             list_append(list, strdup("list_first: basic test"))
         }
 
-        let first = list_first(list) { pointer in
+        let first = list_first(list, nil) { data, element in
             let source = "list_first: basic test"
-            return memcmp(pointer!, source, source.count) == 0 ? TRUE : FALSE
+            return memcmp(element!, source, source.count) == 0 ? TRUE : FALSE
         }
 
         XCTAssert(first == list?.pointee.head.pointee.next.pointee.content)

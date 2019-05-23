@@ -106,6 +106,12 @@ void    ft_putnbr_fd(int n, int fd);
 
 // MARK:- Files
 
+typedef struct s_gnl t_gnl;
+struct s_gnl {
+    int     fd;
+    char    *remaining;
+};
+
 int	    get_next_line(const int fd, char **line);
 
 // MARK:- Errors

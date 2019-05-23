@@ -6,7 +6,7 @@
 //  Copyright © 2019 Alex Legent. All rights reserved.
 //
 
-#include "liblist.h"
+#include "list.h"
 
 /// Deallocation all entries and the list itself.
 /// @param self List to free

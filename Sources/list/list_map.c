@@ -6,7 +6,7 @@
 //  Copyright © 2019 Alex Legent. All rights reserved.
 //
 
-#include "liblist.h"
+#include "list.h"
 
 /// Convert a list in a new one by applying functions onto node content
 /// @param self List to map

@@ -11,12 +11,9 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "liblist.h"
+#include "list.h"
 
-static void *uncasted_strdup(void *source)
-{
-    return (void *) ft_strdup((char *) source);
-}
+static void *uncasted_strdup(void *source);
 
 /// Split a character into an array of string, seperated by c
 /// @param source String to split
@@ -49,64 +46,10 @@ char        **ft_strsplit(const char *source, char seperator)
     return (result);
 }
 
-//char            **ft_strsplit(const char *source, char character)
-//{
-//    char    **tab;
-//    int        i;
-//    int        x;
-//
-//    if (source == NULL)
-//        return (NULL);
-//    i = 0;
-//    if (!(tab = (char **)malloc(sizeof(char*) * (count_words(source, character) + 1))))
-//        return (NULL);
-//    while (*source)
-//    {
-//        while (*source == character)
-//            source++;
-//        if (*source != character && *source && ft_isprint(*source))
-//        {
-//            x = 0;
-//            if (!(tab[i] = ft_strnew(get_word_length(source, character))))
-//                return (NULL);
-//            while (*source != character && *source && ft_isprint(*source))
-//                tab[i][x++] = *source++;
-//            tab[i++][x] = '\0';
-//        }
-//    }
-//    tab[i] = 0;
-//    return (tab);
-//}
-
-//static int        count_words(const char *s, char c)
-//{
-//    int        words;
-//    int        i;
-//
-//    words = 0;
-//    i = 0;
-//    while (s[i])
-//    {
-//        while (s[i] == c)
-//            i++;
-//        if (s[i] != c && s[i] && ft_isprint(s[i]))
-//        {
-//            words++;
-//            while (s[i] != c && s[i])
-//                i++;
-//        }
-//    }
-//    return (words);
-//}
-//
-//static size_t    get_word_length(const char *s, char c)
-//{
-//    size_t    length;
-//    int        i;
-//
-//    length = 0;
-//    i = 0;
-//    while (s[i++] != c && s[i])
-//        length++;
-//    return (length);
-//}
+/// An strdup use by list_to_array with raw pointers
+/// @param source String to duplicate
+/// @returns Raw pointer on the duplicated string
+static void *uncasted_strdup(void *source)
+{
+    return (void *) ft_strdup((char *) source);
+}

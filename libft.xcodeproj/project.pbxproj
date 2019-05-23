@@ -149,7 +149,7 @@
 		ECF193AF229444DA00BDFE34 /* StrreplaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF193AE229444DA00BDFE34 /* StrreplaceTests.swift */; };
 		ECF193B122944A6C00BDFE34 /* fatal_error.c in Sources */ = {isa = PBXBuildFile; fileRef = ECF193B022944A6C00BDFE34 /* fatal_error.c */; };
 		ECF193B322945DB800BDFE34 /* list_new.c in Sources */ = {isa = PBXBuildFile; fileRef = ECF193B222945DB800BDFE34 /* list_new.c */; };
-		ECF193B522945DD000BDFE34 /* liblist.h in Headers */ = {isa = PBXBuildFile; fileRef = ECF193B422945DC900BDFE34 /* liblist.h */; };
+		ECF193B522945DD000BDFE34 /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = ECF193B422945DC900BDFE34 /* list.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -308,7 +308,7 @@
 		ECF193AE229444DA00BDFE34 /* StrreplaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrreplaceTests.swift; path = ../StrreplaceTests.swift; sourceTree = "<group>"; };
 		ECF193B022944A6C00BDFE34 /* fatal_error.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fatal_error.c; sourceTree = "<group>"; };
 		ECF193B222945DB800BDFE34 /* list_new.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_new.c; sourceTree = "<group>"; };
-		ECF193B422945DC900BDFE34 /* liblist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = liblist.h; sourceTree = "<group>"; };
+		ECF193B422945DC900BDFE34 /* list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,7 +330,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EC3E7BAD22945FE800D6C68E /* liblist */ = {
+		EC3E7BAD22945FE800D6C68E /* list */ = {
 			isa = PBXGroup;
 			children = (
 				EC3E7BB02294604500D6C68E /* ListNewTests.swift */,
@@ -346,7 +346,7 @@
 				EC3E7BB6229463D300D6C68E /* NodeNewTests.swift */,
 				EC888E3122954343005841E2 /* NodeFreeTests.swift */,
 			);
-			path = liblist;
+			path = list;
 			sourceTree = "<group>";
 		};
 		EC3E7BAE22945FF900D6C68E /* libft */ = {
@@ -416,7 +416,7 @@
 			path = libft;
 			sourceTree = "<group>";
 		};
-		EC3E7BAF2294602000D6C68E /* liblist */ = {
+		EC3E7BAF2294602000D6C68E /* list */ = {
 			isa = PBXGroup;
 			children = (
 				ECF193B222945DB800BDFE34 /* list_new.c */,
@@ -432,7 +432,7 @@
 				EC3E7BB42294626600D6C68E /* node_new.c */,
 				EC888E272295218B005841E2 /* node_free.c */,
 			);
-			path = liblist;
+			path = list;
 			sourceTree = "<group>";
 		};
 		EC89EFE2228A9BC5002ED417 = {
@@ -457,9 +457,9 @@
 			isa = PBXGroup;
 			children = (
 				EC3E7BAE22945FF900D6C68E /* libft */,
-				EC3E7BAF2294602000D6C68E /* liblist */,
+				EC3E7BAF2294602000D6C68E /* list */,
 				EC89EFF4228A9C63002ED417 /* libft.h */,
-				ECF193B422945DC900BDFE34 /* liblist.h */,
+				ECF193B422945DC900BDFE34 /* list.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -468,7 +468,7 @@
 			isa = PBXGroup;
 			children = (
 				ECF193B622945FAD00BDFE34 /* libft */,
-				EC3E7BAD22945FE800D6C68E /* liblist */,
+				EC3E7BAD22945FE800D6C68E /* list */,
 				EC3E163F228C423500810DE7 /* FileHelper.swift */,
 				EC89F081228A9E6F002ED417 /* Info.plist */,
 				EC89F089228AA1CB002ED417 /* Tests-Bridging-Header.h */,
@@ -545,7 +545,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECF193B522945DD000BDFE34 /* liblist.h in Headers */,
+				ECF193B522945DD000BDFE34 /* list.h in Headers */,
 				EC89F037228A9C68002ED417 /* libft.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

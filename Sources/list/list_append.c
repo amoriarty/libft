@@ -6,7 +6,7 @@
 //  Copyright © 2019 Alex Legent. All rights reserved.
 //
 
-#include "liblist.h"
+#include "list.h"
 
 /// Create a node with content and append it to the list.
 void    list_append(t_list *self, void *content)

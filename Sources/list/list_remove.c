@@ -6,7 +6,7 @@
 //  Copyright © 2019 Alex Legent. All rights reserved.
 //
 
-#include "liblist.h"
+#include "list.h"
 
 /// Remove all list entry that match the given predicate
 /// @param self List to remove items from

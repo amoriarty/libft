@@ -6,7 +6,7 @@
 //  Copyright © 2019 Alex Legent. All rights reserved.
 //
 
-#include "liblist.h"
+#include "list.h"
 
 /// Deallocate a node, applying `remove` function on content.
 /// @param self Node to delete

@@ -1,5 +1,5 @@
 //
-//  liblist.h
+//  list.h
 //  libft
 //
 //  Created by Alex Legent on 21/05/2019.
@@ -25,7 +25,7 @@ struct      s_list
 t_list      *list_new(void);
 void        list_free(t_list **self, void (*remove)(void *));
 void        list_append(t_list *self, void *content);
-void        *list_first(t_list *self, t_bool (*predicate)(void *));
+void        *list_first(t_list *self, void *data, t_bool (*predicate)(void *, void *));
 void        list_for_each(t_list *self, void (*function)(void *));
 t_list      *list_map(t_list *self, void *(*function)(void *));
 void        **list_to_array(t_list *self, void *(*duplicate)(void *));

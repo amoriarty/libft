@@ -6,7 +6,7 @@
 //  Copyright © 2019 Alex Legent. All rights reserved.
 //
 
-#include "liblist.h"
+#include "list.h"
 
 /// Convert list into a fixed size, null-terminated, array and duplicate node content.
 /// @param self List to convert

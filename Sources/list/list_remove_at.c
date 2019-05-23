@@ -6,7 +6,7 @@
 //  Copyright © 2019 Alex Legent. All rights reserved.
 //
 
-#include "liblist.h"
+#include "list.h"
 
 /// Remove a node from list at index, applying function `remove` on node content beforehand.
 /// @param self List to remove node from
