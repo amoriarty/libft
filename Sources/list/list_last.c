@@ -1,5 +1,5 @@
 //
-//  list_first.c
+//  list_last.c
 //  libft
 //
 //  Created by Alex Legent on 23/05/2019.
@@ -8,21 +8,21 @@
 
 #include "list.h"
 
-/// Find and returns first node content matching predicate
+/// Find and returns last node content matching predicate
 /// @param self List to find element in.
 /// @param data Data pointer you can use to pass to your predicate function
 /// @param predicate Predicate function defining if element match
 /// @returns Content of the matching node if exists, null otherwise
-void    *list_first(t_list *self, void *data, t_bool (*predicate)(void *data, void *content))
+void    *list_last(t_list *self, void *data, t_bool (*predicate)(void *data, void *content))
 {
     t_node  *walk;
 
-    walk = self->head;
+    walk = self->tail;
     while (walk)
     {
         if (predicate(data, walk->content))
             return (walk->content);
-        walk = walk->next;
+        walk = walk->previous;
     }
     return (NULL);
 }

@@ -11,6 +11,9 @@
 		EC045A242293D1D30017D11A /* ToIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC045A232293D1D30017D11A /* ToIntTests.swift */; };
 		EC045A262293D2CD0017D11A /* GetNextLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC045A252293D2CC0017D11A /* GetNextLineTests.swift */; };
 		EC045A2A2293DA460017D11A /* basics.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC045A282293DA460017D11A /* basics.txt */; };
+		EC3A4EB52296C37F00EAF468 /* list_last_index.c in Sources */ = {isa = PBXBuildFile; fileRef = EC3A4EB42296C37F00EAF468 /* list_last_index.c */; };
+		EC3A4EB72296C41800EAF468 /* list_entry_at.c in Sources */ = {isa = PBXBuildFile; fileRef = EC3A4EB62296C41800EAF468 /* list_entry_at.c */; };
+		EC3A4EB92296C4ED00EAF468 /* ListEntryAtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A4EB82296C4ED00EAF468 /* ListEntryAtTests.swift */; };
 		EC3E1634228C2F7900810DE7 /* StrsubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1633228C2F7900810DE7 /* StrsubTests.swift */; };
 		EC3E1636228C309800810DE7 /* StrjoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1635228C309800810DE7 /* StrjoinTests.swift */; };
 		EC3E1638228C31B400810DE7 /* StrtrimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1637228C31B400810DE7 /* StrtrimTests.swift */; };
@@ -31,6 +34,11 @@
 		EC64C75B2292BBDE00958375 /* ft_islower.c in Sources */ = {isa = PBXBuildFile; fileRef = EC64C75A2292BBDE00958375 /* ft_islower.c */; };
 		EC66E4D52296A057002AA6DE /* list_contains.c in Sources */ = {isa = PBXBuildFile; fileRef = EC66E4D42296A057002AA6DE /* list_contains.c */; };
 		EC66E4D72296A11D002AA6DE /* ListContainsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC66E4D62296A11D002AA6DE /* ListContainsTests.swift */; };
+		EC66E4D92296C16F002AA6DE /* list_last.c in Sources */ = {isa = PBXBuildFile; fileRef = EC66E4D82296C16F002AA6DE /* list_last.c */; };
+		EC66E4DB2296C1DD002AA6DE /* ListLastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC66E4DA2296C1DD002AA6DE /* ListLastTests.swift */; };
+		EC66E4DD2296C24F002AA6DE /* list_first_index.c in Sources */ = {isa = PBXBuildFile; fileRef = EC66E4DC2296C24F002AA6DE /* list_first_index.c */; };
+		EC66E4DF2296C2D1002AA6DE /* ListFirstIndexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC66E4DE2296C2D1002AA6DE /* ListFirstIndexTests.swift */; };
+		EC66E4E12296C319002AA6DE /* ListLastIndexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC66E4E02296C319002AA6DE /* ListLastIndexTests.swift */; };
 		EC888E2422952053005841E2 /* list_remove_at.c in Sources */ = {isa = PBXBuildFile; fileRef = EC888E2322952053005841E2 /* list_remove_at.c */; };
 		EC888E262295215E005841E2 /* ListRemoveAtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC888E252295215E005841E2 /* ListRemoveAtTests.swift */; };
 		EC888E282295218B005841E2 /* node_free.c in Sources */ = {isa = PBXBuildFile; fileRef = EC888E272295218B005841E2 /* node_free.c */; };
@@ -169,6 +177,9 @@
 		EC045A232293D1D30017D11A /* ToIntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToIntTests.swift; path = ../ToIntTests.swift; sourceTree = "<group>"; };
 		EC045A252293D2CC0017D11A /* GetNextLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GetNextLineTests.swift; path = ../GetNextLineTests.swift; sourceTree = "<group>"; };
 		EC045A282293DA460017D11A /* basics.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = basics.txt; sourceTree = "<group>"; };
+		EC3A4EB42296C37F00EAF468 /* list_last_index.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_last_index.c; sourceTree = "<group>"; };
+		EC3A4EB62296C41800EAF468 /* list_entry_at.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_entry_at.c; sourceTree = "<group>"; };
+		EC3A4EB82296C4ED00EAF468 /* ListEntryAtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEntryAtTests.swift; sourceTree = "<group>"; };
 		EC3E1633228C2F7900810DE7 /* StrsubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrsubTests.swift; path = ../StrsubTests.swift; sourceTree = "<group>"; };
 		EC3E1635228C309800810DE7 /* StrjoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrjoinTests.swift; path = ../StrjoinTests.swift; sourceTree = "<group>"; };
 		EC3E1637228C31B400810DE7 /* StrtrimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrtrimTests.swift; path = ../StrtrimTests.swift; sourceTree = "<group>"; };
@@ -189,6 +200,11 @@
 		EC64C75A2292BBDE00958375 /* ft_islower.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_islower.c; sourceTree = "<group>"; };
 		EC66E4D42296A057002AA6DE /* list_contains.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_contains.c; sourceTree = "<group>"; };
 		EC66E4D62296A11D002AA6DE /* ListContainsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContainsTests.swift; sourceTree = "<group>"; };
+		EC66E4D82296C16F002AA6DE /* list_last.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_last.c; sourceTree = "<group>"; };
+		EC66E4DA2296C1DD002AA6DE /* ListLastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLastTests.swift; sourceTree = "<group>"; };
+		EC66E4DC2296C24F002AA6DE /* list_first_index.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_first_index.c; sourceTree = "<group>"; };
+		EC66E4DE2296C2D1002AA6DE /* ListFirstIndexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFirstIndexTests.swift; sourceTree = "<group>"; };
+		EC66E4E02296C319002AA6DE /* ListLastIndexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLastIndexTests.swift; sourceTree = "<group>"; };
 		EC888E2322952053005841E2 /* list_remove_at.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_remove_at.c; sourceTree = "<group>"; };
 		EC888E252295215E005841E2 /* ListRemoveAtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRemoveAtTests.swift; sourceTree = "<group>"; };
 		EC888E272295218B005841E2 /* node_free.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = node_free.c; sourceTree = "<group>"; };
@@ -340,6 +356,10 @@
 				EC3E7BB02294604500D6C68E /* ListNewTests.swift */,
 				EC888E2F2295433A005841E2 /* ListFreeTests.swift */,
 				ECA7BD9722968E15006DACE4 /* ListFirstTests.swift */,
+				EC66E4DA2296C1DD002AA6DE /* ListLastTests.swift */,
+				EC66E4DE2296C2D1002AA6DE /* ListFirstIndexTests.swift */,
+				EC66E4E02296C319002AA6DE /* ListLastIndexTests.swift */,
+				EC3A4EB82296C4ED00EAF468 /* ListEntryAtTests.swift */,
 				EC66E4D62296A11D002AA6DE /* ListContainsTests.swift */,
 				EC3E7BB82294653300D6C68E /* ListAppendTests.swift */,
 				ECA7BD8322954F55006DACE4 /* ListForEachTests.swift */,
@@ -428,6 +448,10 @@
 				EC888E2D22954281005841E2 /* list_free.c */,
 				EC3E7BB2229461A600D6C68E /* list_append.c */,
 				ECA7BD9922968F69006DACE4 /* list_first.c */,
+				EC66E4D82296C16F002AA6DE /* list_last.c */,
+				EC66E4DC2296C24F002AA6DE /* list_first_index.c */,
+				EC3A4EB42296C37F00EAF468 /* list_last_index.c */,
+				EC3A4EB62296C41800EAF468 /* list_entry_at.c */,
 				EC66E4D42296A057002AA6DE /* list_contains.c */,
 				ECA7BD8122954EEF006DACE4 /* list_for_each.c */,
 				ECA7BD852295513C006DACE4 /* list_map.c */,
@@ -651,6 +675,7 @@
 				EC89F070228A9C69002ED417 /* ft_strdup.c in Sources */,
 				EC89F059228A9C69002ED417 /* ft_strcmp.c in Sources */,
 				EC888E282295218B005841E2 /* node_free.c in Sources */,
+				EC3A4EB72296C41800EAF468 /* list_entry_at.c in Sources */,
 				EC89F05B228A9C69002ED417 /* ft_strcpy.c in Sources */,
 				EC89F078228A9C69002ED417 /* ft_strmap.c in Sources */,
 				EC89F06A228A9C69002ED417 /* ft_strclr.c in Sources */,
@@ -689,6 +714,7 @@
 				ECF193B122944A6C00BDFE34 /* fatal_error.c in Sources */,
 				EC888E2E22954281005841E2 /* list_free.c in Sources */,
 				EC89F044228A9C69002ED417 /* ft_putendl_fd.c in Sources */,
+				EC66E4DD2296C24F002AA6DE /* list_first_index.c in Sources */,
 				EC89F03E228A9C69002ED417 /* get_next_line.c in Sources */,
 				EC89F03D228A9C69002ED417 /* ft_strnequ.c in Sources */,
 				EC89F066228A9C69002ED417 /* ft_isprint.c in Sources */,
@@ -710,6 +736,7 @@
 				ECA7BD8222954EEF006DACE4 /* list_for_each.c in Sources */,
 				ECA9BD822292F5A10000F90F /* ft_toint.c in Sources */,
 				EC89F048228A9C69002ED417 /* ft_isalpha.c in Sources */,
+				EC3A4EB52296C37F00EAF468 /* list_last_index.c in Sources */,
 				EC89F049228A9C69002ED417 /* ft_putchar_fd.c in Sources */,
 				EC89F041228A9C69002ED417 /* ft_strequ.c in Sources */,
 				EC89F069228A9C69002ED417 /* ft_memcpy.c in Sources */,
@@ -720,6 +747,7 @@
 				EC89F06F228A9C69002ED417 /* ft_putchar.c in Sources */,
 				EC89F051228A9C69002ED417 /* ft_isdigit.c in Sources */,
 				EC89F068228A9C69002ED417 /* ft_strlen.c in Sources */,
+				EC66E4D92296C16F002AA6DE /* list_last.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,9 +786,11 @@
 				EC888E2C22954123005841E2 /* ListRemoveAllTests.swift in Sources */,
 				ECA7BD9822968E15006DACE4 /* ListFirstTests.swift in Sources */,
 				EC8C1F39228B0E450032719E /* MemccpyTests.swift in Sources */,
+				EC66E4DB2296C1DD002AA6DE /* ListLastTests.swift in Sources */,
 				ECA74CDE228C21C3005E653D /* StriteriTests.swift in Sources */,
 				EC66E4D72296A11D002AA6DE /* ListContainsTests.swift in Sources */,
 				EC3E163C228C348800810DE7 /* StrsplitTests.swift in Sources */,
+				EC66E4E12296C319002AA6DE /* ListLastIndexTests.swift in Sources */,
 				EC3E7BB92294653300D6C68E /* ListAppendTests.swift in Sources */,
 				ECF193AF229444DA00BDFE34 /* StrreplaceTests.swift in Sources */,
 				ECA74CE2228C2956005E653D /* StrclrTests.swift in Sources */,
@@ -787,6 +817,7 @@
 				ECA7BD8822955323006DACE4 /* ListMapTests.swift in Sources */,
 				EC3E7BB7229463D300D6C68E /* NodeNewTests.swift in Sources */,
 				ECA7BD922295764F006DACE4 /* ListToArrayTests.swift in Sources */,
+				EC66E4DF2296C2D1002AA6DE /* ListFirstIndexTests.swift in Sources */,
 				EC89F080228A9E6F002ED417 /* MemsetTests.swift in Sources */,
 				EC045A242293D1D30017D11A /* ToIntTests.swift in Sources */,
 				ECA74CDC228C1D05005E653D /* StriterTests.swift in Sources */,
@@ -795,6 +826,7 @@
 				EC3E1636228C309800810DE7 /* StrjoinTests.swift in Sources */,
 				ECA7BD8422954F55006DACE4 /* ListForEachTests.swift in Sources */,
 				EC3E1648228C48BF00810DE7 /* DigitlenTests.swift in Sources */,
+				EC3A4EB92296C4ED00EAF468 /* ListEntryAtTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

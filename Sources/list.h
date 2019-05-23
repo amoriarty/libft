@@ -27,11 +27,15 @@ void        list_free(t_list **self, void (*remove)(void *content));
 void        list_append(t_list *self, void *content);
 t_bool      list_contains(t_list *self, void *data, t_bool (*predicate)(void *data, void *content));
 void        *list_first(t_list *self, void *data, t_bool (*predicate)(void *data, void *content));
+void        *list_last(t_list *self, void *data, t_bool (*predicate)(void *data, void *content));
+ssize_t     list_first_index(t_list *self, void *data, t_bool (*predicate)(void *data, void *content));
+ssize_t     list_last_index(t_list *self, void *data, t_bool (*predicate)(void *data, void *content));
+void        *list_entry_at(t_list *self, size_t index);
 void        list_for_each(t_list *self, void (*function)(void *content));
 t_list      *list_map(t_list *self, void *(*function)(void *content));
 void        **list_to_array(t_list *self, void *(*duplicate)(void *content));
 void        list_remove(t_list *self, void *data, t_bool (*predicate)(void * data, void *content), void (*remove)(void *));
-void        list_remove_at(t_list *self, int index, void (*remove)(void *content));
+void        list_remove_at(t_list *self, size_t index, void (*remove)(void *content));
 void        list_remove_all(t_list *self, void (*remove)(void *content));
 
 // MARK:- Node
