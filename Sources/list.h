@@ -36,6 +36,7 @@ t_list      *list_map(t_list *self, void *(*function)(void *content));
 void        **list_to_array(t_list *self, void *(*duplicate)(void *content));
 t_list      *list_from_array(void **array, size_t size, void *(*duplicate)(void *content));
 t_list      *list_strsplit(const char *source, char separator);
+void        list_reverse(t_list *self);
 void        list_remove(t_list *self, void *data, t_bool (*predicate)(void * data, void *content), void (*remove)(void *));
 void        list_remove_at(t_list *self, size_t index, void (*remove)(void *content));
 void        list_remove_all(t_list *self, void (*remove)(void *content));
