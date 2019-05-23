@@ -15,33 +15,16 @@
 
 static void *uncasted_strdup(void *source);
 
-#warning 'ft_strsplit' should use 'list_strsplit' and 'list_to_array' instead.
-/// Split a character into an array of string, seperated by c
+/// Split a character into an array of string, seperated by character
 /// @param source String to split
-/// @param seperator Splitting character
+/// @param separator Splitting character
 /// @returns Array of splitting strings
-char        **ft_strsplit(const char *source, char seperator)
+char        **ft_strsplit(const char *source, char separator)
 {
-    size_t  length;
-    char    *offset;
-    char    *substring;
     char    **result;
     t_list  *list;
 
-    list = list_new();
-    offset = (char *) source;
-    while (*offset)
-    {
-        if (*offset == seperator)
-        {
-            offset += 1;
-            continue;
-        }
-        length = ft_strclen(offset, seperator);
-        substring = ft_strsub(offset, 0, length);
-        offset += length;
-        list_append(list, substring);
-    }
+    list = list_strsplit(source, separator);
     result = (char **) list_to_array(list, uncasted_strdup);
     list_free(&list, free);
     return (result);
