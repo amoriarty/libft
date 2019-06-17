@@ -11,6 +11,12 @@
 		EC045A242293D1D30017D11A /* ToIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC045A232293D1D30017D11A /* ToIntTests.swift */; };
 		EC045A262293D2CD0017D11A /* GetNextLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC045A252293D2CC0017D11A /* GetNextLineTests.swift */; };
 		EC045A2A2293DA460017D11A /* basics.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC045A282293DA460017D11A /* basics.txt */; };
+		EC21F69822B795C600D1B13C /* ft_sprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = EC21F69722B795C600D1B13C /* ft_sprintf.c */; };
+		EC21F69A22B7961700D1B13C /* ft_snprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = EC21F69922B7961700D1B13C /* ft_snprintf.c */; };
+		EC21F69C22B7965E00D1B13C /* ft_asprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = EC21F69B22B7965E00D1B13C /* ft_asprintf.c */; };
+		EC21F69E22B796B700D1B13C /* ft_vsprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = EC21F69D22B796B700D1B13C /* ft_vsprintf.c */; };
+		EC21F6A022B7970A00D1B13C /* ft_vsnprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = EC21F69F22B7970A00D1B13C /* ft_vsnprintf.c */; };
+		EC21F6A222B7974D00D1B13C /* ft_vasprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = EC21F6A122B7974D00D1B13C /* ft_vasprintf.c */; };
 		EC3A4EB52296C37F00EAF468 /* list_last_index.c in Sources */ = {isa = PBXBuildFile; fileRef = EC3A4EB42296C37F00EAF468 /* list_last_index.c */; };
 		EC3A4EB72296C41800EAF468 /* list_entry_at.c in Sources */ = {isa = PBXBuildFile; fileRef = EC3A4EB62296C41800EAF468 /* list_entry_at.c */; };
 		EC3A4EB92296C4ED00EAF468 /* ListEntryAtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A4EB82296C4ED00EAF468 /* ListEntryAtTests.swift */; };
@@ -38,6 +44,11 @@
 		EC3E7BB52294626600D6C68E /* node_new.c in Sources */ = {isa = PBXBuildFile; fileRef = EC3E7BB42294626600D6C68E /* node_new.c */; };
 		EC3E7BB7229463D300D6C68E /* NodeNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E7BB6229463D300D6C68E /* NodeNewTests.swift */; };
 		EC3E7BB92294653300D6C68E /* ListAppendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E7BB82294653300D6C68E /* ListAppendTests.swift */; };
+		EC5C010F22B224F7001AAC51 /* printf.h in Headers */ = {isa = PBXBuildFile; fileRef = EC5C010E22B224F7001AAC51 /* printf.h */; };
+		EC5C011222B225A4001AAC51 /* ft_printf.c in Sources */ = {isa = PBXBuildFile; fileRef = EC5C011122B225A4001AAC51 /* ft_printf.c */; };
+		EC5C011422B225ED001AAC51 /* ft_dprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = EC5C011322B225ED001AAC51 /* ft_dprintf.c */; };
+		EC5C011622B2265B001AAC51 /* ft_vprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = EC5C011522B2265B001AAC51 /* ft_vprintf.c */; };
+		EC5C011822B227A0001AAC51 /* ft_vdprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = EC5C011722B227A0001AAC51 /* ft_vdprintf.c */; };
 		EC64C7592292BB9700958375 /* ft_isupper.c in Sources */ = {isa = PBXBuildFile; fileRef = EC64C7582292BB9700958375 /* ft_isupper.c */; };
 		EC64C75B2292BBDE00958375 /* ft_islower.c in Sources */ = {isa = PBXBuildFile; fileRef = EC64C75A2292BBDE00958375 /* ft_islower.c */; };
 		EC66E4D52296A057002AA6DE /* list_contains.c in Sources */ = {isa = PBXBuildFile; fileRef = EC66E4D42296A057002AA6DE /* list_contains.c */; };
@@ -185,6 +196,12 @@
 		EC045A232293D1D30017D11A /* ToIntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToIntTests.swift; path = ../ToIntTests.swift; sourceTree = "<group>"; };
 		EC045A252293D2CC0017D11A /* GetNextLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GetNextLineTests.swift; path = ../GetNextLineTests.swift; sourceTree = "<group>"; };
 		EC045A282293DA460017D11A /* basics.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = basics.txt; sourceTree = "<group>"; };
+		EC21F69722B795C600D1B13C /* ft_sprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_sprintf.c; sourceTree = "<group>"; };
+		EC21F69922B7961700D1B13C /* ft_snprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_snprintf.c; sourceTree = "<group>"; };
+		EC21F69B22B7965E00D1B13C /* ft_asprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_asprintf.c; sourceTree = "<group>"; };
+		EC21F69D22B796B700D1B13C /* ft_vsprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_vsprintf.c; sourceTree = "<group>"; };
+		EC21F69F22B7970A00D1B13C /* ft_vsnprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_vsnprintf.c; sourceTree = "<group>"; };
+		EC21F6A122B7974D00D1B13C /* ft_vasprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_vasprintf.c; sourceTree = "<group>"; };
 		EC3A4EB42296C37F00EAF468 /* list_last_index.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_last_index.c; sourceTree = "<group>"; };
 		EC3A4EB62296C41800EAF468 /* list_entry_at.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_entry_at.c; sourceTree = "<group>"; };
 		EC3A4EB82296C4ED00EAF468 /* ListEntryAtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEntryAtTests.swift; sourceTree = "<group>"; };
@@ -215,6 +232,11 @@
 		EC3E7BB42294626600D6C68E /* node_new.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = node_new.c; sourceTree = "<group>"; };
 		EC3E7BB6229463D300D6C68E /* NodeNewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeNewTests.swift; sourceTree = "<group>"; };
 		EC3E7BB82294653300D6C68E /* ListAppendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppendTests.swift; sourceTree = "<group>"; };
+		EC5C010E22B224F7001AAC51 /* printf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = printf.h; sourceTree = "<group>"; };
+		EC5C011122B225A4001AAC51 /* ft_printf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_printf.c; sourceTree = "<group>"; };
+		EC5C011322B225ED001AAC51 /* ft_dprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_dprintf.c; sourceTree = "<group>"; };
+		EC5C011522B2265B001AAC51 /* ft_vprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_vprintf.c; sourceTree = "<group>"; };
+		EC5C011722B227A0001AAC51 /* ft_vdprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_vdprintf.c; sourceTree = "<group>"; };
 		EC64C7582292BB9700958375 /* ft_isupper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_isupper.c; sourceTree = "<group>"; };
 		EC64C75A2292BBDE00958375 /* ft_islower.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_islower.c; sourceTree = "<group>"; };
 		EC66E4D42296A057002AA6DE /* list_contains.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_contains.c; sourceTree = "<group>"; };
@@ -492,6 +514,23 @@
 			path = list;
 			sourceTree = "<group>";
 		};
+		EC5C011022B2258D001AAC51 /* printf */ = {
+			isa = PBXGroup;
+			children = (
+				EC5C011122B225A4001AAC51 /* ft_printf.c */,
+				EC21F69722B795C600D1B13C /* ft_sprintf.c */,
+				EC21F69922B7961700D1B13C /* ft_snprintf.c */,
+				EC21F69B22B7965E00D1B13C /* ft_asprintf.c */,
+				EC5C011322B225ED001AAC51 /* ft_dprintf.c */,
+				EC5C011522B2265B001AAC51 /* ft_vprintf.c */,
+				EC21F69D22B796B700D1B13C /* ft_vsprintf.c */,
+				EC21F69F22B7970A00D1B13C /* ft_vsnprintf.c */,
+				EC21F6A122B7974D00D1B13C /* ft_vasprintf.c */,
+				EC5C011722B227A0001AAC51 /* ft_vdprintf.c */,
+			);
+			path = printf;
+			sourceTree = "<group>";
+		};
 		EC89EFE2228A9BC5002ED417 = {
 			isa = PBXGroup;
 			children = (
@@ -518,8 +557,10 @@
 			children = (
 				EC3E7BAE22945FF900D6C68E /* libft */,
 				EC3E7BAF2294602000D6C68E /* list */,
+				EC5C011022B2258D001AAC51 /* printf */,
 				EC89EFF4228A9C63002ED417 /* libft.h */,
 				ECF193B422945DC900BDFE34 /* list.h */,
+				EC5C010E22B224F7001AAC51 /* printf.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -607,6 +648,7 @@
 			files = (
 				ECF193B522945DD000BDFE34 /* list.h in Headers */,
 				EC89F037228A9C68002ED417 /* libft.h in Headers */,
+				EC5C010F22B224F7001AAC51 /* printf.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,7 +697,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Alex Legent";
 				TargetAttributes = {
 					EC89EFEA228A9BC5002ED417 = {
@@ -673,6 +715,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = EC89EFE2228A9BC5002ED417;
 			productRefGroup = EC89EFEC228A9BC5002ED417 /* Products */;
@@ -704,15 +747,18 @@
 				EC89F04C228A9C69002ED417 /* ft_memccpy.c in Sources */,
 				EC89F070228A9C69002ED417 /* ft_strdup.c in Sources */,
 				EC89F059228A9C69002ED417 /* ft_strcmp.c in Sources */,
+				EC5C011622B2265B001AAC51 /* ft_vprintf.c in Sources */,
 				EC888E282295218B005841E2 /* node_free.c in Sources */,
 				EC3A4EB72296C41800EAF468 /* list_entry_at.c in Sources */,
 				EC89F05B228A9C69002ED417 /* ft_strcpy.c in Sources */,
 				EC89F078228A9C69002ED417 /* ft_strmap.c in Sources */,
 				EC89F06A228A9C69002ED417 /* ft_strclr.c in Sources */,
+				EC5C011822B227A0001AAC51 /* ft_vdprintf.c in Sources */,
 				EC64C7592292BB9700958375 /* ft_isupper.c in Sources */,
 				ECA9BD802292F4BF0000F90F /* ft_tochar.c in Sources */,
 				EC89F054228A9C69002ED417 /* ft_itoa.c in Sources */,
 				EC89F071228A9C69002ED417 /* ft_isascii.c in Sources */,
+				EC21F69C22B7965E00D1B13C /* ft_asprintf.c in Sources */,
 				EC89F05E228A9C69002ED417 /* ft_strcat.c in Sources */,
 				EC89F055228A9C69002ED417 /* ft_strtrim.c in Sources */,
 				EC888E2A2295406A005841E2 /* list_remove_all.c in Sources */,
@@ -732,11 +778,13 @@
 				EC89F04F228A9C69002ED417 /* ft_strncpy.c in Sources */,
 				EC89F06C228A9C69002ED417 /* ft_strmapi.c in Sources */,
 				EC3A4ECB2296E03600EAF468 /* list_filter.c in Sources */,
+				EC21F6A022B7970A00D1B13C /* ft_vsnprintf.c in Sources */,
 				EC89F075228A9C69002ED417 /* ft_isblank.c in Sources */,
 				EC89F077228A9C69002ED417 /* ft_memcmp.c in Sources */,
 				EC89F06B228A9C69002ED417 /* ft_strncmp.c in Sources */,
 				ECF193B322945DB800BDFE34 /* list_new.c in Sources */,
 				EC89F03A228A9C69002ED417 /* ft_tolower.c in Sources */,
+				EC21F69822B795C600D1B13C /* ft_sprintf.c in Sources */,
 				ECEACABF2294396900BFCD54 /* ft_strreplace.c in Sources */,
 				EC89F05A228A9C69002ED417 /* ft_toupper.c in Sources */,
 				EC89F067228A9C69002ED417 /* ft_strsplit.c in Sources */,
@@ -754,6 +802,7 @@
 				EC64C75B2292BBDE00958375 /* ft_islower.c in Sources */,
 				EC89F053228A9C69002ED417 /* ft_atoi.c in Sources */,
 				EC89F065228A9C69002ED417 /* ft_strjoin.c in Sources */,
+				EC21F69A22B7961700D1B13C /* ft_snprintf.c in Sources */,
 				EC888E2422952053005841E2 /* list_remove_at.c in Sources */,
 				EC89F052228A9C69002ED417 /* ft_strrchr.c in Sources */,
 				EC3A4EC72296DBB100EAF468 /* list_reverse.c in Sources */,
@@ -761,6 +810,7 @@
 				EC89F04E228A9C69002ED417 /* ft_putnbr.c in Sources */,
 				ECA7BD9422959600006DACE4 /* ft_strclen.c in Sources */,
 				EC89F064228A9C69002ED417 /* ft_strnstr.c in Sources */,
+				EC21F6A222B7974D00D1B13C /* ft_vasprintf.c in Sources */,
 				ECA7BD8A22956562006DACE4 /* list_remove.c in Sources */,
 				ECA7BD9A22968F69006DACE4 /* list_first.c in Sources */,
 				EC89F03C228A9C69002ED417 /* ft_memdel.c in Sources */,
@@ -774,11 +824,14 @@
 				EC89F041228A9C69002ED417 /* ft_strequ.c in Sources */,
 				EC89F069228A9C69002ED417 /* ft_memcpy.c in Sources */,
 				EC89F073228A9C69002ED417 /* ft_isalnum.c in Sources */,
+				EC21F69E22B796B700D1B13C /* ft_vsprintf.c in Sources */,
 				EC3E7BB3229461A600D6C68E /* list_append.c in Sources */,
 				EC3A4EBF2296D01C00EAF468 /* list_strsplit.c in Sources */,
 				EC89F05D228A9C69002ED417 /* ft_digitlen.c in Sources */,
 				ECA7BD9022957565006DACE4 /* list_to_array.c in Sources */,
+				EC5C011422B225ED001AAC51 /* ft_dprintf.c in Sources */,
 				EC89F06F228A9C69002ED417 /* ft_putchar.c in Sources */,
+				EC5C011222B225A4001AAC51 /* ft_printf.c in Sources */,
 				EC89F051228A9C69002ED417 /* ft_isdigit.c in Sources */,
 				EC89F068228A9C69002ED417 /* ft_strlen.c in Sources */,
 				EC66E4D92296C16F002AA6DE /* list_last.c in Sources */,
@@ -987,6 +1040,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};
