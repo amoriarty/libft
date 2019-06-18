@@ -128,7 +128,7 @@ class PrintfBasicTests: XCTestCase {
         XCTAssert(printf_tester("max int :  %d", INT16_MAX))
         XCTAssert(printf_tester("min int :  %d", INT16_MIN))
         XCTAssert(printf_tester("max int :  %d", INT32_MAX))
-        XCTAssert(printf_tester("min int :  %d", INT32_MIN))
+        XCTAssert(printf_tester("min int :  %d", -2147483648))
         XCTAssert(printf_tester("max long :  %ld", LONG_MAX))
     }
 

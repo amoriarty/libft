@@ -176,6 +176,7 @@
 		ECA9BD7E2292F20D0000F90F /* AbsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD7D2292F20D0000F90F /* AbsTests.swift */; };
 		ECA9BD802292F4BF0000F90F /* ft_tochar.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD7F2292F4BF0000F90F /* ft_tochar.c */; };
 		ECA9BD822292F5A10000F90F /* ft_toint.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD812292F5A10000F90F /* ft_toint.c */; };
+		ECB2D3EB22B93B6800E08886 /* PrintfReusedArgsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D3EA22B93B6800E08886 /* PrintfReusedArgsTests.swift */; };
 		ECC5469122B8E69700E9970B /* PrintfModifiersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5469022B8E69700E9970B /* PrintfModifiersTests.swift */; };
 		ECC5469322B8E7D600E9970B /* PrintfCharTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5469222B8E7D600E9970B /* PrintfCharTests.swift */; };
 		ECC5469522B8EA8700E9970B /* PrintfHexaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5469422B8EA8700E9970B /* PrintfHexaTests.swift */; };
@@ -378,6 +379,7 @@
 		ECA9BD7D2292F20D0000F90F /* AbsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AbsTests.swift; path = ../AbsTests.swift; sourceTree = "<group>"; };
 		ECA9BD7F2292F4BF0000F90F /* ft_tochar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_tochar.c; sourceTree = "<group>"; };
 		ECA9BD812292F5A10000F90F /* ft_toint.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_toint.c; sourceTree = "<group>"; };
+		ECB2D3EA22B93B6800E08886 /* PrintfReusedArgsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintfReusedArgsTests.swift; sourceTree = "<group>"; };
 		ECC5469022B8E69700E9970B /* PrintfModifiersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintfModifiersTests.swift; sourceTree = "<group>"; };
 		ECC5469222B8E7D600E9970B /* PrintfCharTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintfCharTests.swift; sourceTree = "<group>"; };
 		ECC5469422B8EA8700E9970B /* PrintfHexaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintfHexaTests.swift; sourceTree = "<group>"; };
@@ -426,6 +428,7 @@
 				ECC5469C22B8EECE00E9970B /* PrintfStringTests.swift */,
 				ECC5469E22B8F0C600E9970B /* PrintfPointersTests.swift */,
 				ECC546A022B8F27F00E9970B /* PrintfMultiArgsTests.swift */,
+				ECB2D3EA22B93B6800E08886 /* PrintfReusedArgsTests.swift */,
 			);
 			path = printf;
 			sourceTree = "<group>";
@@ -964,6 +967,7 @@
 				EC045A242293D1D30017D11A /* ToIntTests.swift in Sources */,
 				ECA74CDC228C1D05005E653D /* StriterTests.swift in Sources */,
 				ECC546A122B8F27F00E9970B /* PrintfMultiArgsTests.swift in Sources */,
+				ECB2D3EB22B93B6800E08886 /* PrintfReusedArgsTests.swift in Sources */,
 				EC3E1644228C452900810DE7 /* PutendlTests.swift in Sources */,
 				ECA74CAA228BEBD3005E653D /* SrtlenTests.swift in Sources */,
 				EC3E1636228C309800810DE7 /* StrjoinTests.swift in Sources */,
