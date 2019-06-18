@@ -11,9 +11,9 @@
 
 int     ft_vsnprintf(char *destination, size_t size, const char *format, va_list list)
 {
-    int result;
-
-    result = ft_vsprintf(destination, format, list);
-    ft_strreplace(&destination, ft_strsub(destination, 0, size));
-    return (result);
+    (void)destination;
+    (void)size;
+    (void)format;
+    (void)list;
+    return (0);
 }

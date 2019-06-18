@@ -12,10 +12,8 @@
 
 int     ft_vasprintf(char **destination, const char *format, va_list list)
 {
-    int result;
-
-    *destination = ft_strnew(INT_MAX);
-    result = ft_vsprintf(*destination, format, list);
-    ft_strreplace(destination, ft_strdup(*destination));
-    return (result);
+    (void)destination;
+    (void)format;
+    (void)list;
+    return (0);
 }
