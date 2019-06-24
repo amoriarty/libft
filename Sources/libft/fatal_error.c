@@ -7,11 +7,16 @@
 //
 
 #include "libft.h"
+#include "printf.h"
 
 /// Force program execution to stop, printing message on STDOUT beforehand
 /// @param message Message to print on STDOUT before stopping program execution
-void    fatal_error(const char *message)
+void    fatal_error(const char *message, ...)
 {
-    ft_putendl(message);
+    va_list     list;
+
+    va_start(list, message);
+    ft_vdprintf(STDERR_FILENO, message, list);
+    va_end(list);
     exit(EXIT_FAILURE);
 }

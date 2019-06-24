@@ -115,6 +115,6 @@ int	    get_next_line(const int fd, char **line);
 
 // MARK:- Errors
 
-void    fatal_error(const char *message);
+void    fatal_error(const char *message, ...);
 
 #endif

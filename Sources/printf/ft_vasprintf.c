@@ -12,8 +12,11 @@
 
 int     ft_vasprintf(char **destination, const char *format, va_list list)
 {
-    (void)destination;
-    (void)format;
-    (void)list;
-    return (0);
+    int     result;
+    char    buffer[BUFF_SIZE + 1];
+
+    ft_bzero(buffer, BUFF_SIZE + 1);
+    result = ft_vsprintf(buffer, format, list);
+    *destination = ft_strdup(buffer);
+    return (result);
 }

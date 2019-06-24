@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC045A222293D0F60017D11A /* ToCharTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC045A212293D0F60017D11A /* ToCharTests.swift */; };
-		EC045A242293D1D30017D11A /* ToIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC045A232293D1D30017D11A /* ToIntTests.swift */; };
-		EC045A262293D2CD0017D11A /* GetNextLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC045A252293D2CC0017D11A /* GetNextLineTests.swift */; };
 		EC045A2A2293DA460017D11A /* basics.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC045A282293DA460017D11A /* basics.txt */; };
 		EC21F69822B795C600D1B13C /* ft_sprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = EC21F69722B795C600D1B13C /* ft_sprintf.c */; };
 		EC21F69A22B7961700D1B13C /* ft_snprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = EC21F69922B7961700D1B13C /* ft_snprintf.c */; };
@@ -30,17 +27,7 @@
 		EC3A4ECB2296E03600EAF468 /* list_filter.c in Sources */ = {isa = PBXBuildFile; fileRef = EC3A4ECA2296E03600EAF468 /* list_filter.c */; };
 		EC3A4ECD2296E18F00EAF468 /* ListFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A4ECC2296E18F00EAF468 /* ListFilterTests.swift */; };
 		EC3DAB6322B8D01A00EE72EE /* PrintfHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3DAB6222B8D01A00EE72EE /* PrintfHelper.swift */; };
-		EC3E1634228C2F7900810DE7 /* StrsubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1633228C2F7900810DE7 /* StrsubTests.swift */; };
-		EC3E1636228C309800810DE7 /* StrjoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1635228C309800810DE7 /* StrjoinTests.swift */; };
-		EC3E1638228C31B400810DE7 /* StrtrimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1637228C31B400810DE7 /* StrtrimTests.swift */; };
-		EC3E163A228C32DC00810DE7 /* ItoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1639228C32DC00810DE7 /* ItoaTests.swift */; };
-		EC3E163C228C348800810DE7 /* StrsplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E163B228C348800810DE7 /* StrsplitTests.swift */; };
-		EC3E163E228C3D1C00810DE7 /* PutcharTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E163D228C3D1C00810DE7 /* PutcharTests.swift */; };
 		EC3E1640228C423500810DE7 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E163F228C423500810DE7 /* FileHelper.swift */; };
-		EC3E1642228C444300810DE7 /* PutstrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1641228C444300810DE7 /* PutstrTests.swift */; };
-		EC3E1644228C452900810DE7 /* PutendlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1643228C452900810DE7 /* PutendlTests.swift */; };
-		EC3E1646228C458C00810DE7 /* PutnbrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1645228C458C00810DE7 /* PutnbrTests.swift */; };
-		EC3E1648228C48BF00810DE7 /* DigitlenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1647228C48BF00810DE7 /* DigitlenTests.swift */; };
 		EC3E7BB12294604500D6C68E /* ListNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E7BB02294604500D6C68E /* ListNewTests.swift */; };
 		EC3E7BB3229461A600D6C68E /* list_append.c in Sources */ = {isa = PBXBuildFile; fileRef = EC3E7BB2229461A600D6C68E /* list_append.c */; };
 		EC3E7BB52294626600D6C68E /* node_new.c in Sources */ = {isa = PBXBuildFile; fileRef = EC3E7BB42294626600D6C68E /* node_new.c */; };
@@ -121,43 +108,60 @@
 		EC89F076228A9C69002ED417 /* ft_striteri.c in Sources */ = {isa = PBXBuildFile; fileRef = EC89F033228A9C68002ED417 /* ft_striteri.c */; };
 		EC89F077228A9C69002ED417 /* ft_memcmp.c in Sources */ = {isa = PBXBuildFile; fileRef = EC89F034228A9C68002ED417 /* ft_memcmp.c */; };
 		EC89F078228A9C69002ED417 /* ft_strmap.c in Sources */ = {isa = PBXBuildFile; fileRef = EC89F035228A9C68002ED417 /* ft_strmap.c */; };
-		EC89F080228A9E6F002ED417 /* MemsetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC89F07F228A9E6F002ED417 /* MemsetTests.swift */; };
 		EC89F082228A9E6F002ED417 /* libft.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC89EFEB228A9BC5002ED417 /* libft.a */; };
-		EC8C1F35228B01BA0032719E /* BzeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C1F34228B01BA0032719E /* BzeroTests.swift */; };
-		EC8C1F37228B04A20032719E /* MemcpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C1F36228B04A20032719E /* MemcpyTests.swift */; };
-		EC8C1F39228B0E450032719E /* MemccpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C1F38228B0E450032719E /* MemccpyTests.swift */; };
-		EC8C1F3D228B1A520032719E /* MemchrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C1F3C228B1A520032719E /* MemchrTests.swift */; };
-		EC8C1F3F228B21170032719E /* MemcmpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C1F3E228B21170032719E /* MemcmpTests.swift */; };
-		ECA74CAA228BEBD3005E653D /* SrtlenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CA9228BEBD3005E653D /* SrtlenTests.swift */; };
-		ECA74CAC228BED2D005E653D /* StrdupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CAB228BED2D005E653D /* StrdupTests.swift */; };
-		ECA74CAE228BEE81005E653D /* StrcpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CAD228BEE81005E653D /* StrcpyTests.swift */; };
-		ECA74CB0228BF10D005E653D /* StrncpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CAF228BF10D005E653D /* StrncpyTests.swift */; };
-		ECA74CB2228BF245005E653D /* StrcatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CB1228BF245005E653D /* StrcatTests.swift */; };
-		ECA74CB4228BF714005E653D /* StrncatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CB3228BF714005E653D /* StrncatTests.swift */; };
-		ECA74CB8228C05FE005E653D /* StrchrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CB7228C05FE005E653D /* StrchrTests.swift */; };
-		ECA74CBA228C077E005E653D /* StrrchrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CB9228C077E005E653D /* StrrchrTests.swift */; };
-		ECA74CBC228C0823005E653D /* StrstrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CBB228C0823005E653D /* StrstrTests.swift */; };
-		ECA74CBE228C094B005E653D /* StrnstrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CBD228C094B005E653D /* StrnstrTests.swift */; };
-		ECA74CC0228C0A3F005E653D /* StrcmpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CBF228C0A3F005E653D /* StrcmpTests.swift */; };
-		ECA74CC2228C0B04005E653D /* StrncmpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CC1228C0B04005E653D /* StrncmpTests.swift */; };
-		ECA74CC4228C0C36005E653D /* AtoiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CC3228C0C36005E653D /* AtoiTests.swift */; };
-		ECA74CC6228C0F28005E653D /* IsAlphaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CC5228C0F28005E653D /* IsAlphaTests.swift */; };
-		ECA74CC8228C0FCB005E653D /* IsDigitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CC7228C0FCB005E653D /* IsDigitTests.swift */; };
-		ECA74CCA228C1056005E653D /* IsAlnumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CC9228C1056005E653D /* IsAlnumTests.swift */; };
-		ECA74CCC228C10AF005E653D /* IsAsciiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CCB228C10AF005E653D /* IsAsciiTests.swift */; };
-		ECA74CCE228C1106005E653D /* IsPrintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CCD228C1106005E653D /* IsPrintTests.swift */; };
-		ECA74CD0228C1157005E653D /* ToUpperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CCF228C1157005E653D /* ToUpperTests.swift */; };
-		ECA74CD2228C1196005E653D /* ToLowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CD1228C1196005E653D /* ToLowerTests.swift */; };
-		ECA74CD6228C162E005E653D /* MemdelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CD5228C162E005E653D /* MemdelTests.swift */; };
-		ECA74CD8228C1AF1005E653D /* StrnewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CD7228C1AF1005E653D /* StrnewTests.swift */; };
-		ECA74CDA228C1BDE005E653D /* StrdelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CD9228C1BDE005E653D /* StrdelTests.swift */; };
-		ECA74CDC228C1D05005E653D /* StriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CDB228C1D05005E653D /* StriterTests.swift */; };
-		ECA74CDE228C21C3005E653D /* StriteriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CDD228C21C3005E653D /* StriteriTests.swift */; };
-		ECA74CE2228C2956005E653D /* StrclrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CE1228C2956005E653D /* StrclrTests.swift */; };
-		ECA74CE4228C2A6A005E653D /* StrmapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CE3228C2A6A005E653D /* StrmapTests.swift */; };
-		ECA74CE6228C2C69005E653D /* StrmapiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CE5228C2C69005E653D /* StrmapiTests.swift */; };
-		ECA74CE8228C2CC6005E653D /* StrequTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CE7228C2CC6005E653D /* StrequTests.swift */; };
-		ECA74CEA228C2E45005E653D /* StrnequTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA74CE9228C2E45005E653D /* StrnequTests.swift */; };
+		EC8B835022C0A26000485B4D /* StrdelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B831B22C0A25800485B4D /* StrdelTests.swift */; };
+		EC8B835122C0A26000485B4D /* StrnequTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B831C22C0A25800485B4D /* StrnequTests.swift */; };
+		EC8B835222C0A26000485B4D /* StrcmpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B831D22C0A25800485B4D /* StrcmpTests.swift */; };
+		EC8B835322C0A26000485B4D /* StrreplaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B831E22C0A25900485B4D /* StrreplaceTests.swift */; };
+		EC8B835422C0A26000485B4D /* ToLowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B831F22C0A25A00485B4D /* ToLowerTests.swift */; };
+		EC8B835522C0A26000485B4D /* StrsubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B832022C0A25A00485B4D /* StrsubTests.swift */; };
+		EC8B835622C0A26000485B4D /* StrmapiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B832122C0A25A00485B4D /* StrmapiTests.swift */; };
+		EC8B835722C0A26000485B4D /* GetNextLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B832222C0A25A00485B4D /* GetNextLineTests.swift */; };
+		EC8B835822C0A26000485B4D /* AbsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B832322C0A25A00485B4D /* AbsTests.swift */; };
+		EC8B835922C0A26000485B4D /* StrclrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B832422C0A25A00485B4D /* StrclrTests.swift */; };
+		EC8B835A22C0A26000485B4D /* IsAlphaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B832522C0A25A00485B4D /* IsAlphaTests.swift */; };
+		EC8B835B22C0A26000485B4D /* StrnstrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B832622C0A25A00485B4D /* StrnstrTests.swift */; };
+		EC8B835C22C0A26000485B4D /* IsPrintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B832722C0A25B00485B4D /* IsPrintTests.swift */; };
+		EC8B835D22C0A26000485B4D /* IsUpperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B832822C0A25B00485B4D /* IsUpperTests.swift */; };
+		EC8B835E22C0A26000485B4D /* ToCharTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B832922C0A25B00485B4D /* ToCharTests.swift */; };
+		EC8B835F22C0A26000485B4D /* ItoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B832A22C0A25B00485B4D /* ItoaTests.swift */; };
+		EC8B836022C0A26000485B4D /* PutcharTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B832B22C0A25B00485B4D /* PutcharTests.swift */; };
+		EC8B836122C0A26000485B4D /* StrncatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B832C22C0A25B00485B4D /* StrncatTests.swift */; };
+		EC8B836222C0A26000485B4D /* PutstrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B832D22C0A25B00485B4D /* PutstrTests.swift */; };
+		EC8B836322C0A26000485B4D /* StrncmpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B832E22C0A25B00485B4D /* StrncmpTests.swift */; };
+		EC8B836422C0A26000485B4D /* IsAlnumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B832F22C0A25B00485B4D /* IsAlnumTests.swift */; };
+		EC8B836522C0A26000485B4D /* StrncpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B833022C0A25C00485B4D /* StrncpyTests.swift */; };
+		EC8B836622C0A26000485B4D /* StrcatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B833122C0A25C00485B4D /* StrcatTests.swift */; };
+		EC8B836722C0A26000485B4D /* MemdelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B833222C0A25C00485B4D /* MemdelTests.swift */; };
+		EC8B836822C0A26000485B4D /* StriteriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B833322C0A25D00485B4D /* StriteriTests.swift */; };
+		EC8B836922C0A26000485B4D /* IsDigitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B833422C0A25D00485B4D /* IsDigitTests.swift */; };
+		EC8B836A22C0A26000485B4D /* ToUpperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B833522C0A25D00485B4D /* ToUpperTests.swift */; };
+		EC8B836B22C0A26000485B4D /* StrchrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B833622C0A25E00485B4D /* StrchrTests.swift */; };
+		EC8B836C22C0A26000485B4D /* StriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B833722C0A25E00485B4D /* StriterTests.swift */; };
+		EC8B836D22C0A26000485B4D /* StrtrimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B833822C0A25E00485B4D /* StrtrimTests.swift */; };
+		EC8B836E22C0A26000485B4D /* StrstrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B833922C0A25E00485B4D /* StrstrTests.swift */; };
+		EC8B836F22C0A26000485B4D /* StrequTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B833A22C0A25E00485B4D /* StrequTests.swift */; };
+		EC8B837022C0A26000485B4D /* StrsplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B833B22C0A25E00485B4D /* StrsplitTests.swift */; };
+		EC8B837122C0A26000485B4D /* SrtlenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B833C22C0A25E00485B4D /* SrtlenTests.swift */; };
+		EC8B837222C0A26000485B4D /* ToIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B833D22C0A25E00485B4D /* ToIntTests.swift */; };
+		EC8B837322C0A26000485B4D /* StrjoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B833E22C0A25E00485B4D /* StrjoinTests.swift */; };
+		EC8B837422C0A26000485B4D /* PutendlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B833F22C0A25E00485B4D /* PutendlTests.swift */; };
+		EC8B837522C0A26000485B4D /* DigitlenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B834022C0A25F00485B4D /* DigitlenTests.swift */; };
+		EC8B837622C0A26000485B4D /* MemchrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B834122C0A25F00485B4D /* MemchrTests.swift */; };
+		EC8B837722C0A26000485B4D /* StrcpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B834222C0A25F00485B4D /* StrcpyTests.swift */; };
+		EC8B837822C0A26000485B4D /* StrrchrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B834322C0A25F00485B4D /* StrrchrTests.swift */; };
+		EC8B837922C0A26000485B4D /* IsAsciiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B834422C0A25F00485B4D /* IsAsciiTests.swift */; };
+		EC8B837A22C0A26000485B4D /* MemcpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B834522C0A25F00485B4D /* MemcpyTests.swift */; };
+		EC8B837B22C0A26000485B4D /* StrdupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B834622C0A25F00485B4D /* StrdupTests.swift */; };
+		EC8B837C22C0A26000485B4D /* StrnewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B834722C0A25F00485B4D /* StrnewTests.swift */; };
+		EC8B837D22C0A26000485B4D /* StrmapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B834822C0A25F00485B4D /* StrmapTests.swift */; };
+		EC8B837E22C0A26000485B4D /* MemsetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B834922C0A26000485B4D /* MemsetTests.swift */; };
+		EC8B837F22C0A26000485B4D /* PutnbrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B834A22C0A26000485B4D /* PutnbrTests.swift */; };
+		EC8B838022C0A26000485B4D /* MemcmpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B834B22C0A26000485B4D /* MemcmpTests.swift */; };
+		EC8B838122C0A26000485B4D /* MemccpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B834C22C0A26000485B4D /* MemccpyTests.swift */; };
+		EC8B838222C0A26000485B4D /* AtoiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B834D22C0A26000485B4D /* AtoiTests.swift */; };
+		EC8B838322C0A26000485B4D /* BzeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B834E22C0A26000485B4D /* BzeroTests.swift */; };
+		EC8B838422C0A26000485B4D /* IsLowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8B834F22C0A26000485B4D /* IsLowerTests.swift */; };
 		ECA7BD8222954EEF006DACE4 /* list_for_each.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA7BD8122954EEF006DACE4 /* list_for_each.c */; };
 		ECA7BD8422954F55006DACE4 /* ListForEachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7BD8322954F55006DACE4 /* ListForEachTests.swift */; };
 		ECA7BD862295513C006DACE4 /* list_map.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA7BD852295513C006DACE4 /* list_map.c */; };
@@ -170,10 +174,7 @@
 		ECA7BD96229598EA006DACE4 /* StrclenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7BD95229598EA006DACE4 /* StrclenTests.swift */; };
 		ECA7BD9822968E15006DACE4 /* ListFirstTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7BD9722968E15006DACE4 /* ListFirstTests.swift */; };
 		ECA7BD9A22968F69006DACE4 /* list_first.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA7BD9922968F69006DACE4 /* list_first.c */; };
-		ECA9BD782292EB110000F90F /* IsLowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD772292EB110000F90F /* IsLowerTests.swift */; };
-		ECA9BD7A2292EC040000F90F /* IsUpperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD792292EC040000F90F /* IsUpperTests.swift */; };
 		ECA9BD7C2292F1CA0000F90F /* ft_abs.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD7B2292F1CA0000F90F /* ft_abs.c */; };
-		ECA9BD7E2292F20D0000F90F /* AbsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD7D2292F20D0000F90F /* AbsTests.swift */; };
 		ECA9BD802292F4BF0000F90F /* ft_tochar.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD7F2292F4BF0000F90F /* ft_tochar.c */; };
 		ECA9BD822292F5A10000F90F /* ft_toint.c in Sources */ = {isa = PBXBuildFile; fileRef = ECA9BD812292F5A10000F90F /* ft_toint.c */; };
 		ECB2D3EB22B93B6800E08886 /* PrintfReusedArgsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D3EA22B93B6800E08886 /* PrintfReusedArgsTests.swift */; };
@@ -187,7 +188,6 @@
 		ECC5469F22B8F0C600E9970B /* PrintfPointersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5469E22B8F0C600E9970B /* PrintfPointersTests.swift */; };
 		ECC546A122B8F27F00E9970B /* PrintfMultiArgsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC546A022B8F27F00E9970B /* PrintfMultiArgsTests.swift */; };
 		ECEACABF2294396900BFCD54 /* ft_strreplace.c in Sources */ = {isa = PBXBuildFile; fileRef = ECEACABE2294396900BFCD54 /* ft_strreplace.c */; };
-		ECF193AF229444DA00BDFE34 /* StrreplaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF193AE229444DA00BDFE34 /* StrreplaceTests.swift */; };
 		ECF193B122944A6C00BDFE34 /* fatal_error.c in Sources */ = {isa = PBXBuildFile; fileRef = ECF193B022944A6C00BDFE34 /* fatal_error.c */; };
 		ECF193B322945DB800BDFE34 /* list_new.c in Sources */ = {isa = PBXBuildFile; fileRef = ECF193B222945DB800BDFE34 /* list_new.c */; };
 		ECF193B522945DD000BDFE34 /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = ECF193B422945DC900BDFE34 /* list.h */; };
@@ -204,9 +204,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EC045A212293D0F60017D11A /* ToCharTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToCharTests.swift; path = ../ToCharTests.swift; sourceTree = "<group>"; };
-		EC045A232293D1D30017D11A /* ToIntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToIntTests.swift; path = ../ToIntTests.swift; sourceTree = "<group>"; };
-		EC045A252293D2CC0017D11A /* GetNextLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GetNextLineTests.swift; path = ../GetNextLineTests.swift; sourceTree = "<group>"; };
 		EC045A282293DA460017D11A /* basics.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = basics.txt; sourceTree = "<group>"; };
 		EC21F69722B795C600D1B13C /* ft_sprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_sprintf.c; sourceTree = "<group>"; };
 		EC21F69922B7961700D1B13C /* ft_snprintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_snprintf.c; sourceTree = "<group>"; };
@@ -230,17 +227,7 @@
 		EC3A4ECF2296E92F00EAF468 /* auteur */ = {isa = PBXFileReference; lastKnownFileType = text; path = auteur; sourceTree = "<group>"; };
 		EC3A4ED02296E92F00EAF468 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		EC3DAB6222B8D01A00EE72EE /* PrintfHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintfHelper.swift; sourceTree = "<group>"; };
-		EC3E1633228C2F7900810DE7 /* StrsubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrsubTests.swift; path = ../StrsubTests.swift; sourceTree = "<group>"; };
-		EC3E1635228C309800810DE7 /* StrjoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrjoinTests.swift; path = ../StrjoinTests.swift; sourceTree = "<group>"; };
-		EC3E1637228C31B400810DE7 /* StrtrimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrtrimTests.swift; path = ../StrtrimTests.swift; sourceTree = "<group>"; };
-		EC3E1639228C32DC00810DE7 /* ItoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItoaTests.swift; path = ../ItoaTests.swift; sourceTree = "<group>"; };
-		EC3E163B228C348800810DE7 /* StrsplitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrsplitTests.swift; path = ../StrsplitTests.swift; sourceTree = "<group>"; };
-		EC3E163D228C3D1C00810DE7 /* PutcharTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PutcharTests.swift; path = ../PutcharTests.swift; sourceTree = "<group>"; };
 		EC3E163F228C423500810DE7 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
-		EC3E1641228C444300810DE7 /* PutstrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PutstrTests.swift; path = ../PutstrTests.swift; sourceTree = "<group>"; };
-		EC3E1643228C452900810DE7 /* PutendlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PutendlTests.swift; path = ../PutendlTests.swift; sourceTree = "<group>"; };
-		EC3E1645228C458C00810DE7 /* PutnbrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PutnbrTests.swift; path = ../PutnbrTests.swift; sourceTree = "<group>"; };
-		EC3E1647228C48BF00810DE7 /* DigitlenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DigitlenTests.swift; path = ../DigitlenTests.swift; sourceTree = "<group>"; };
 		EC3E7BB02294604500D6C68E /* ListNewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNewTests.swift; sourceTree = "<group>"; };
 		EC3E7BB2229461A600D6C68E /* list_append.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_append.c; sourceTree = "<group>"; };
 		EC3E7BB42294626600D6C68E /* node_new.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = node_new.c; sourceTree = "<group>"; };
@@ -323,44 +310,61 @@
 		EC89F034228A9C68002ED417 /* ft_memcmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_memcmp.c; sourceTree = "<group>"; };
 		EC89F035228A9C68002ED417 /* ft_strmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ft_strmap.c; sourceTree = "<group>"; };
 		EC89F07D228A9E6F002ED417 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC89F07F228A9E6F002ED417 /* MemsetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MemsetTests.swift; path = ../MemsetTests.swift; sourceTree = "<group>"; };
 		EC89F081228A9E6F002ED417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC89F089228AA1CB002ED417 /* Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Bridging-Header.h"; sourceTree = "<group>"; };
-		EC8C1F34228B01BA0032719E /* BzeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BzeroTests.swift; path = ../BzeroTests.swift; sourceTree = "<group>"; };
-		EC8C1F36228B04A20032719E /* MemcpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MemcpyTests.swift; path = ../MemcpyTests.swift; sourceTree = "<group>"; };
-		EC8C1F38228B0E450032719E /* MemccpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MemccpyTests.swift; path = ../MemccpyTests.swift; sourceTree = "<group>"; };
-		EC8C1F3C228B1A520032719E /* MemchrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MemchrTests.swift; path = ../MemchrTests.swift; sourceTree = "<group>"; };
-		EC8C1F3E228B21170032719E /* MemcmpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MemcmpTests.swift; path = ../MemcmpTests.swift; sourceTree = "<group>"; };
-		ECA74CA9228BEBD3005E653D /* SrtlenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SrtlenTests.swift; path = ../SrtlenTests.swift; sourceTree = "<group>"; };
-		ECA74CAB228BED2D005E653D /* StrdupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrdupTests.swift; path = ../StrdupTests.swift; sourceTree = "<group>"; };
-		ECA74CAD228BEE81005E653D /* StrcpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrcpyTests.swift; path = ../StrcpyTests.swift; sourceTree = "<group>"; };
-		ECA74CAF228BF10D005E653D /* StrncpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrncpyTests.swift; path = ../StrncpyTests.swift; sourceTree = "<group>"; };
-		ECA74CB1228BF245005E653D /* StrcatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrcatTests.swift; path = ../StrcatTests.swift; sourceTree = "<group>"; };
-		ECA74CB3228BF714005E653D /* StrncatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrncatTests.swift; path = ../StrncatTests.swift; sourceTree = "<group>"; };
-		ECA74CB7228C05FE005E653D /* StrchrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrchrTests.swift; path = ../StrchrTests.swift; sourceTree = "<group>"; };
-		ECA74CB9228C077E005E653D /* StrrchrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrrchrTests.swift; path = ../StrrchrTests.swift; sourceTree = "<group>"; };
-		ECA74CBB228C0823005E653D /* StrstrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrstrTests.swift; path = ../StrstrTests.swift; sourceTree = "<group>"; };
-		ECA74CBD228C094B005E653D /* StrnstrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrnstrTests.swift; path = ../StrnstrTests.swift; sourceTree = "<group>"; };
-		ECA74CBF228C0A3F005E653D /* StrcmpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrcmpTests.swift; path = ../StrcmpTests.swift; sourceTree = "<group>"; };
-		ECA74CC1228C0B04005E653D /* StrncmpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrncmpTests.swift; path = ../StrncmpTests.swift; sourceTree = "<group>"; };
-		ECA74CC3228C0C36005E653D /* AtoiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AtoiTests.swift; path = ../AtoiTests.swift; sourceTree = "<group>"; };
-		ECA74CC5228C0F28005E653D /* IsAlphaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IsAlphaTests.swift; path = ../IsAlphaTests.swift; sourceTree = "<group>"; };
-		ECA74CC7228C0FCB005E653D /* IsDigitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IsDigitTests.swift; path = ../IsDigitTests.swift; sourceTree = "<group>"; };
-		ECA74CC9228C1056005E653D /* IsAlnumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IsAlnumTests.swift; path = ../IsAlnumTests.swift; sourceTree = "<group>"; };
-		ECA74CCB228C10AF005E653D /* IsAsciiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IsAsciiTests.swift; path = ../IsAsciiTests.swift; sourceTree = "<group>"; };
-		ECA74CCD228C1106005E653D /* IsPrintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IsPrintTests.swift; path = ../IsPrintTests.swift; sourceTree = "<group>"; };
-		ECA74CCF228C1157005E653D /* ToUpperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToUpperTests.swift; path = ../ToUpperTests.swift; sourceTree = "<group>"; };
-		ECA74CD1228C1196005E653D /* ToLowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToLowerTests.swift; path = ../ToLowerTests.swift; sourceTree = "<group>"; };
-		ECA74CD5228C162E005E653D /* MemdelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MemdelTests.swift; path = ../MemdelTests.swift; sourceTree = "<group>"; };
-		ECA74CD7228C1AF1005E653D /* StrnewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrnewTests.swift; path = ../StrnewTests.swift; sourceTree = "<group>"; };
-		ECA74CD9228C1BDE005E653D /* StrdelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrdelTests.swift; path = ../StrdelTests.swift; sourceTree = "<group>"; };
-		ECA74CDB228C1D05005E653D /* StriterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StriterTests.swift; path = ../StriterTests.swift; sourceTree = "<group>"; };
-		ECA74CDD228C21C3005E653D /* StriteriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StriteriTests.swift; path = ../StriteriTests.swift; sourceTree = "<group>"; };
-		ECA74CE1228C2956005E653D /* StrclrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrclrTests.swift; path = ../StrclrTests.swift; sourceTree = "<group>"; };
-		ECA74CE3228C2A6A005E653D /* StrmapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrmapTests.swift; path = ../StrmapTests.swift; sourceTree = "<group>"; };
-		ECA74CE5228C2C69005E653D /* StrmapiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrmapiTests.swift; path = ../StrmapiTests.swift; sourceTree = "<group>"; };
-		ECA74CE7228C2CC6005E653D /* StrequTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrequTests.swift; path = ../StrequTests.swift; sourceTree = "<group>"; };
-		ECA74CE9228C2E45005E653D /* StrnequTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrnequTests.swift; path = ../StrnequTests.swift; sourceTree = "<group>"; };
+		EC8B831B22C0A25800485B4D /* StrdelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrdelTests.swift; sourceTree = "<group>"; };
+		EC8B831C22C0A25800485B4D /* StrnequTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrnequTests.swift; sourceTree = "<group>"; };
+		EC8B831D22C0A25800485B4D /* StrcmpTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrcmpTests.swift; sourceTree = "<group>"; };
+		EC8B831E22C0A25900485B4D /* StrreplaceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrreplaceTests.swift; sourceTree = "<group>"; };
+		EC8B831F22C0A25A00485B4D /* ToLowerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToLowerTests.swift; sourceTree = "<group>"; };
+		EC8B832022C0A25A00485B4D /* StrsubTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrsubTests.swift; sourceTree = "<group>"; };
+		EC8B832122C0A25A00485B4D /* StrmapiTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrmapiTests.swift; sourceTree = "<group>"; };
+		EC8B832222C0A25A00485B4D /* GetNextLineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetNextLineTests.swift; sourceTree = "<group>"; };
+		EC8B832322C0A25A00485B4D /* AbsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbsTests.swift; sourceTree = "<group>"; };
+		EC8B832422C0A25A00485B4D /* StrclrTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrclrTests.swift; sourceTree = "<group>"; };
+		EC8B832522C0A25A00485B4D /* IsAlphaTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsAlphaTests.swift; sourceTree = "<group>"; };
+		EC8B832622C0A25A00485B4D /* StrnstrTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrnstrTests.swift; sourceTree = "<group>"; };
+		EC8B832722C0A25B00485B4D /* IsPrintTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsPrintTests.swift; sourceTree = "<group>"; };
+		EC8B832822C0A25B00485B4D /* IsUpperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsUpperTests.swift; sourceTree = "<group>"; };
+		EC8B832922C0A25B00485B4D /* ToCharTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToCharTests.swift; sourceTree = "<group>"; };
+		EC8B832A22C0A25B00485B4D /* ItoaTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItoaTests.swift; sourceTree = "<group>"; };
+		EC8B832B22C0A25B00485B4D /* PutcharTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PutcharTests.swift; sourceTree = "<group>"; };
+		EC8B832C22C0A25B00485B4D /* StrncatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrncatTests.swift; sourceTree = "<group>"; };
+		EC8B832D22C0A25B00485B4D /* PutstrTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PutstrTests.swift; sourceTree = "<group>"; };
+		EC8B832E22C0A25B00485B4D /* StrncmpTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrncmpTests.swift; sourceTree = "<group>"; };
+		EC8B832F22C0A25B00485B4D /* IsAlnumTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsAlnumTests.swift; sourceTree = "<group>"; };
+		EC8B833022C0A25C00485B4D /* StrncpyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrncpyTests.swift; sourceTree = "<group>"; };
+		EC8B833122C0A25C00485B4D /* StrcatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrcatTests.swift; sourceTree = "<group>"; };
+		EC8B833222C0A25C00485B4D /* MemdelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemdelTests.swift; sourceTree = "<group>"; };
+		EC8B833322C0A25D00485B4D /* StriteriTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StriteriTests.swift; sourceTree = "<group>"; };
+		EC8B833422C0A25D00485B4D /* IsDigitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsDigitTests.swift; sourceTree = "<group>"; };
+		EC8B833522C0A25D00485B4D /* ToUpperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToUpperTests.swift; sourceTree = "<group>"; };
+		EC8B833622C0A25E00485B4D /* StrchrTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrchrTests.swift; sourceTree = "<group>"; };
+		EC8B833722C0A25E00485B4D /* StriterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StriterTests.swift; sourceTree = "<group>"; };
+		EC8B833822C0A25E00485B4D /* StrtrimTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrtrimTests.swift; sourceTree = "<group>"; };
+		EC8B833922C0A25E00485B4D /* StrstrTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrstrTests.swift; sourceTree = "<group>"; };
+		EC8B833A22C0A25E00485B4D /* StrequTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrequTests.swift; sourceTree = "<group>"; };
+		EC8B833B22C0A25E00485B4D /* StrsplitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrsplitTests.swift; sourceTree = "<group>"; };
+		EC8B833C22C0A25E00485B4D /* SrtlenTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SrtlenTests.swift; sourceTree = "<group>"; };
+		EC8B833D22C0A25E00485B4D /* ToIntTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToIntTests.swift; sourceTree = "<group>"; };
+		EC8B833E22C0A25E00485B4D /* StrjoinTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrjoinTests.swift; sourceTree = "<group>"; };
+		EC8B833F22C0A25E00485B4D /* PutendlTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PutendlTests.swift; sourceTree = "<group>"; };
+		EC8B834022C0A25F00485B4D /* DigitlenTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitlenTests.swift; sourceTree = "<group>"; };
+		EC8B834122C0A25F00485B4D /* MemchrTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemchrTests.swift; sourceTree = "<group>"; };
+		EC8B834222C0A25F00485B4D /* StrcpyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrcpyTests.swift; sourceTree = "<group>"; };
+		EC8B834322C0A25F00485B4D /* StrrchrTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrrchrTests.swift; sourceTree = "<group>"; };
+		EC8B834422C0A25F00485B4D /* IsAsciiTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsAsciiTests.swift; sourceTree = "<group>"; };
+		EC8B834522C0A25F00485B4D /* MemcpyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemcpyTests.swift; sourceTree = "<group>"; };
+		EC8B834622C0A25F00485B4D /* StrdupTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrdupTests.swift; sourceTree = "<group>"; };
+		EC8B834722C0A25F00485B4D /* StrnewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrnewTests.swift; sourceTree = "<group>"; };
+		EC8B834822C0A25F00485B4D /* StrmapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrmapTests.swift; sourceTree = "<group>"; };
+		EC8B834922C0A26000485B4D /* MemsetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemsetTests.swift; sourceTree = "<group>"; };
+		EC8B834A22C0A26000485B4D /* PutnbrTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PutnbrTests.swift; sourceTree = "<group>"; };
+		EC8B834B22C0A26000485B4D /* MemcmpTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemcmpTests.swift; sourceTree = "<group>"; };
+		EC8B834C22C0A26000485B4D /* MemccpyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemccpyTests.swift; sourceTree = "<group>"; };
+		EC8B834D22C0A26000485B4D /* AtoiTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtoiTests.swift; sourceTree = "<group>"; };
+		EC8B834E22C0A26000485B4D /* BzeroTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BzeroTests.swift; sourceTree = "<group>"; };
+		EC8B834F22C0A26000485B4D /* IsLowerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsLowerTests.swift; sourceTree = "<group>"; };
 		ECA7BD8122954EEF006DACE4 /* list_for_each.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_for_each.c; sourceTree = "<group>"; };
 		ECA7BD8322954F55006DACE4 /* ListForEachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListForEachTests.swift; sourceTree = "<group>"; };
 		ECA7BD852295513C006DACE4 /* list_map.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_map.c; sourceTree = "<group>"; };
@@ -373,10 +377,7 @@
 		ECA7BD95229598EA006DACE4 /* StrclenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrclenTests.swift; sourceTree = "<group>"; };
 		ECA7BD9722968E15006DACE4 /* ListFirstTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFirstTests.swift; sourceTree = "<group>"; };
 		ECA7BD9922968F69006DACE4 /* list_first.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_first.c; sourceTree = "<group>"; };
-		ECA9BD772292EB110000F90F /* IsLowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IsLowerTests.swift; path = ../IsLowerTests.swift; sourceTree = "<group>"; };
-		ECA9BD792292EC040000F90F /* IsUpperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IsUpperTests.swift; path = ../IsUpperTests.swift; sourceTree = "<group>"; };
 		ECA9BD7B2292F1CA0000F90F /* ft_abs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_abs.c; sourceTree = "<group>"; };
-		ECA9BD7D2292F20D0000F90F /* AbsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AbsTests.swift; path = ../AbsTests.swift; sourceTree = "<group>"; };
 		ECA9BD7F2292F4BF0000F90F /* ft_tochar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_tochar.c; sourceTree = "<group>"; };
 		ECA9BD812292F5A10000F90F /* ft_toint.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_toint.c; sourceTree = "<group>"; };
 		ECB2D3EA22B93B6800E08886 /* PrintfReusedArgsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintfReusedArgsTests.swift; sourceTree = "<group>"; };
@@ -390,7 +391,6 @@
 		ECC5469E22B8F0C600E9970B /* PrintfPointersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintfPointersTests.swift; sourceTree = "<group>"; };
 		ECC546A022B8F27F00E9970B /* PrintfMultiArgsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintfMultiArgsTests.swift; sourceTree = "<group>"; };
 		ECEACABE2294396900BFCD54 /* ft_strreplace.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_strreplace.c; sourceTree = "<group>"; };
-		ECF193AE229444DA00BDFE34 /* StrreplaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StrreplaceTests.swift; path = ../StrreplaceTests.swift; sourceTree = "<group>"; };
 		ECF193B022944A6C00BDFE34 /* fatal_error.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fatal_error.c; sourceTree = "<group>"; };
 		ECF193B222945DB800BDFE34 /* list_new.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = list_new.c; sourceTree = "<group>"; };
 		ECF193B422945DC900BDFE34 /* list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
@@ -625,60 +625,60 @@
 		ECF193B622945FAD00BDFE34 /* libft */ = {
 			isa = PBXGroup;
 			children = (
-				ECA9BD7D2292F20D0000F90F /* AbsTests.swift */,
-				EC8C1F34228B01BA0032719E /* BzeroTests.swift */,
-				EC89F07F228A9E6F002ED417 /* MemsetTests.swift */,
-				EC8C1F36228B04A20032719E /* MemcpyTests.swift */,
-				EC8C1F38228B0E450032719E /* MemccpyTests.swift */,
-				EC8C1F3C228B1A520032719E /* MemchrTests.swift */,
-				EC8C1F3E228B21170032719E /* MemcmpTests.swift */,
-				ECA74CD5228C162E005E653D /* MemdelTests.swift */,
-				ECA74CA9228BEBD3005E653D /* SrtlenTests.swift */,
+				EC8B832322C0A25A00485B4D /* AbsTests.swift */,
+				EC8B834D22C0A26000485B4D /* AtoiTests.swift */,
+				EC8B834E22C0A26000485B4D /* BzeroTests.swift */,
+				EC8B834022C0A25F00485B4D /* DigitlenTests.swift */,
+				EC8B832222C0A25A00485B4D /* GetNextLineTests.swift */,
+				EC8B832F22C0A25B00485B4D /* IsAlnumTests.swift */,
+				EC8B832522C0A25A00485B4D /* IsAlphaTests.swift */,
+				EC8B834422C0A25F00485B4D /* IsAsciiTests.swift */,
+				EC8B833422C0A25D00485B4D /* IsDigitTests.swift */,
+				EC8B834F22C0A26000485B4D /* IsLowerTests.swift */,
+				EC8B832722C0A25B00485B4D /* IsPrintTests.swift */,
+				EC8B832822C0A25B00485B4D /* IsUpperTests.swift */,
+				EC8B832A22C0A25B00485B4D /* ItoaTests.swift */,
+				EC8B834C22C0A26000485B4D /* MemccpyTests.swift */,
+				EC8B834122C0A25F00485B4D /* MemchrTests.swift */,
+				EC8B834B22C0A26000485B4D /* MemcmpTests.swift */,
+				EC8B834522C0A25F00485B4D /* MemcpyTests.swift */,
+				EC8B833222C0A25C00485B4D /* MemdelTests.swift */,
+				EC8B834922C0A26000485B4D /* MemsetTests.swift */,
+				EC8B832B22C0A25B00485B4D /* PutcharTests.swift */,
+				EC8B833F22C0A25E00485B4D /* PutendlTests.swift */,
+				EC8B834A22C0A26000485B4D /* PutnbrTests.swift */,
+				EC8B832D22C0A25B00485B4D /* PutstrTests.swift */,
+				EC8B833C22C0A25E00485B4D /* SrtlenTests.swift */,
+				EC8B833122C0A25C00485B4D /* StrcatTests.swift */,
+				EC8B833622C0A25E00485B4D /* StrchrTests.swift */,
+				EC8B832422C0A25A00485B4D /* StrclrTests.swift */,
+				EC8B831D22C0A25800485B4D /* StrcmpTests.swift */,
+				EC8B834222C0A25F00485B4D /* StrcpyTests.swift */,
+				EC8B831B22C0A25800485B4D /* StrdelTests.swift */,
+				EC8B834622C0A25F00485B4D /* StrdupTests.swift */,
+				EC8B833A22C0A25E00485B4D /* StrequTests.swift */,
+				EC8B833322C0A25D00485B4D /* StriteriTests.swift */,
+				EC8B833722C0A25E00485B4D /* StriterTests.swift */,
+				EC8B833E22C0A25E00485B4D /* StrjoinTests.swift */,
+				EC8B832122C0A25A00485B4D /* StrmapiTests.swift */,
+				EC8B834822C0A25F00485B4D /* StrmapTests.swift */,
+				EC8B832C22C0A25B00485B4D /* StrncatTests.swift */,
+				EC8B832E22C0A25B00485B4D /* StrncmpTests.swift */,
+				EC8B833022C0A25C00485B4D /* StrncpyTests.swift */,
+				EC8B831C22C0A25800485B4D /* StrnequTests.swift */,
+				EC8B834722C0A25F00485B4D /* StrnewTests.swift */,
+				EC8B832622C0A25A00485B4D /* StrnstrTests.swift */,
+				EC8B834322C0A25F00485B4D /* StrrchrTests.swift */,
+				EC8B831E22C0A25900485B4D /* StrreplaceTests.swift */,
+				EC8B833B22C0A25E00485B4D /* StrsplitTests.swift */,
+				EC8B833922C0A25E00485B4D /* StrstrTests.swift */,
+				EC8B832022C0A25A00485B4D /* StrsubTests.swift */,
+				EC8B833822C0A25E00485B4D /* StrtrimTests.swift */,
+				EC8B832922C0A25B00485B4D /* ToCharTests.swift */,
+				EC8B833D22C0A25E00485B4D /* ToIntTests.swift */,
+				EC8B831F22C0A25A00485B4D /* ToLowerTests.swift */,
+				EC8B833522C0A25D00485B4D /* ToUpperTests.swift */,
 				ECA7BD95229598EA006DACE4 /* StrclenTests.swift */,
-				ECA74CAB228BED2D005E653D /* StrdupTests.swift */,
-				ECA74CAD228BEE81005E653D /* StrcpyTests.swift */,
-				ECA74CAF228BF10D005E653D /* StrncpyTests.swift */,
-				ECA74CB1228BF245005E653D /* StrcatTests.swift */,
-				ECA74CB3228BF714005E653D /* StrncatTests.swift */,
-				ECA74CB7228C05FE005E653D /* StrchrTests.swift */,
-				ECA74CB9228C077E005E653D /* StrrchrTests.swift */,
-				ECA74CBB228C0823005E653D /* StrstrTests.swift */,
-				ECA74CBD228C094B005E653D /* StrnstrTests.swift */,
-				ECA74CBF228C0A3F005E653D /* StrcmpTests.swift */,
-				ECA74CC1228C0B04005E653D /* StrncmpTests.swift */,
-				ECA74CD7228C1AF1005E653D /* StrnewTests.swift */,
-				ECA74CD9228C1BDE005E653D /* StrdelTests.swift */,
-				ECA74CE1228C2956005E653D /* StrclrTests.swift */,
-				ECA74CDB228C1D05005E653D /* StriterTests.swift */,
-				ECA74CDD228C21C3005E653D /* StriteriTests.swift */,
-				ECA74CE3228C2A6A005E653D /* StrmapTests.swift */,
-				ECA74CE5228C2C69005E653D /* StrmapiTests.swift */,
-				ECA74CE7228C2CC6005E653D /* StrequTests.swift */,
-				ECA74CE9228C2E45005E653D /* StrnequTests.swift */,
-				EC3E1633228C2F7900810DE7 /* StrsubTests.swift */,
-				EC3E1635228C309800810DE7 /* StrjoinTests.swift */,
-				EC3E1637228C31B400810DE7 /* StrtrimTests.swift */,
-				EC3E163B228C348800810DE7 /* StrsplitTests.swift */,
-				ECF193AE229444DA00BDFE34 /* StrreplaceTests.swift */,
-				ECA74CC3228C0C36005E653D /* AtoiTests.swift */,
-				EC3E1639228C32DC00810DE7 /* ItoaTests.swift */,
-				ECA74CCD228C1106005E653D /* IsPrintTests.swift */,
-				ECA74CCB228C10AF005E653D /* IsAsciiTests.swift */,
-				ECA74CC9228C1056005E653D /* IsAlnumTests.swift */,
-				ECA74CC7228C0FCB005E653D /* IsDigitTests.swift */,
-				ECA74CC5228C0F28005E653D /* IsAlphaTests.swift */,
-				ECA9BD772292EB110000F90F /* IsLowerTests.swift */,
-				ECA9BD792292EC040000F90F /* IsUpperTests.swift */,
-				ECA74CD1228C1196005E653D /* ToLowerTests.swift */,
-				ECA74CCF228C1157005E653D /* ToUpperTests.swift */,
-				EC045A232293D1D30017D11A /* ToIntTests.swift */,
-				EC045A212293D0F60017D11A /* ToCharTests.swift */,
-				EC3E1647228C48BF00810DE7 /* DigitlenTests.swift */,
-				EC3E1645228C458C00810DE7 /* PutnbrTests.swift */,
-				EC3E1643228C452900810DE7 /* PutendlTests.swift */,
-				EC3E1641228C444300810DE7 /* PutstrTests.swift */,
-				EC3E163D228C3D1C00810DE7 /* PutcharTests.swift */,
-				EC045A252293D2CC0017D11A /* GetNextLineTests.swift */,
 			);
 			path = libft;
 			sourceTree = "<group>";
@@ -886,94 +886,94 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECA74CD2228C1196005E653D /* ToLowerTests.swift in Sources */,
+				EC8B837522C0A26000485B4D /* DigitlenTests.swift in Sources */,
 				ECA7BD96229598EA006DACE4 /* StrclenTests.swift in Sources */,
+				EC8B836222C0A26000485B4D /* PutstrTests.swift in Sources */,
+				EC8B835022C0A26000485B4D /* StrdelTests.swift in Sources */,
+				EC8B837922C0A26000485B4D /* IsAsciiTests.swift in Sources */,
+				EC8B838122C0A26000485B4D /* MemccpyTests.swift in Sources */,
 				ECC5469B22B8EDE500E9970B /* PrintfOctalTests.swift in Sources */,
-				EC045A262293D2CD0017D11A /* GetNextLineTests.swift in Sources */,
-				ECA74CAE228BEE81005E653D /* StrcpyTests.swift in Sources */,
-				EC8C1F35228B01BA0032719E /* BzeroTests.swift in Sources */,
-				ECA74CB8228C05FE005E653D /* StrchrTests.swift in Sources */,
+				EC8B836D22C0A26000485B4D /* StrtrimTests.swift in Sources */,
+				EC8B836622C0A26000485B4D /* StrcatTests.swift in Sources */,
 				ECC5469D22B8EECE00E9970B /* PrintfStringTests.swift in Sources */,
-				ECA74CC0228C0A3F005E653D /* StrcmpTests.swift in Sources */,
-				ECA74CC4228C0C36005E653D /* AtoiTests.swift in Sources */,
-				ECA74CB4228BF714005E653D /* StrncatTests.swift in Sources */,
+				EC8B837F22C0A26000485B4D /* PutnbrTests.swift in Sources */,
 				EC3A4ECD2296E18F00EAF468 /* ListFilterTests.swift in Sources */,
-				EC3E1642228C444300810DE7 /* PutstrTests.swift in Sources */,
-				ECA74CBE228C094B005E653D /* StrnstrTests.swift in Sources */,
-				ECA74CB0228BF10D005E653D /* StrncpyTests.swift in Sources */,
-				ECA74CC2228C0B04005E653D /* StrncmpTests.swift in Sources */,
-				EC3E1634228C2F7900810DE7 /* StrsubTests.swift in Sources */,
+				EC8B836F22C0A26000485B4D /* StrequTests.swift in Sources */,
+				EC8B837122C0A26000485B4D /* SrtlenTests.swift in Sources */,
 				ECA7BD8C22956714006DACE4 /* ListRemoveTests.swift in Sources */,
+				EC8B835122C0A26000485B4D /* StrnequTests.swift in Sources */,
+				EC8B835322C0A26000485B4D /* StrreplaceTests.swift in Sources */,
 				EC3DAB6322B8D01A00EE72EE /* PrintfHelper.swift in Sources */,
-				EC3E163A228C32DC00810DE7 /* ItoaTests.swift in Sources */,
-				ECA74CCA228C1056005E653D /* IsAlnumTests.swift in Sources */,
-				ECA9BD7A2292EC040000F90F /* IsUpperTests.swift in Sources */,
-				ECA74CC8228C0FCB005E653D /* IsDigitTests.swift in Sources */,
-				ECA74CAC228BED2D005E653D /* StrdupTests.swift in Sources */,
-				ECA74CDA228C1BDE005E653D /* StrdelTests.swift in Sources */,
-				EC8C1F3D228B1A520032719E /* MemchrTests.swift in Sources */,
-				EC8C1F37228B04A20032719E /* MemcpyTests.swift in Sources */,
+				EC8B837222C0A26000485B4D /* ToIntTests.swift in Sources */,
+				EC8B835C22C0A26000485B4D /* IsPrintTests.swift in Sources */,
+				EC8B835F22C0A26000485B4D /* ItoaTests.swift in Sources */,
 				ECC5469122B8E69700E9970B /* PrintfModifiersTests.swift in Sources */,
-				ECA74CBA228C077E005E653D /* StrrchrTests.swift in Sources */,
 				EC3E1640228C423500810DE7 /* FileHelper.swift in Sources */,
-				EC3E1646228C458C00810DE7 /* PutnbrTests.swift in Sources */,
-				ECA9BD782292EB110000F90F /* IsLowerTests.swift in Sources */,
-				EC3E163E228C3D1C00810DE7 /* PutcharTests.swift in Sources */,
+				EC8B837D22C0A26000485B4D /* StrmapTests.swift in Sources */,
 				EC888E2C22954123005841E2 /* ListRemoveAllTests.swift in Sources */,
+				EC8B837422C0A26000485B4D /* PutendlTests.swift in Sources */,
 				ECA7BD9822968E15006DACE4 /* ListFirstTests.swift in Sources */,
-				EC8C1F39228B0E450032719E /* MemccpyTests.swift in Sources */,
+				EC8B838022C0A26000485B4D /* MemcmpTests.swift in Sources */,
+				EC8B835D22C0A26000485B4D /* IsUpperTests.swift in Sources */,
 				EC66E4DB2296C1DD002AA6DE /* ListLastTests.swift in Sources */,
 				ECC5469322B8E7D600E9970B /* PrintfCharTests.swift in Sources */,
-				ECA74CDE228C21C3005E653D /* StriteriTests.swift in Sources */,
+				EC8B835B22C0A26000485B4D /* StrnstrTests.swift in Sources */,
+				EC8B835922C0A26000485B4D /* StrclrTests.swift in Sources */,
+				EC8B836722C0A26000485B4D /* MemdelTests.swift in Sources */,
+				EC8B837622C0A26000485B4D /* MemchrTests.swift in Sources */,
 				ECC5469522B8EA8700E9970B /* PrintfHexaTests.swift in Sources */,
 				EC66E4D72296A11D002AA6DE /* ListContainsTests.swift in Sources */,
 				EC3A4EBD2296C7EA00EAF468 /* ListFromArrayTests.swift in Sources */,
-				EC3E163C228C348800810DE7 /* StrsplitTests.swift in Sources */,
 				ECC5469722B8EABD00E9970B /* PrintfFloatTests.swift in Sources */,
 				EC66E4E12296C319002AA6DE /* ListLastIndexTests.swift in Sources */,
+				EC8B837722C0A26000485B4D /* StrcpyTests.swift in Sources */,
+				EC8B835422C0A26000485B4D /* ToLowerTests.swift in Sources */,
 				EC3E7BB92294653300D6C68E /* ListAppendTests.swift in Sources */,
+				EC8B838322C0A26000485B4D /* BzeroTests.swift in Sources */,
 				ECC5469F22B8F0C600E9970B /* PrintfPointersTests.swift in Sources */,
-				ECF193AF229444DA00BDFE34 /* StrreplaceTests.swift in Sources */,
-				ECA74CE2228C2956005E653D /* StrclrTests.swift in Sources */,
+				EC8B837A22C0A26000485B4D /* MemcpyTests.swift in Sources */,
+				EC8B837E22C0A26000485B4D /* MemsetTests.swift in Sources */,
+				EC8B836822C0A26000485B4D /* StriteriTests.swift in Sources */,
 				EC3A4EC12296D10B00EAF468 /* ListStrsplitTests.swift in Sources */,
-				ECA9BD7E2292F20D0000F90F /* AbsTests.swift in Sources */,
-				ECA74CBC228C0823005E653D /* StrstrTests.swift in Sources */,
-				ECA74CE6228C2C69005E653D /* StrmapiTests.swift in Sources */,
-				ECA74CE8228C2CC6005E653D /* StrequTests.swift in Sources */,
-				ECA74CB2228BF245005E653D /* StrcatTests.swift in Sources */,
+				EC8B836A22C0A26000485B4D /* ToUpperTests.swift in Sources */,
+				EC8B835E22C0A26000485B4D /* ToCharTests.swift in Sources */,
+				EC8B835222C0A26000485B4D /* StrcmpTests.swift in Sources */,
 				EC888E262295215E005841E2 /* ListRemoveAtTests.swift in Sources */,
-				ECA74CD6228C162E005E653D /* MemdelTests.swift in Sources */,
-				ECA74CC6228C0F28005E653D /* IsAlphaTests.swift in Sources */,
-				EC3E1638228C31B400810DE7 /* StrtrimTests.swift in Sources */,
+				EC8B836422C0A26000485B4D /* IsAlnumTests.swift in Sources */,
+				EC8B836922C0A26000485B4D /* IsDigitTests.swift in Sources */,
+				EC8B835722C0A26000485B4D /* GetNextLineTests.swift in Sources */,
+				EC8B837C22C0A26000485B4D /* StrnewTests.swift in Sources */,
+				EC8B836E22C0A26000485B4D /* StrstrTests.swift in Sources */,
 				EC3A4EC92296DCA000EAF468 /* ListReverseTests.swift in Sources */,
-				ECA74CD0228C1157005E653D /* ToUpperTests.swift in Sources */,
-				ECA74CD8228C1AF1005E653D /* StrnewTests.swift in Sources */,
 				EC3E7BB12294604500D6C68E /* ListNewTests.swift in Sources */,
-				ECA74CCE228C1106005E653D /* IsPrintTests.swift in Sources */,
-				EC8C1F3F228B21170032719E /* MemcmpTests.swift in Sources */,
-				ECA74CE4228C2A6A005E653D /* StrmapTests.swift in Sources */,
-				ECA74CCC228C10AF005E653D /* IsAsciiTests.swift in Sources */,
-				ECA74CEA228C2E45005E653D /* StrnequTests.swift in Sources */,
-				EC045A222293D0F60017D11A /* ToCharTests.swift in Sources */,
 				EC888E302295433B005841E2 /* ListFreeTests.swift in Sources */,
+				EC8B837822C0A26000485B4D /* StrrchrTests.swift in Sources */,
+				EC8B837B22C0A26000485B4D /* StrdupTests.swift in Sources */,
+				EC8B835822C0A26000485B4D /* AbsTests.swift in Sources */,
+				EC8B836B22C0A26000485B4D /* StrchrTests.swift in Sources */,
+				EC8B836C22C0A26000485B4D /* StriterTests.swift in Sources */,
 				EC888E3222954343005841E2 /* NodeFreeTests.swift in Sources */,
+				EC8B837022C0A26000485B4D /* StrsplitTests.swift in Sources */,
+				EC8B835522C0A26000485B4D /* StrsubTests.swift in Sources */,
+				EC8B838222C0A26000485B4D /* AtoiTests.swift in Sources */,
+				EC8B836522C0A26000485B4D /* StrncpyTests.swift in Sources */,
 				ECA7BD8822955323006DACE4 /* ListMapTests.swift in Sources */,
+				EC8B837322C0A26000485B4D /* StrjoinTests.swift in Sources */,
+				EC8B835622C0A26000485B4D /* StrmapiTests.swift in Sources */,
 				EC3E7BB7229463D300D6C68E /* NodeNewTests.swift in Sources */,
 				EC21F6A522B7B8F000D1B13C /* PrintfBasicTests.swift in Sources */,
+				EC8B836022C0A26000485B4D /* PutcharTests.swift in Sources */,
+				EC8B838422C0A26000485B4D /* IsLowerTests.swift in Sources */,
 				ECA7BD922295764F006DACE4 /* ListToArrayTests.swift in Sources */,
 				EC66E4DF2296C2D1002AA6DE /* ListFirstIndexTests.swift in Sources */,
-				EC89F080228A9E6F002ED417 /* MemsetTests.swift in Sources */,
 				ECC5469922B8ECCE00E9970B /* PrintfUnsignedDecimalTests.swift in Sources */,
-				EC045A242293D1D30017D11A /* ToIntTests.swift in Sources */,
-				ECA74CDC228C1D05005E653D /* StriterTests.swift in Sources */,
 				ECC546A122B8F27F00E9970B /* PrintfMultiArgsTests.swift in Sources */,
+				EC8B836122C0A26000485B4D /* StrncatTests.swift in Sources */,
 				ECB2D3EB22B93B6800E08886 /* PrintfReusedArgsTests.swift in Sources */,
-				EC3E1644228C452900810DE7 /* PutendlTests.swift in Sources */,
-				ECA74CAA228BEBD3005E653D /* SrtlenTests.swift in Sources */,
-				EC3E1636228C309800810DE7 /* StrjoinTests.swift in Sources */,
 				ECA7BD8422954F55006DACE4 /* ListForEachTests.swift in Sources */,
-				EC3E1648228C48BF00810DE7 /* DigitlenTests.swift in Sources */,
+				EC8B835A22C0A26000485B4D /* IsAlphaTests.swift in Sources */,
 				EC3A4EB92296C4ED00EAF468 /* ListEntryAtTests.swift in Sources */,
+				EC8B836322C0A26000485B4D /* StrncmpTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,8 +11,11 @@
 
 int     ft_vdprintf(int fd, const char *format, va_list list)
 {
-    (void)fd;
-    (void)format;
-    (void)list;
-    return (0);
+    int     result;
+    char    *buffer;
+
+    result = ft_vasprintf(&buffer, format, list);
+    ft_putstr_fd(buffer, fd);
+    ft_strdel(&buffer);
+    return (result);
 }
