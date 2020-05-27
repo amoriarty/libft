@@ -73,6 +73,8 @@ SRC_NAME= libft/ft_isalnum.c \
           libft/ft_itoa.c \
           libft/ft_tolower.c \
           libft/ft_toupper.c \
+          libft/ft_abs.c \
+          libft/ft_tochar.c \
           libft/get_next_line.c \
           libft/fatal_error.c \
           list/node_new.c \
