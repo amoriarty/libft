@@ -41,6 +41,7 @@ void        list_reverse(t_list *self);
 void        list_remove(t_list *self, void *data, t_bool (*predicate)(void * data, void *content), void (*remove)(void *));
 void        list_remove_at(t_list *self, size_t index, void (*remove)(void *content));
 void        list_remove_all(t_list *self, void (*remove)(void *content));
+void		*list_drop_first(t_list *list);
 
 // MARK:- Node
 

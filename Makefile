@@ -97,7 +97,8 @@ SRC_NAME= libft/ft_isalnum.c \
           list/list_reverse.c \
           list/list_remove.c \
           list/list_remove_at.c \
-          list/list_remove_all.c
+          list/list_remove_all.c \
+          list/list_drop_first.c
 
 SRC= $(addprefix $(SRC_PATH), $(SRC_NAME))
 
